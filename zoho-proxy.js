@@ -1,31 +1,29 @@
 /**
- * Zoho CRM Proxy Server
- * ---------------------
- * Lightweight Express server that proxies requests to the Zoho CRM v2 API.
- * Stores the OAuth token in memory so the browser-based sales map can
- * push leads into Zoho without exposing the token in client-side code.
- *
- * Usage:
- *   1. Start the server:  node zoho-proxy.js
- *   2. POST your Zoho OAuth token to /api/zoho/auth
- *   3. Use the other endpoints to create records in Zoho CRM
+ * Rooted Broth — Zoho CRM Proxy Server
+ * Auto-refreshing OAuth, real-time sync, email sending
  */
 
 const express = require('express');
 const path = require('path');
+const https = require('https');
 
 const app = express();
 const PORT = process.env.PORT || 3456;
-// Support both US and EU Zoho domains via env var
-const ZOHO_BASE = process.env.ZOHO_API_BASE || 'https://www.zohoapis.eu/crm/v2';
 
-// Serve static files (map HTML + data JSON) from public/ directory
+// Zoho config — set via env vars on Render, or defaults to your EU credentials
+const ZOHO_API_BASE = process.env.ZOHO_API_BASE || 'https://www.zohoapis.eu/crm/v2';
+const ZOHO_ACCOUNTS_URL = process.env.ZOHO_ACCOUNTS_URL || 'https://accounts.zoho.eu';
+const ZOHO_CLIENT_ID = process.env.ZOHO_CLIENT_ID || '1000.15Y71QF5FP5TD20RHGPJSUHMPFR1UJ';
+const ZOHO_CLIENT_SECRET = process.env.ZOHO_CLIENT_SECRET || '78fad5abdc6f8510d01b4a3ff0ca0a808fe8ffe757';
+const ZOHO_REFRESH_TOKEN = process.env.ZOHO_REFRESH_TOKEN || '1000.827e4bf96255bbfc27fa8f77848b0734.009cf556ae7f04e763657339f6a35be1';
+
+let zohoToken = process.env.ZOHO_ACCESS_TOKEN || null;
+let tokenExpiresAt = 0;
+
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// ---------------------------------------------------------------------------
-// Middleware
-// ---------------------------------------------------------------------------
-// Inline CORS (no cors package needed)
+// CORS
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -36,396 +34,318 @@ app.use((req, res, next) => {
 app.use(express.json({ limit: '5mb' }));
 
 // ---------------------------------------------------------------------------
-// In-memory token store
+// AUTO TOKEN REFRESH
 // ---------------------------------------------------------------------------
-let zohoToken = null;
+async function refreshToken() {
+  console.log('[zoho] Refreshing access token...');
+  const params = new URLSearchParams({
+    grant_type: 'refresh_token',
+    client_id: ZOHO_CLIENT_ID,
+    client_secret: ZOHO_CLIENT_SECRET,
+    refresh_token: ZOHO_REFRESH_TOKEN,
+  });
 
-/**
- * Build the Authorization header value for Zoho API calls.
- */
-function authHeader() {
-  return `Zoho-oauthtoken ${zohoToken}`;
-}
+  const resp = await fetch(`${ZOHO_ACCOUNTS_URL}/oauth/v2/token`, {
+    method: 'POST',
+    body: params,
+  });
+  const data = await resp.json();
 
-/**
- * Middleware that rejects requests when no token has been stored yet.
- */
-function requireToken(req, res, next) {
-  if (!zohoToken) {
-    return res.status(401).json({
-      success: false,
-      error: 'No Zoho token configured. POST to /api/zoho/auth first.',
-    });
+  if (data.access_token) {
+    zohoToken = data.access_token;
+    tokenExpiresAt = Date.now() + (data.expires_in - 60) * 1000; // refresh 60s before expiry
+    console.log('[zoho] Token refreshed, expires in', data.expires_in, 'seconds');
+    return true;
+  } else {
+    console.error('[zoho] Token refresh failed:', data);
+    return false;
   }
-  next();
 }
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
+async function ensureToken() {
+  if (!zohoToken || Date.now() > tokenExpiresAt) {
+    await refreshToken();
+  }
+  return zohoToken;
+}
 
-/**
- * Generic wrapper around fetch for Zoho CRM API calls.
- * Returns { ok, status, data } where `data` is the parsed JSON body.
- */
-async function zohoRequest(method, path, body) {
-  const url = `${ZOHO_BASE}${path}`;
+// Refresh on startup
+refreshToken().catch(e => console.error('[zoho] Initial refresh failed:', e.message));
+
+// Refresh every 50 minutes
+setInterval(() => refreshToken().catch(e => console.error('[zoho] Scheduled refresh failed:', e.message)), 50 * 60 * 1000);
+
+// ---------------------------------------------------------------------------
+// ZOHO API HELPER
+// ---------------------------------------------------------------------------
+async function zohoRequest(method, apiPath, body) {
+  const token = await ensureToken();
+  if (!token) throw new Error('No Zoho token available');
+
+  const url = `${ZOHO_API_BASE}${apiPath}`;
   const options = {
     method,
     headers: {
-      Authorization: authHeader(),
+      'Authorization': `Zoho-oauthtoken ${token}`,
       'Content-Type': 'application/json',
     },
   };
-  if (body) {
-    options.body = JSON.stringify(body);
-  }
+  if (body) options.body = JSON.stringify(body);
 
   const response = await fetch(url, options);
-
   let data;
-  try {
-    data = await response.json();
-  } catch {
-    data = null;
+  try { data = await response.json(); } catch { data = null; }
+
+  // If token expired mid-request, refresh and retry once
+  if (response.status === 401) {
+    console.log('[zoho] 401 received, refreshing token and retrying...');
+    await refreshToken();
+    options.headers['Authorization'] = `Zoho-oauthtoken ${zohoToken}`;
+    const retry = await fetch(url, options);
+    try { data = await retry.json(); } catch { data = null; }
+    return { ok: retry.ok, status: retry.status, data };
   }
 
   return { ok: response.ok, status: response.status, data };
 }
 
-/**
- * Wrap an async route handler so that thrown errors are caught and forwarded
- * as a 500 JSON response.
- */
 function asyncHandler(fn) {
   return (req, res, next) => {
-    Promise.resolve(fn(req, res, next)).catch((err) => {
-      console.error(`[zoho-proxy] ${req.method} ${req.path} error:`, err);
-      res.status(500).json({
-        success: false,
-        error: err.message || 'Internal server error',
-      });
+    Promise.resolve(fn(req, res, next)).catch(err => {
+      console.error(`[zoho-proxy] ${req.method} ${req.path} error:`, err.message);
+      res.status(500).json({ success: false, error: err.message });
     });
   };
 }
 
 // ---------------------------------------------------------------------------
-// Routes
+// ROUTES
 // ---------------------------------------------------------------------------
 
-/**
- * Health check
- */
-app.get('/api/zoho/health', (_req, res) => {
-  res.json({
-    success: true,
-    tokenConfigured: !!zohoToken,
-    uptime: process.uptime(),
-  });
+// Health check
+app.get('/api/zoho/health', async (_req, res) => {
+  res.json({ success: true, tokenConfigured: !!zohoToken, tokenExpired: Date.now() > tokenExpiresAt, uptime: process.uptime() });
 });
 
-// ---- AUTH -----------------------------------------------------------------
-
-/**
- * POST /api/zoho/auth
- * Store the Zoho OAuth token in memory.
- * Body: { "token": "1000.xxxxx.yyyyy" }
- */
-app.post(
-  '/api/zoho/auth',
-  asyncHandler(async (req, res) => {
-    const { token } = req.body;
-    if (!token || typeof token !== 'string' || token.trim().length === 0) {
-      return res.status(400).json({
-        success: false,
-        error: 'Missing or invalid "token" in request body.',
-      });
-    }
-
+// Manual auth (override)
+app.post('/api/zoho/auth', asyncHandler(async (req, res) => {
+  const { token } = req.body;
+  if (token) {
     zohoToken = token.trim();
-    console.log('[zoho-proxy] Token stored successfully.');
-    res.json({ success: true, message: 'Token stored.' });
-  })
-);
+    tokenExpiresAt = Date.now() + 3500 * 1000;
+    console.log('[zoho] Manual token stored.');
+  }
+  res.json({ success: true, message: 'Token stored.' });
+}));
 
-// ---- CREATE COMPANY (Account) ---------------------------------------------
+// ---------------------------------------------------------------------------
+// SEARCH ACCOUNTS — find a Zoho Account by name to get its ID
+// ---------------------------------------------------------------------------
+app.get('/api/zoho/search-account', asyncHandler(async (req, res) => {
+  const name = req.query.name;
+  if (!name) return res.status(400).json({ success: false, error: 'name query param required' });
 
-/**
- * POST /api/zoho/company
- * Create an Account record in Zoho CRM.
- * Body: { "Account_Name": "...", "Phone": "...", "Website": "...", ...extraFields }
- */
-app.post(
-  '/api/zoho/company',
-  requireToken,
-  asyncHandler(async (req, res) => {
-    const payload = req.body;
-    if (!payload || !payload.Account_Name) {
-      return res.status(400).json({
-        success: false,
-        error: '"Account_Name" is required.',
-      });
-    }
+  const result = await zohoRequest('GET', `/Accounts/search?criteria=(Account_Name:equals:${encodeURIComponent(name)})`);
+  if (result.ok && result.data?.data?.length > 0) {
+    const acct = result.data.data[0];
+    res.json({ success: true, id: acct.id, name: acct.Account_Name, data: acct });
+  } else {
+    res.json({ success: false, id: null, message: 'Account not found' });
+  }
+}));
 
-    const result = await zohoRequest('POST', '/Accounts', {
-      data: [payload],
-    });
+// ---------------------------------------------------------------------------
+// CREATE ACCOUNT
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/company', asyncHandler(async (req, res) => {
+  const payload = req.body;
+  if (!payload?.Account_Name) return res.status(400).json({ success: false, error: 'Account_Name required' });
 
-    if (!result.ok) {
-      return res.status(result.status).json({
-        success: false,
-        error: 'Zoho API error',
-        zoho: result.data,
-      });
-    }
+  const result = await zohoRequest('POST', '/Accounts', { data: [payload] });
+  const record = result.data?.data?.[0];
+  res.json({ success: result.ok, id: record?.details?.id || null, zoho: result.data });
+}));
 
-    const record = result.data?.data?.[0];
-    res.json({
-      success: true,
-      id: record?.details?.id || null,
-      zoho: result.data,
-    });
-  })
-);
+// ---------------------------------------------------------------------------
+// UPDATE ACCOUNT — update an existing Account by Zoho ID
+// ---------------------------------------------------------------------------
+app.put('/api/zoho/company/:id', asyncHandler(async (req, res) => {
+  const zohoId = req.params.id;
+  const payload = req.body;
 
-// ---- CREATE CONTACT -------------------------------------------------------
+  const result = await zohoRequest('PUT', '/Accounts', {
+    data: [{ id: zohoId, ...payload }],
+  });
+  const record = result.data?.data?.[0];
+  res.json({ success: result.ok, id: record?.details?.id || zohoId, zoho: result.data });
+}));
 
-/**
- * POST /api/zoho/contact
- * Create a Contact record in Zoho CRM.
- * Body: { "First_Name": "...", "Last_Name": "...", "Email": "...", ...extraFields }
- */
-app.post(
-  '/api/zoho/contact',
-  requireToken,
-  asyncHandler(async (req, res) => {
-    const payload = req.body;
-    if (!payload || !payload.Last_Name) {
-      return res.status(400).json({
-        success: false,
-        error: '"Last_Name" is required.',
-      });
-    }
+// ---------------------------------------------------------------------------
+// UPSERT ACCOUNT — create or update by Account_Name
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/upsert-account', asyncHandler(async (req, res) => {
+  const payload = req.body;
+  if (!payload?.Account_Name) return res.status(400).json({ success: false, error: 'Account_Name required' });
 
-    const result = await zohoRequest('POST', '/Contacts', {
-      data: [payload],
-    });
+  const result = await zohoRequest('POST', '/Accounts/upsert', {
+    data: [payload],
+    duplicate_check_fields: ['Account_Name'],
+  });
+  const record = result.data?.data?.[0];
+  res.json({
+    success: result.ok,
+    id: record?.details?.id || null,
+    action: record?.action || 'unknown',
+    zoho: result.data,
+  });
+}));
 
-    if (!result.ok) {
-      return res.status(result.status).json({
-        success: false,
-        error: 'Zoho API error',
-        zoho: result.data,
-      });
-    }
+// ---------------------------------------------------------------------------
+// CREATE NOTE on Account
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/note', asyncHandler(async (req, res) => {
+  const { Note_Title, Note_Content, parent_module, parent_id } = req.body;
+  if (!Note_Content) return res.status(400).json({ success: false, error: 'Note_Content required' });
+  if (!parent_id) return res.status(400).json({ success: false, error: 'parent_id required' });
 
-    const record = result.data?.data?.[0];
-    res.json({
-      success: true,
-      id: record?.details?.id || null,
-      zoho: result.data,
-    });
-  })
-);
-
-// ---- CREATE NOTE ----------------------------------------------------------
-
-/**
- * POST /api/zoho/note
- * Create a Note attached to a record in Zoho CRM.
- * Body: {
- *   "Note_Title": "...",
- *   "Note_Content": "...",
- *   "parent_module": "Accounts",   // or "Contacts", "Leads", etc.
- *   "parent_id": "000000000000"
- * }
- */
-app.post(
-  '/api/zoho/note',
-  requireToken,
-  asyncHandler(async (req, res) => {
-    const { Note_Title, Note_Content, parent_module, parent_id } = req.body;
-
-    if (!Note_Content) {
-      return res.status(400).json({
-        success: false,
-        error: '"Note_Content" is required.',
-      });
-    }
-    if (!parent_id) {
-      return res.status(400).json({
-        success: false,
-        error: '"parent_id" is required.',
-      });
-    }
-
-    const notePayload = {
+  const result = await zohoRequest('POST', '/Notes', {
+    data: [{
       Note_Title: Note_Title || 'Note',
       Note_Content,
       $se_module: parent_module || 'Accounts',
       Parent_Id: { id: parent_id },
-    };
-
-    const result = await zohoRequest('POST', '/Notes', {
-      data: [notePayload],
-    });
-
-    if (!result.ok) {
-      return res.status(result.status).json({
-        success: false,
-        error: 'Zoho API error',
-        zoho: result.data,
-      });
-    }
-
-    const record = result.data?.data?.[0];
-    res.json({
-      success: true,
-      id: record?.details?.id || null,
-      zoho: result.data,
-    });
-  })
-);
-
-// ---- BULK IMPORT ----------------------------------------------------------
-
-/**
- * POST /api/zoho/bulk-import
- * Create multiple Account records in Zoho CRM.
- * Zoho allows up to 100 records per request, so we batch automatically.
- *
- * Body: {
- *   "companies": [
- *     { "Account_Name": "...", "Phone": "...", ... },
- *     ...
- *   ]
- * }
- */
-app.post(
-  '/api/zoho/bulk-import',
-  requireToken,
-  asyncHandler(async (req, res) => {
-    const { companies } = req.body;
-
-    if (!Array.isArray(companies) || companies.length === 0) {
-      return res.status(400).json({
-        success: false,
-        error: '"companies" must be a non-empty array.',
-      });
-    }
-
-    // Validate every entry has at least an Account_Name
-    const invalid = companies.filter((c) => !c.Account_Name);
-    if (invalid.length > 0) {
-      return res.status(400).json({
-        success: false,
-        error: `${invalid.length} record(s) missing "Account_Name".`,
-      });
-    }
-
-    const BATCH_SIZE = 100; // Zoho CRM limit per request
-    const batches = [];
-    for (let i = 0; i < companies.length; i += BATCH_SIZE) {
-      batches.push(companies.slice(i, i + BATCH_SIZE));
-    }
-
-    const results = [];
-    let created = 0;
-    let failed = 0;
-
-    for (const batch of batches) {
-      const result = await zohoRequest('POST', '/Accounts', {
-        data: batch,
-      });
-
-      if (result.ok && result.data?.data) {
-        for (const record of result.data.data) {
-          if (record.status === 'success') {
-            created++;
-          } else {
-            failed++;
-          }
-        }
-      } else {
-        // Entire batch failed
-        failed += batch.length;
-      }
-
-      results.push({
-        batchSize: batch.length,
-        ok: result.ok,
-        status: result.status,
-        zoho: result.data,
-      });
-    }
-
-    res.json({
-      success: failed === 0,
-      summary: {
-        total: companies.length,
-        created,
-        failed,
-        batches: batches.length,
-      },
-      results,
-    });
-  })
-);
-
-// ---------------------------------------------------------------------------
-// POST /api/zoho/send-email — Send email via Zoho Mail/CRM
-// ---------------------------------------------------------------------------
-app.post('/api/zoho/send-email', asyncHandler(async (req, res) => {
-  requireToken(res);
-  const { to, subject, body } = req.body;
-  if (!to || !subject) {
-    return res.status(400).json({ success: false, error: 'to and subject are required' });
-  }
-
-  // Use Zoho CRM's send mail API
-  const result = await zohoFetch('/crm/v2/functions/send_mail/actions/execute?auth_type=apikey', {
-    method: 'POST',
-    body: JSON.stringify({
-      arguments: {
-        to_email: to,
-        subject: subject,
-        body_content: body || '',
-      }
-    }),
+    }]
   });
-
-  // Fallback: If CRM send_mail function doesn't work, try creating an email activity
-  if (!result.ok) {
-    // Log as a note instead
-    const noteResult = await zohoFetch('/crm/v2/Notes', {
-      method: 'POST',
-      body: JSON.stringify({
-        data: [{
-          Note_Title: 'Email sent to ' + to,
-          Note_Content: 'Subject: ' + subject + '\n\n' + (body || ''),
-        }]
-      }),
-    });
-    return res.json({
-      success: true,
-      method: 'logged_as_note',
-      note: noteResult.data,
-      message: 'Email logged as a note. Open your mail client to actually send the email.'
-    });
-  }
-
-  res.json({ success: true, zoho: result.data });
+  const record = result.data?.data?.[0];
+  res.json({ success: result.ok, id: record?.details?.id || null, zoho: result.data });
 }));
 
 // ---------------------------------------------------------------------------
-// Start server
+// SEND EMAIL via Zoho CRM
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/send-email', asyncHandler(async (req, res) => {
+  const { to, subject, body, accountName } = req.body;
+  if (!to || !subject) return res.status(400).json({ success: false, error: 'to and subject required' });
+
+  // Try Zoho CRM email sending via /Accounts/{id}/actions/send_mail
+  // First find the account
+  let zohoId = null;
+  if (accountName) {
+    const search = await zohoRequest('GET', `/Accounts/search?criteria=(Account_Name:equals:${encodeURIComponent(accountName)})`);
+    if (search.ok && search.data?.data?.length > 0) {
+      zohoId = search.data.data[0].id;
+    }
+  }
+
+  // Try sending via CRM send_mail endpoint
+  if (zohoId) {
+    const emailResult = await zohoRequest('POST', `/Accounts/${zohoId}/actions/send_mail`, {
+      data: [{
+        from: { user_name: "Danielle", email: "danielle@rootedbroth.com" },
+        to: [{ user_name: to.split('@')[0], email: to }],
+        subject: subject,
+        content: `<p>${(body || '').replace(/\n/g, '<br>')}</p>`,
+        mail_format: "html",
+      }]
+    });
+
+    if (emailResult.ok) {
+      return res.json({ success: true, method: 'zoho_crm', zoho: emailResult.data });
+    }
+  }
+
+  // Fallback: log as note on the account
+  if (zohoId) {
+    await zohoRequest('POST', '/Notes', {
+      data: [{
+        Note_Title: 'Email sent to ' + to,
+        Note_Content: 'Subject: ' + subject + '\n\nTo: ' + to + '\n\n' + (body || ''),
+        $se_module: 'Accounts',
+        Parent_Id: { id: zohoId },
+      }]
+    });
+  }
+
+  res.json({
+    success: true,
+    method: 'mailto_with_note',
+    zohoAccountId: zohoId,
+    message: 'Email logged as note in Zoho. Use your mail client to send the actual email.',
+  });
+}));
+
+// ---------------------------------------------------------------------------
+// BULK IMPORT
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/bulk-import', asyncHandler(async (req, res) => {
+  const { companies } = req.body;
+  if (!Array.isArray(companies) || companies.length === 0) {
+    return res.status(400).json({ success: false, error: 'companies array required' });
+  }
+
+  const BATCH = 100;
+  let created = 0, failed = 0;
+  for (let i = 0; i < companies.length; i += BATCH) {
+    const batch = companies.slice(i, i + BATCH);
+    const result = await zohoRequest('POST', '/Accounts', { data: batch });
+    if (result.ok && result.data?.data) {
+      result.data.data.forEach(r => r.status === 'success' ? created++ : failed++);
+    } else {
+      failed += batch.length;
+    }
+  }
+  res.json({ success: failed === 0, created, failed, total: companies.length });
+}));
+
+// ---------------------------------------------------------------------------
+// SYNC SINGLE LEAD — upsert account + update description with latest outreach data
+// ---------------------------------------------------------------------------
+app.post('/api/zoho/sync-lead', asyncHandler(async (req, res) => {
+  const { name, phone, website, address, category, neighborhood, borough, statuses, channels, notes, assigned, email, instagram, rating, reviewCount } = req.body;
+  if (!name) return res.status(400).json({ success: false, error: 'name required' });
+
+  const description = [
+    'Category: ' + (category || ''),
+    'Neighborhood: ' + (neighborhood || ''),
+    'Borough: ' + (borough || ''),
+    'Assigned: ' + (assigned || ''),
+    'Outreach Status: ' + (statuses || []).join(', '),
+    'Channels: ' + (channels || []).join(', '),
+    email ? 'Email: ' + email : '',
+    instagram ? 'Instagram: ' + instagram : '',
+    rating ? 'Rating: ' + rating + '/5' : '',
+    reviewCount ? 'Reviews: ' + reviewCount : '',
+    notes ? 'Notes: ' + notes : '',
+  ].filter(Boolean).join('\n');
+
+  const result = await zohoRequest('POST', '/Accounts/upsert', {
+    data: [{
+      Account_Name: name,
+      Phone: phone || '',
+      Website: website || '',
+      Billing_Street: address || '',
+      Billing_City: 'New York',
+      Billing_State: 'NY',
+      Billing_Country: 'United States',
+      Industry: 'Food & Beverage',
+      Description: description,
+    }],
+    duplicate_check_fields: ['Account_Name'],
+  });
+
+  const record = result.data?.data?.[0];
+  res.json({
+    success: result.ok,
+    id: record?.details?.id || null,
+    action: record?.action || 'unknown',
+  });
+}));
+
+// ---------------------------------------------------------------------------
+// START
 // ---------------------------------------------------------------------------
 app.listen(PORT, () => {
-  console.log(`[zoho-proxy] Running on http://localhost:${PORT}`);
-  console.log(`[zoho-proxy] POST /api/zoho/auth   — store OAuth token`);
-  console.log(`[zoho-proxy] POST /api/zoho/company — create Account`);
-  console.log(`[zoho-proxy] POST /api/zoho/contact — create Contact`);
-  console.log(`[zoho-proxy] POST /api/zoho/note    — create Note`);
-  console.log(`[zoho-proxy] POST /api/zoho/bulk-import — bulk create Accounts`);
-  console.log(`[zoho-proxy] GET  /api/zoho/health   — health check`);
+  console.log(`[rooted-broth] Server running on http://localhost:${PORT}`);
+  console.log(`[rooted-broth] Zoho auto-refresh: enabled`);
+  console.log(`[rooted-broth] Static files: ./public`);
 });

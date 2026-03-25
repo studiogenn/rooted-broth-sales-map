@@ -613,7 +613,53 @@ function updateNotes() {
 function saveAndClose() {
   updateChannels(); updateAssigned(); updateNotes();
   saveOutreach();
+  syncLeadToZoho(selectedBizId); // auto-sync to Zoho
   closeDetail();
+}
+
+// --- AUTO ZOHO SYNC ---
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? '' // same origin when running locally
+  : (localStorage.getItem('rooted_broth_api_url') || ''); // deployed backend URL
+
+function syncLeadToZoho(bizId) {
+  if (!API_BASE && window.location.protocol === 'https:') return; // no backend configured for GH Pages
+  const b = ALL_BUSINESSES.find(x => x.id === bizId);
+  if (!b) return;
+  const o = getOutreach(bizId);
+  const assigned = (o.assigned || b.territory) === 'danielle' ? 'Danielle' : 'Yasmeen';
+
+  fetch(API_BASE + '/api/zoho/sync-lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: b.name, phone: b.phone || '', website: b.website || '',
+      address: b.address, category: b.category, neighborhood: b.neighborhood,
+      borough: b.borough || '', statuses: (o.statuses||[]).map(s=>STATUS_LABELS[s]),
+      channels: o.channels || [], notes: o.notes || '', assigned: assigned,
+      email: b.email || '', instagram: b.instagram || '',
+      rating: b.rating || '', reviewCount: b.reviewCount || '',
+    })
+  }).then(r => r.json()).then(d => {
+    if (d.success) {
+      console.log('[zoho] Synced:', b.name, d.action);
+      // Show brief toast
+      showToast('Synced to Zoho: ' + b.name);
+    }
+  }).catch(e => console.log('[zoho] Sync skipped (no backend)'));
+}
+
+function showToast(msg) {
+  let t = document.getElementById('toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'toast';
+    t.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#2C2C2C;color:#fff;padding:10px 20px;border-radius:8px;font-size:12px;font-weight:600;z-index:9999;opacity:0;transition:opacity 0.3s;';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  setTimeout(() => { t.style.opacity = '0'; }, 2500);
 }
 
 // --- Email ---
@@ -623,27 +669,22 @@ function sendEmail() {
   const body = document.getElementById('emailBody').value;
   if (!to) { alert('Please enter a recipient email address'); return; }
 
-  const zohoToken = localStorage.getItem('rooted_broth_zoho_token');
-  if (!zohoToken) {
-    alert('Connect Zoho first to send emails through Zoho. Or click "Open in Mail App" to send via your default email client.');
-    return;
-  }
-
-  fetch('/api/zoho/send-email', {
+  fetch(API_BASE + '/api/zoho/send-email', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ to, subject, body, zohoToken })
+    body: JSON.stringify({ to, subject, body, accountName: document.getElementById('detailName').textContent })
   }).then(r => r.json()).then(data => {
     if (data.success) {
-      alert('Email sent to ' + to);
+      showToast('Email logged for ' + to);
       const o = getOutreach(selectedBizId);
       if (!o.statuses.includes('emailed')) o.statuses.push('emailed');
       if (!o.channels.includes('email')) o.channels.push('email');
       o.emailsSent.push({ to, subject, date: new Date().toISOString() });
       saveOutreach();
+      syncLeadToZoho(selectedBizId);
       render();
     } else {
-      alert('Email failed: ' + (data.error || 'Unknown error') + '\n\nTry "Open in Mail App" instead.');
+      alert('Email logging failed. Try "Open in Mail App" instead.\n' + (data.error || ''));
     }
   }).catch(e => {
     alert('Could not connect to server. Try "Open in Mail App" instead.');
@@ -664,48 +705,17 @@ function openMailto() {
 
 // --- Zoho CRM ---
 function connectZoho() {
-  const token = prompt('Enter your Zoho OAuth Token.\n\nTo get one:\n1. Go to api-console.zoho.com\n2. Create a Self Client\n3. Generate token with scope: ZohoCRM.modules.ALL\n4. Paste the access_token here');
-  if (token) {
-    localStorage.setItem('rooted_broth_zoho_token', token);
-    fetch('/api/zoho/auth', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token })
-    }).then(r => r.json()).then(d => {
-      if (d.success) alert('Zoho connected! You can now sync leads and send emails.');
-      else alert('Token saved locally. Server connection: ' + (d.error || 'OK'));
-    }).catch(() => {
-      alert('Token saved locally. Start the Zoho proxy server to enable full sync.');
-    });
+  const url = prompt('Enter your Render backend URL (e.g. https://rooted-broth-sales-map.onrender.com)\n\nOr leave blank if running locally on localhost:3456');
+  if (url !== null) {
+    const base = url.trim().replace(/\/$/, '');
+    localStorage.setItem('rooted_broth_api_url', base);
+    window.location.reload(); // reload to pick up new API_BASE
   }
 }
 
 function syncOneToZoho() {
-  const b = ALL_BUSINESSES.find(x => x.id === selectedBizId);
-  const o = getOutreach(selectedBizId);
-  if (!b) return;
-
-  const zohoToken = localStorage.getItem('rooted_broth_zoho_token');
-  if (!zohoToken) { connectZoho(); return; }
-
-  fetch('/api/zoho/company', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      Account_Name: b.name,
-      Phone: b.phone || '',
-      Website: b.website || '',
-      Billing_Street: b.address,
-      Billing_City: 'New York',
-      Billing_State: 'NY',
-      Description: 'Category: ' + b.category + ' | Neighborhood: ' + b.neighborhood + ' | Statuses: ' + (o.statuses||[]).map(s=>STATUS_LABELS[s]).join(', ') + ' | Channels: ' + (o.channels||[]).join(', ') + ' | Notes: ' + (o.notes||''),
-      Industry: 'Food & Beverage',
-      Tag: (o.assigned || b.territory) === 'danielle' ? 'Danielle' : 'Yasmeen'
-    })
-  }).then(r => r.json()).then(d => {
-    if (d.success) alert('Synced "' + b.name + '" to Zoho CRM!');
-    else alert('Sync issue: ' + JSON.stringify(d.error || d));
-  }).catch(() => alert('Could not reach Zoho proxy. Is the server running?'));
+  if (!selectedBizId && selectedBizId !== 0) return;
+  syncLeadToZoho(selectedBizId);
 }
 
 function bulkSyncZoho() {
