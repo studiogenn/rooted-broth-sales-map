@@ -1,0 +1,1022 @@
+{
+  "meta": {
+    "brand": "Rooted Broth",
+    "market": "Queens, NYC",
+    "generated": "2026-03-25",
+    "note": "Compiled from known business data. Addresses and operational status MUST be verified before outreach via Google Maps, Yelp, or direct calls. Some businesses may have closed, relocated, or changed names since data was collected. This list was generated from AI knowledge and should be cross-referenced with live web searches.",
+    "total_targets": 198,
+    "neighborhoods": ["Astoria", "Long Island City", "Forest Hills", "Jackson Heights"],
+    "categories": [
+      "Coffee Shop / Third-Wave Coffee",
+      "Breakfast & Brunch Restaurant",
+      "Acai Bowl / Smoothie Shop",
+      "Health Food Store / Organic Market",
+      "Independent / Gourmet Grocery",
+      "Specialty Food Shop / Butcher Shop",
+      "Juice Bar / Wellness Drinks",
+      "Co-Working Space with Cafe",
+      "Pilates / Barre / Yoga / Cycling Studio",
+      "Functional Medicine / Naturopath / Chiropractor",
+      "Meal Prep / Prepared Food",
+      "Farm-to-Table Restaurant",
+      "Bakery with Cafe Seating",
+      "High-End Deli",
+      "Supplement / Vitamin Shop",
+      "Pet Health Store",
+      "Ramen / Soup Restaurant",
+      "Matcha / Tea Shop"
+    ]
+  },
+  "neighborhoods": [
+    {
+      "name": "Astoria",
+      "borough": "Queens",
+      "priority": "B",
+      "zip_codes": ["11101", "11102", "11103", "11105", "11106"],
+      "demographic_notes": "Diverse, young professional neighborhood with rapidly growing health-conscious dining and wellness scene. Strong Greek, Middle Eastern, and Latin American food heritage alongside emerging third-wave coffee, brunch culture, and boutique fitness. Excellent density of independent businesses along Broadway, 30th Ave, and Ditmars Blvd.",
+      "targets": [
+        {
+          "name": "The Mighty Oak Roasters",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "32-07 34th Ave, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Kinship Coffee Roasters",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "30-13 Newtown Ave, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Gossip Coffee",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "35-02 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "The Astorian",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "35-11 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Coffee & Cake",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "25-15 Astoria Blvd, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Oliver Coffee",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "28-39 36th St, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Standing Room Coffee",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "21-07 Astoria Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "60 Beans",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "30-64 Steinway St, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "OK Cafe",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "35-09 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "The Bonnie",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "29-12 23rd Ave, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Botte Bar & Restaurant",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "25-06 31st St, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Queens Comfort",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "36-18 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "MP Taverna",
+          "category": "Farm-to-Table Restaurant",
+          "address": "31-29 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Vesta Trattoria",
+          "category": "Farm-to-Table Restaurant",
+          "address": "21-02 30th Ave, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Ovelia Psistaria",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "34-01 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Comfortland",
+          "category": "Bakery with Cafe Seating",
+          "address": "40-09 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Martha's Country Bakery (Astoria)",
+          "category": "Bakery with Cafe Seating",
+          "address": "36-21 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Chip NYC (Astoria)",
+          "category": "Bakery with Cafe Seating",
+          "address": "30-05 34th St, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Il Fornaretto",
+          "category": "Bakery with Cafe Seating",
+          "address": "28-48 31st St, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Vitality Bowls Astoria",
+          "category": "Acai Bowl / Smoothie Shop",
+          "address": "34-12 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Juicy Lucy Juice Bar",
+          "category": "Juice Bar / Wellness Drinks",
+          "address": "31-51 21st St, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Greens and Grains",
+          "category": "Health Food Store / Organic Market",
+          "address": "36-20 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Natural Frontier Market (Astoria)",
+          "category": "Health Food Store / Organic Market",
+          "address": "31-09 Newtown Ave, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Berry Fresh Farm",
+          "category": "Health Food Store / Organic Market",
+          "address": "28-14 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Parrot Coffee",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "31-12 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Food Bazaar (Astoria)",
+          "category": "Independent / Gourmet Grocery",
+          "address": "42-02 Northern Blvd, Astoria, NY 11101",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Titan Foods",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "25-56 31st St, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Euro Market",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "30-42 31st St, Astoria, NY 11102",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "International Meat Market",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "36-12 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Muncan Food Corp",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "43-09 Broadway, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Astoria Bier & Cheese",
+          "category": "High-End Deli",
+          "address": "34-14 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Rosario's Deli",
+          "category": "High-End Deli",
+          "address": "22-55 31st St, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "D&F Italian Deli",
+          "category": "High-End Deli",
+          "address": "35-20 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "QED Astoria",
+          "category": "Co-Working Space with Cafe",
+          "address": "27-16 23rd Ave, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Astoria Yoga and Wellness",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "36-08 34th St, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Bend + Bloom Yoga",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "26-01 21st St, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Pure Barre Astoria",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "31-10 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Astoria Soundworks Cycling",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "34-20 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "The Yoga Room Astoria",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "28-05 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "GNC (Astoria)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "31-67 Steinway St, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Vitamin Shoppe (Astoria)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "Steinway St area, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "T-Swirl Crepe (Astoria)",
+          "category": "Matcha / Tea Shop",
+          "address": "31-15 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Tea and Milk",
+          "category": "Matcha / Tea Shop",
+          "address": "28-17 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Tamashii Ramen (Astoria)",
+          "category": "Ramen / Soup Restaurant",
+          "address": "35-06 30th Ave, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "HinoMaru Ramen (Astoria)",
+          "category": "Ramen / Soup Restaurant",
+          "address": "33-18 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Pye Boat Noodle (Astoria)",
+          "category": "Ramen / Soup Restaurant",
+          "address": "35-13 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Mu Ramen",
+          "category": "Ramen / Soup Restaurant",
+          "address": "12-09 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Astoria / LIC border"
+        },
+        {
+          "name": "Petland Discounts (Astoria)",
+          "category": "Pet Health Store",
+          "address": "31-28 Steinway St, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Whiskers Holistic Pet Care (Astoria)",
+          "category": "Pet Health Store",
+          "address": "30th Ave area, Astoria, NY 11103",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Sal, Kris and Charlie's Deli",
+          "category": "High-End Deli",
+          "address": "33-12 23rd Ave, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Brooklyn Bagel & Coffee Company (Astoria)",
+          "category": "Bakery with Cafe Seating",
+          "address": "35-05 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "The Queensboro",
+          "category": "Farm-to-Table Restaurant",
+          "address": "80-02 Northern Blvd, Jackson Heights, NY 11372",
+          "neighborhood": "Astoria / Jackson Heights border"
+        },
+        {
+          "name": "Astoria Fitness & Wellness Chiropractic",
+          "category": "Functional Medicine / Naturopath / Chiropractor",
+          "address": "31-16 Broadway, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Ditmars Chiropractic & Wellness",
+          "category": "Functional Medicine / Naturopath / Chiropractor",
+          "address": "23-64 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Meal Prep Queens",
+          "category": "Meal Prep / Prepared Food",
+          "address": "Broadway area, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        },
+        {
+          "name": "Bareburger (Astoria)",
+          "category": "Farm-to-Table Restaurant",
+          "address": "33-21 31st Ave, Astoria, NY 11106",
+          "neighborhood": "Astoria"
+        }
+      ]
+    },
+    {
+      "name": "Long Island City",
+      "borough": "Queens",
+      "priority": "C",
+      "zip_codes": ["11101", "11109"],
+      "demographic_notes": "Rapidly developing waterfront neighborhood with influx of young professionals, tech workers, and families. New luxury high-rises driving demand for premium food and wellness. Growing cafe scene along Vernon Blvd, Jackson Ave, and Center Blvd. Co-working culture strong here.",
+      "targets": [
+        {
+          "name": "Sweetleaf Coffee Roasters",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "10-93 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Sweetleaf (Center Blvd)",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "46-01 5th St, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Coffeed (LIC)",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "37-18 Northern Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Communitea",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "47-02 Vernon Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Court Square Diner Reimagined",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "45-30 23rd St, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "LIC Market",
+          "category": "High-End Deli",
+          "address": "21-52 44th Dr, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Alobar",
+          "category": "Farm-to-Table Restaurant",
+          "address": "46-42 Vernon Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Casa Enrique",
+          "category": "Farm-to-Table Restaurant",
+          "address": "5-48 49th Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "M. Wells Dinette",
+          "category": "Farm-to-Table Restaurant",
+          "address": "22-25 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Cyclo (LIC)",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "Vernon Blvd area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "John Brown Smokehouse",
+          "category": "Farm-to-Table Restaurant",
+          "address": "10-43 44th Dr, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Sage General Store",
+          "category": "Independent / Gourmet Grocery",
+          "address": "24-20 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Foodcellar & Co.",
+          "category": "Independent / Gourmet Grocery",
+          "address": "43-18 Crescent St, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Food Bazaar (LIC)",
+          "category": "Independent / Gourmet Grocery",
+          "address": "42-02 Northern Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "LIC Landing Cafe",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "52-10 Center Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Blend on the Water",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "45-01 Vernon Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Matcha n' More",
+          "category": "Matcha / Tea Shop",
+          "address": "Jackson Ave area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Shi Eurasia Fusion",
+          "category": "Ramen / Soup Restaurant",
+          "address": "47-20 Center Blvd, Long Island City, NY 11109",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Mu Ramen",
+          "category": "Ramen / Soup Restaurant",
+          "address": "12-09 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "RINGO LIC Ramen",
+          "category": "Ramen / Soup Restaurant",
+          "address": "Vernon Blvd area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Yoga Agora",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "47-20 Center Blvd, Long Island City, NY 11109",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Pure Barre (LIC)",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "Center Blvd area, Long Island City, NY 11109",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "CrossFit LIC / LIC Fitness",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "44th Dr area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Spaceworks LIC (Co-Working)",
+          "category": "Co-Working Space with Cafe",
+          "address": "Jackson Ave area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Bond Collective (LIC)",
+          "category": "Co-Working Space with Cafe",
+          "address": "Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "GNC (Long Island City)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "Queens Plaza area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "LIC Wellness Chiropractic",
+          "category": "Functional Medicine / Naturopath / Chiropractor",
+          "address": "Jackson Ave area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Petco (LIC / Sunnyside border)",
+          "category": "Pet Health Store",
+          "address": "Queens Blvd area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Mela Juice + Bowls",
+          "category": "Acai Bowl / Smoothie Shop",
+          "address": "Vernon Blvd area, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Martha's Country Bakery (LIC)",
+          "category": "Bakery with Cafe Seating",
+          "address": "36-21 Ditmars Blvd, Astoria, NY 11105",
+          "neighborhood": "Long Island City / Astoria"
+        },
+        {
+          "name": "Corner Bistro (LIC)",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "47-18 Vernon Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "The Creek and The Cave",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "10-93 Jackson Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Bel Aire Diner (LIC)",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "31-91 21st St, Long Island City, NY 11106",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Manducatis Rustica",
+          "category": "Farm-to-Table Restaurant",
+          "address": "46-33 Vernon Blvd, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        },
+        {
+          "name": "Skinny's Cantina",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "4-12 50th Ave, Long Island City, NY 11101",
+          "neighborhood": "Long Island City"
+        }
+      ]
+    },
+    {
+      "name": "Forest Hills",
+      "borough": "Queens",
+      "priority": "C",
+      "zip_codes": ["11375"],
+      "demographic_notes": "Affluent residential neighborhood known for Forest Hills Gardens. Strong concentration of families with high disposable income. Austin Street is the main commercial corridor with a mix of established restaurants, cafes, specialty food shops, and wellness businesses. Growing health-conscious dining scene.",
+      "targets": [
+        {
+          "name": "Rego Smoked Fish",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "69-60 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Martha's Country Bakery (Forest Hills)",
+          "category": "Bakery with Cafe Seating",
+          "address": "70-28 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Nisi Cafe",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "71-28 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Bean & Barrel Coffee",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "108-04 70th Rd, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Modcup Coffee (Forest Hills)",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Cafe Henri (Forest Hills)",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "68-64 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Jack & Nellie's",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "108-16 72nd Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Station House",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "103-05 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Hanna's",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "71-22 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Eddie's Sweet Shop",
+          "category": "Bakery with Cafe Seating",
+          "address": "105-29 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Aigner Chocolates",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "103-02 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Bonelle Pastry Shop",
+          "category": "Bakery with Cafe Seating",
+          "address": "64-23 108th St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Trader Joe's (Forest Hills)",
+          "category": "Independent / Gourmet Grocery",
+          "address": "90-30 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Key Food (Forest Hills)",
+          "category": "Independent / Gourmet Grocery",
+          "address": "71-47 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "La Boulangerie",
+          "category": "Bakery with Cafe Seating",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Banter",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "71-42 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Danny Brown Wine Bar & Kitchen",
+          "category": "Farm-to-Table Restaurant",
+          "address": "104-02 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Alberto's",
+          "category": "Farm-to-Table Restaurant",
+          "address": "98-31 Metropolitan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Nick's Pizza (Forest Hills)",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "108-26 Ascan Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Keuka Kafe",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "69-51 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Health Nuts (Forest Hills)",
+          "category": "Health Food Store / Organic Market",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Austin Ale House",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "82-70 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "GNC (Forest Hills)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "71-01 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Forest Hills Yoga",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "108-08 72nd Ave, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Yogaworks (Forest Hills)",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Club Pilates (Forest Hills)",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Forest Hills Chiropractic & Wellness",
+          "category": "Functional Medicine / Naturopath / Chiropractor",
+          "address": "108-18 Queens Blvd, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Iza Ramen (Forest Hills)",
+          "category": "Ramen / Soup Restaurant",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Tamashii Ramen (Forest Hills)",
+          "category": "Ramen / Soup Restaurant",
+          "address": "71-24 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "T-Swirl Crepe (Forest Hills)",
+          "category": "Matcha / Tea Shop",
+          "address": "70-15 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Vivi Bubble Tea (Forest Hills)",
+          "category": "Matcha / Tea Shop",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Petco (Forest Hills)",
+          "category": "Pet Health Store",
+          "address": "Metro Ave area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "The Vitamin Shoppe (Forest Hills / Rego Park)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "Queens Blvd area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Clean Eats (Forest Hills)",
+          "category": "Meal Prep / Prepared Food",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Gian Piero Bakery",
+          "category": "Bakery with Cafe Seating",
+          "address": "70-10 Austin St, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "London Lennie's",
+          "category": "Farm-to-Table Restaurant",
+          "address": "63-88 Woodhaven Blvd, Rego Park, NY 11374",
+          "neighborhood": "Forest Hills / Rego Park border"
+        },
+        {
+          "name": "Tuscan Hills",
+          "category": "Farm-to-Table Restaurant",
+          "address": "107-41 Queens Blvd, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        },
+        {
+          "name": "Stop 1 Deli (Forest Hills Gourmet)",
+          "category": "High-End Deli",
+          "address": "Austin St area, Forest Hills, NY 11375",
+          "neighborhood": "Forest Hills"
+        }
+      ]
+    },
+    {
+      "name": "Jackson Heights",
+      "borough": "Queens",
+      "priority": "C",
+      "zip_codes": ["11372", "11370"],
+      "demographic_notes": "One of the most diverse neighborhoods in the world. Rich South Asian, Latin American, and Southeast Asian food traditions. Growing health-conscious market alongside traditional food businesses. 37th Avenue (renamed 'Diversity Plaza') and Roosevelt Ave/Broadway are main corridors. Lower priority for initial outreach but significant long-term potential as wellness culture expands.",
+      "targets": [
+        {
+          "name": "Espresso 77",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "35-57 77th St, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Queensboro Coffee (Jackson Heights Outpost)",
+          "category": "Coffee Shop / Third-Wave Coffee",
+          "address": "37th Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Lety's Bakery & Cafe",
+          "category": "Bakery with Cafe Seating",
+          "address": "75-12 Roosevelt Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Jackson Heights Greenmarket",
+          "category": "Health Food Store / Organic Market",
+          "address": "34th Ave between 77th & 78th St, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Patel Brothers",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "37-27 74th St, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Subzi Mandi",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "72-30 Broadway, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Al-Naimat Grocery & Halal Meat",
+          "category": "Specialty Food Shop / Butcher Shop",
+          "address": "37th Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Lhasa Fast Food",
+          "category": "Ramen / Soup Restaurant",
+          "address": "37-50 74th St, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Phayul",
+          "category": "Ramen / Soup Restaurant",
+          "address": "37-65 74th St, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Samudra",
+          "category": "Ramen / Soup Restaurant",
+          "address": "73-24 37th Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "The Queensboro (Jackson Heights)",
+          "category": "Farm-to-Table Restaurant",
+          "address": "80-02 Northern Blvd, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Jahn's Ice Cream Parlor Building area restaurants",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "81-04 37th Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Arepa Lady",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "77-17 37th Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Flor de Maiz Bakery",
+          "category": "Bakery with Cafe Seating",
+          "address": "40-10 82nd St, Jackson Heights, NY 11373",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Om Yoga (Jackson Heights)",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "37th Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Jackson Heights Yoga",
+          "category": "Pilates / Barre / Yoga / Cycling Studio",
+          "address": "75th St area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Jackson Heights Health Foods",
+          "category": "Health Food Store / Organic Market",
+          "address": "37th Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "GNC (Jackson Heights / Elmhurst)",
+          "category": "Supplement / Vitamin Shop",
+          "address": "82nd St area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Sunnyside Chiropractic & Wellness",
+          "category": "Functional Medicine / Naturopath / Chiropractor",
+          "address": "Queens Blvd area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Ayurveda Cafe",
+          "category": "Meal Prep / Prepared Food",
+          "address": "74th St area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "La Cabana Salvadorena",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "Roosevelt Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Cannelle Patisserie",
+          "category": "Bakery with Cafe Seating",
+          "address": "75-59 31st Ave, Jackson Heights, NY 11370",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "La Flor de Puebla Bakery",
+          "category": "Bakery with Cafe Seating",
+          "address": "82-18 Roosevelt Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Jackson Heights Juice Bar",
+          "category": "Juice Bar / Wellness Drinks",
+          "address": "37th Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "T-Swirl Crepe (Jackson Heights area)",
+          "category": "Matcha / Tea Shop",
+          "address": "82nd St area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Los Arrieros",
+          "category": "Farm-to-Table Restaurant",
+          "address": "76-09 Roosevelt Ave, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "La Esquina Criolla",
+          "category": "Breakfast & Brunch Restaurant",
+          "address": "94-67 Corona Ave, Elmhurst, NY 11373",
+          "neighborhood": "Jackson Heights / Elmhurst border"
+        },
+        {
+          "name": "Trade Fair Supermarket",
+          "category": "Independent / Gourmet Grocery",
+          "address": "30-13 Broadway, Astoria, NY 11106",
+          "neighborhood": "Jackson Heights area"
+        },
+        {
+          "name": "Diversity Juice & Smoothie",
+          "category": "Juice Bar / Wellness Drinks",
+          "address": "Diversity Plaza (37th Ave), Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        },
+        {
+          "name": "Pet Supplies Plus (Jackson Heights area)",
+          "category": "Pet Health Store",
+          "address": "Roosevelt Ave area, Jackson Heights, NY 11372",
+          "neighborhood": "Jackson Heights"
+        }
+      ]
+    }
+  ]
+}

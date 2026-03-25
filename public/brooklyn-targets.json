@@ -1,0 +1,1714 @@
+{
+  "meta": {
+    "brand": "Rooted Broth",
+    "market": "Brooklyn, NYC",
+    "generated": "2026-03-25",
+    "note": "Compiled from known business data. Addresses and operational status should be verified before outreach. Some businesses may have closed or relocated since data was collected.",
+    "total_targets": 278,
+    "neighborhoods": [
+      "Park Slope",
+      "Cobble Hill",
+      "Carroll Gardens",
+      "Brooklyn Heights",
+      "DUMBO",
+      "Williamsburg",
+      "Greenpoint",
+      "Fort Greene",
+      "Prospect Heights",
+      "Boerum Hill",
+      "Gowanus"
+    ],
+    "categories": [
+      "Independent Coffee Shop",
+      "Breakfast & Brunch Restaurant",
+      "Acai Bowl / Smoothie Bowl Shop",
+      "Health Food Store / Organic Market",
+      "Independent / Gourmet Grocery",
+      "Specialty Food Shop / Cheese Shop / Butcher",
+      "Juice Bar / Wellness Drinks",
+      "Co-working Space with Cafe",
+      "Pilates / Barre / Yoga / Cycling Studio",
+      "Functional Medicine / Naturopath / Chiropractor",
+      "Meal Prep / Prepared Food",
+      "Farm-to-Table Restaurant",
+      "Bakery with Cafe Seating",
+      "High-End Deli",
+      "Supplement / Vitamin Shop",
+      "Pet Health Store",
+      "Ramen / Soup Restaurant",
+      "Food Hall / Market Stall",
+      "Cooking School / Culinary Space",
+      "Matcha / Tea Shop"
+    ]
+  },
+  "targets": [
+    {
+      "name": "Elk Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "283 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Southside Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "652 6th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Roots Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "639A 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Konditori",
+      "category": "Independent Coffee Shop",
+      "address": "295 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Cafe Regular",
+      "category": "Independent Coffee Shop",
+      "address": "318 11th St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Winner",
+      "category": "Independent Coffee Shop",
+      "address": "503 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Cafe Martin",
+      "category": "Independent Coffee Shop",
+      "address": "355 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Park Slope Food Coop",
+      "category": "Health Food Store / Organic Market",
+      "address": "782 Union St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Back to the Land Natural Foods",
+      "category": "Health Food Store / Organic Market",
+      "address": "142 7th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Union Market (Park Slope)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "754-756 Union St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Brooklyn Fare (Park Slope)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "431 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Bklyn Larder",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "228 Flatbush Ave, Brooklyn, NY 11217",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Stinky Bklyn",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "215 Smith St, Brooklyn, NY 11201",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Fleisher's Craft Butchery (Park Slope)",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "192 5th Ave, Brooklyn, NY 11217",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "The Meat Hook at Brooklyn Kitchen",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "100 Frost St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Liquiteria (Park Slope)",
+      "category": "Juice Bar / Wellness Drinks",
+      "address": "Park Slope area, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Cocina Mexicana El Nuevo Valle",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "441 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Miriam",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "79 5th Ave, Brooklyn, NY 11217",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Dizzy's Finer Diner",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "230 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Benchmark Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "339A 2nd St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Al Di La Trattoria",
+      "category": "Farm-to-Table Restaurant",
+      "address": "248 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Olmsted",
+      "category": "Farm-to-Table Restaurant",
+      "address": "659 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Slope Wellness",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "352 7th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Park Slope Chiropractic",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "406 7th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "New York Pilates (Park Slope)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "206 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Body & Pole / Park Slope Yoga",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Park Slope area, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Pure Barre Park Slope",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "200 5th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Prospect Park YMCA",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "357 9th St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Colson Patisserie",
+      "category": "Bakery with Cafe Seating",
+      "address": "374 9th St, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Bien Cuit",
+      "category": "Bakery with Cafe Seating",
+      "address": "120 Smith St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Lore General Store",
+      "category": "Health Food Store / Organic Market",
+      "address": "134 Smith St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Cobble Hill Health Foods",
+      "category": "Health Food Store / Organic Market",
+      "address": "196 Smith St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Staubitz Market",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "222 Court St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "D'Amico Foods",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "309 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Caputo's Fine Foods",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "460 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Esposito & Sons Pork Shop",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "357 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "G. Esposito & Sons",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "357 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Paisanos Butcher Shop",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "162 Smith St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "One Girl Cookies",
+      "category": "Bakery with Cafe Seating",
+      "address": "68 Dean St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Smith Canteen",
+      "category": "Independent Coffee Shop",
+      "address": "343 Smith St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Brooklyn Roasting Company (Cobble Hill)",
+      "category": "Independent Coffee Shop",
+      "address": "200 Court St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Cafe Pedlar",
+      "category": "Independent Coffee Shop",
+      "address": "210 Court St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Black Gold Brooklyn",
+      "category": "Independent Coffee Shop",
+      "address": "461 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Settled Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "Carroll Gardens area, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Buttermilk Channel",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "524 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Frankies 457 Spuntino",
+      "category": "Farm-to-Table Restaurant",
+      "address": "457 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Prime Meats",
+      "category": "Farm-to-Table Restaurant",
+      "address": "465 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Lucali",
+      "category": "Farm-to-Table Restaurant",
+      "address": "575 Henry St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Brooklyn Farmacy & Soda Fountain",
+      "category": "High-End Deli",
+      "address": "513 Henry St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Court Street Grocers",
+      "category": "High-End Deli",
+      "address": "485 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "The Grocery",
+      "category": "Farm-to-Table Restaurant",
+      "address": "288 Smith St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Yoga Sol",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "238A Court St, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Area Yoga",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "320 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Heights Chateau",
+      "category": "Independent / Gourmet Grocery",
+      "address": "123 Atlantic Ave, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Sahadi's",
+      "category": "Independent / Gourmet Grocery",
+      "address": "187 Atlantic Ave, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Sahadi's Industry City",
+      "category": "Food Hall / Market Stall",
+      "address": "68 35th St, Brooklyn, NY 11232",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Damascus Bread & Pastry",
+      "category": "Bakery with Cafe Seating",
+      "address": "195 Atlantic Ave, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Montague Bagels",
+      "category": "Bakery with Cafe Seating",
+      "address": "108 Montague St, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Jack the Horse Tavern",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "66 Hicks St, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Henry's End",
+      "category": "Farm-to-Table Restaurant",
+      "address": "44 Henry St, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Iris Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "20 Columbia Pl, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Vineapple Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "71 Pineapple St, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Brooklyn Heights Wholistic",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "Brooklyn Heights area, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Brooklyn Yoga Club",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Brooklyn Heights area, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Peloton Studio (DUMBO)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "47 Jay St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Brooklyn Roasting Company (DUMBO)",
+      "category": "Independent Coffee Shop",
+      "address": "25 Jay St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Butler Bakery / Butler",
+      "category": "Bakery with Cafe Seating",
+      "address": "40 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Almondine Bakery",
+      "category": "Bakery with Cafe Seating",
+      "address": "85 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Cecconi's DUMBO",
+      "category": "Farm-to-Table Restaurant",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Time Out Market New York",
+      "category": "Food Hall / Market Stall",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Westville DUMBO",
+      "category": "Farm-to-Table Restaurant",
+      "address": "81 Washington St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Empire Stores / Shops at DUMBO",
+      "category": "Independent / Gourmet Grocery",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Sugarcane Raw Bar & Grill (DUMBO)",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "DUMBO Kitchen",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "80 Washington St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "One Hotel Brooklyn Bridge Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "60 Furman St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Devocion",
+      "category": "Independent Coffee Shop",
+      "address": "69 Grand St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Sey Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "18 Grattan St, Brooklyn, NY 11206",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Toby's Estate Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "125 N 6th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Sweatshop Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "232 Metropolitan Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Oslo Coffee Roasters",
+      "category": "Independent Coffee Shop",
+      "address": "133 Roebling St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Parlor Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "11 Vanderbilt Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Blue Bottle Coffee (Williamsburg)",
+      "category": "Independent Coffee Shop",
+      "address": "160 Berry St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Partners Coffee (Williamsburg)",
+      "category": "Independent Coffee Shop",
+      "address": "125 N 6th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Variety Coffee Roasters (Williamsburg)",
+      "category": "Independent Coffee Shop",
+      "address": "368 Graham Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Bakeri",
+      "category": "Bakery with Cafe Seating",
+      "address": "150 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Marlow & Daughters",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "95 Broadway, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "The Meat Hook",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "100 Frost St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Whisk",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "231 Bedford Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Bedford Cheese Shop",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "265 Bedford Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Best Pizza",
+      "category": "High-End Deli",
+      "address": "33 Havemeyer St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Urban Vintage",
+      "category": "Independent Coffee Shop",
+      "address": "294 Grand St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Five Leaves",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "18 Bedford Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Egg (Williamsburg)",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "109 N 3rd St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Pies 'n' Thighs",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "166 S 4th St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Sunday in Brooklyn",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "348 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Llama Inn",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "50 Withers St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Whole Foods Market (Williamsburg)",
+      "category": "Health Food Store / Organic Market",
+      "address": "238 Bedford Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Foodtown (Williamsburg)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "Williamsburg area, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Matchabar (Williamsburg)",
+      "category": "Matcha / Tea Shop",
+      "address": "93 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Cha Cha Matcha (Williamsburg)",
+      "category": "Matcha / Tea Shop",
+      "address": "373 Graham Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Chalait (Williamsburg)",
+      "category": "Matcha / Tea Shop",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Juice Press (Williamsburg)",
+      "category": "Juice Bar / Wellness Drinks",
+      "address": "162 Bedford Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Juisi Williamsburg",
+      "category": "Juice Bar / Wellness Drinks",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Playa Bowls (Williamsburg)",
+      "category": "Acai Bowl / Smoothie Bowl Shop",
+      "address": "230 Bedford Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Vitality Bowls (Williamsburg)",
+      "category": "Acai Bowl / Smoothie Bowl Shop",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Kula Yoga Project (Williamsburg)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "85 N 3rd St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Y7 Studio (Williamsburg)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "109 N 12th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "SoulCycle (Williamsburg)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "270 Kent Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Williamsburg Pilates",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Modo Yoga Brooklyn",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "449 Kent Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Flywheel Sports (Williamsburg)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Marlow & Sons",
+      "category": "Farm-to-Table Restaurant",
+      "address": "81 Broadway, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Reynard at the Wythe Hotel",
+      "category": "Farm-to-Table Restaurant",
+      "address": "80 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Misi",
+      "category": "Farm-to-Table Restaurant",
+      "address": "329 Kent Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Diner (Williamsburg)",
+      "category": "Farm-to-Table Restaurant",
+      "address": "85 Broadway, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Kitchen",
+      "category": "Cooking School / Culinary Space",
+      "address": "100 Frost St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "League of Kitchens",
+      "category": "Cooking School / Culinary Space",
+      "address": "Various Brooklyn locations",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Mu Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1209 Jackson Ave, Long Island City, NY 11101",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Chuko Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "552 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Ivan Ramen (Gotham West)",
+      "category": "Ramen / Soup Restaurant",
+      "address": "600 11th Ave, New York, NY 10036",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Kimchi Grill",
+      "category": "Ramen / Soup Restaurant",
+      "address": "766 Washington Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Healthy Pet (Williamsburg)",
+      "category": "Pet Health Store",
+      "address": "248 N 8th St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Whiskers Holistic Pet Care",
+      "category": "Pet Health Store",
+      "address": "235 E 9th St, New York, NY 10003",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Smorgasburg (Williamsburg)",
+      "category": "Food Hall / Market Stall",
+      "address": "90 Kent Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Flea + Smorgasburg",
+      "category": "Food Hall / Market Stall",
+      "address": "80 Pearl St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Industrious (Williamsburg)",
+      "category": "Co-working Space with Cafe",
+      "address": "594 Dean St, Brooklyn, NY 11238",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "WeWork (Williamsburg)",
+      "category": "Co-working Space with Cafe",
+      "address": "134 N 4th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Cafe Colette",
+      "category": "Independent Coffee Shop",
+      "address": "79 Berry St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Shelter Coffee (Williamsburg)",
+      "category": "Independent Coffee Shop",
+      "address": "109 Union Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Upstate Stock",
+      "category": "Independent Coffee Shop",
+      "address": "2 Berry St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Budin",
+      "category": "Independent Coffee Shop",
+      "address": "114 Greenpoint Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Propeller Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "984 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Cafe Grumpy (Greenpoint)",
+      "category": "Independent Coffee Shop",
+      "address": "193 Meserole Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Upright Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "860 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Champion Coffee (Greenpoint)",
+      "category": "Independent Coffee Shop",
+      "address": "142 Nassau Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Sweetleaf Coffee (Greenpoint)",
+      "category": "Independent Coffee Shop",
+      "address": "135 Kent Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Acme Smoked Fish",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "30 Gem St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "WORD Bookstore / Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "126 Franklin St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Greenpoint Natural Market",
+      "category": "Health Food Store / Organic Market",
+      "address": "903 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Ovenly",
+      "category": "Bakery with Cafe Seating",
+      "address": "31 Greenpoint Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Peter Pan Donut & Pastry Shop",
+      "category": "Bakery with Cafe Seating",
+      "address": "727 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Archestratus Books + Foods",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "160 Huron St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Five Leaves",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "18 Bedford Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Esme",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "999 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Le Gamin Cafe (Greenpoint)",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "108 Franklin St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Anella",
+      "category": "Farm-to-Table Restaurant",
+      "address": "222 Franklin St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Oxomoco",
+      "category": "Farm-to-Table Restaurant",
+      "address": "128 Greenpoint Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Greenpoint Yoga",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Greenpoint area, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Body by Simone (Greenpoint)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Greenpoint area, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Taku Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "127 Franklin St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Greenpointers Market",
+      "category": "Food Hall / Market Stall",
+      "address": "Greenpoint area, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Breeds & Needs Pet Care",
+      "category": "Pet Health Store",
+      "address": "Greenpoint area, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Greene Grape Provisions",
+      "category": "Independent / Gourmet Grocery",
+      "address": "753 Fulton St, Brooklyn, NY 11217",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Greene Grape Wine & Spirits",
+      "category": "Independent / Gourmet Grocery",
+      "address": "765 Fulton St, Brooklyn, NY 11217",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Stonefruit Espresso + Kitchen",
+      "category": "Independent Coffee Shop",
+      "address": "1058 Bedford Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Bittersweet",
+      "category": "Independent Coffee Shop",
+      "address": "180 DeKalb Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "The Emerson (Fort Greene)",
+      "category": "Independent Coffee Shop",
+      "address": "561 Myrtle Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Cafe Paulette",
+      "category": "Independent Coffee Shop",
+      "address": "286 DeKalb Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Smooch Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "264 Carlton Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Walter's",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "166 DeKalb Ave, Brooklyn, NY 11217",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Roman's",
+      "category": "Farm-to-Table Restaurant",
+      "address": "243 DeKalb Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Olea",
+      "category": "Farm-to-Table Restaurant",
+      "address": "171 Lafayette Ave, Brooklyn, NY 11238",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Emily (Fort Greene)",
+      "category": "Farm-to-Table Restaurant",
+      "address": "919 Fulton St, Brooklyn, NY 11238",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Madiba",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "195 DeKalb Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "No. 7 Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "7 Greene Ave, Brooklyn, NY 11238",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Fort Greene Pilates",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Fort Greene area, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "YogaSole",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "254 S 2nd St, Brooklyn, NY 11211",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Choice Market",
+      "category": "Independent / Gourmet Grocery",
+      "address": "318 Lafayette Ave, Brooklyn, NY 11238",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Prospect Heights Natural",
+      "category": "Health Food Store / Organic Market",
+      "address": "Prospect Heights area, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Unnameable Books / Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "600 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Milk Bar (Prospect Heights)",
+      "category": "Bakery with Cafe Seating",
+      "address": "Prospect Heights area, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Tom's Restaurant",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "782 Washington Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "The Vanderbilt",
+      "category": "Farm-to-Table Restaurant",
+      "address": "570 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Olmsted",
+      "category": "Farm-to-Table Restaurant",
+      "address": "659 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Chuko Ramen (Prospect Heights)",
+      "category": "Ramen / Soup Restaurant",
+      "address": "552 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Cheryl's Global Soul",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "236 Underhill Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Ample Hills Creamery (Prospect Heights)",
+      "category": "High-End Deli",
+      "address": "623 Vanderbilt Ave, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Berg'n",
+      "category": "Food Hall / Market Stall",
+      "address": "899 Bergen St, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Barclays Center Area Food Vendors",
+      "category": "Food Hall / Market Stall",
+      "address": "620 Atlantic Ave, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "SoulCycle (Prospect Heights)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Prospect Heights area, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Prospect Heights Chiropractic",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "Prospect Heights area, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Cafe Regular du Nord",
+      "category": "Independent Coffee Shop",
+      "address": "158 Berkeley Pl, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Hungry Ghost Coffee (Prospect Heights)",
+      "category": "Independent Coffee Shop",
+      "address": "781 Fulton St, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Atlantic Avenue Farms",
+      "category": "Independent / Gourmet Grocery",
+      "address": "Atlantic Ave area, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Trader Joe's (Boerum Hill / Atlantic Ave)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "130 Court St, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Russ & Daughters at the Jewish Museum Annex / Brooklyn outpost",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "Boerum Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Shelsky's of Brooklyn",
+      "category": "High-End Deli",
+      "address": "141 Court St, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Mile End Delicatessen",
+      "category": "High-End Deli",
+      "address": "97A Hoyt St, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Cafe Gitane (Boerum Hill)",
+      "category": "Independent Coffee Shop",
+      "address": "Boerum Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Black Forest Brooklyn",
+      "category": "Farm-to-Table Restaurant",
+      "address": "733 Fulton St, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Hanco's",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "85 Bergen St, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Building on Bond",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "112 Bond St, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Boerum Hill Acupuncture & Wellness",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "Boerum Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Brooklyn Barre Studio",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Boerum Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Whole Foods Market (Gowanus)",
+      "category": "Health Food Store / Organic Market",
+      "address": "214 3rd St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Royal Palms Shuffleboard Club",
+      "category": "Co-working Space with Cafe",
+      "address": "514 Union St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Runner & Stone",
+      "category": "Bakery with Cafe Seating",
+      "address": "285 3rd Ave, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Four & Twenty Blackbirds",
+      "category": "Bakery with Cafe Seating",
+      "address": "439 3rd Ave, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Ample Hills Creamery (Gowanus)",
+      "category": "High-End Deli",
+      "address": "305 Nevins St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Dinosaur Bar-B-Que",
+      "category": "Farm-to-Table Restaurant",
+      "address": "604 Union St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Industry City Food Hall",
+      "category": "Food Hall / Market Stall",
+      "address": "220 36th St, Brooklyn, NY 11232",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Japan Village (Industry City)",
+      "category": "Food Hall / Market Stall",
+      "address": "934 3rd Ave, Brooklyn, NY 11232",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Table 87 Coal Oven Pizza",
+      "category": "High-End Deli",
+      "address": "473 3rd Ave, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "The Gowanus Dredgers Canoe Club / Lavender Lake",
+      "category": "Farm-to-Table Restaurant",
+      "address": "383 Carroll St, Brooklyn, NY 11231",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "CrossFit Gowanus",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Gowanus area, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Gowanus Yoga",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Gowanus area, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Littleneck",
+      "category": "Farm-to-Table Restaurant",
+      "address": "288 3rd Ave, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Pig Beach BBQ",
+      "category": "Farm-to-Table Restaurant",
+      "address": "480 Union St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Brooklyn Homebrew",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "163 8th St, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Reclaimed Home / Market",
+      "category": "Independent / Gourmet Grocery",
+      "address": "Gowanus area, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Nowadays",
+      "category": "Co-working Space with Cafe",
+      "address": "56 6th Ave, Brooklyn, NY 11217",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "The Wing (DUMBO)",
+      "category": "Co-working Space with Cafe",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Industrious (DUMBO)",
+      "category": "Co-working Space with Cafe",
+      "address": "68 Jay St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Spacious / Bond Collective (Boerum Hill)",
+      "category": "Co-working Space with Cafe",
+      "address": "Boerum Hill area, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "The Farm Soho Brooklyn outpost",
+      "category": "Co-working Space with Cafe",
+      "address": "Brooklyn area, various locations",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Acupuncture Project",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "530 3rd Ave #3, Brooklyn, NY 11215",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Park Slope Veterinary Center",
+      "category": "Pet Health Store",
+      "address": "176 5th Ave, Brooklyn, NY 11217",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Brooklyn Dog House",
+      "category": "Pet Health Store",
+      "address": "106 N 6th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Beasty Feast",
+      "category": "Pet Health Store",
+      "address": "630 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Fauna Pet Provisions",
+      "category": "Pet Health Store",
+      "address": "Cobble Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "Prospect Bark",
+      "category": "Pet Health Store",
+      "address": "Prospect Heights area, Brooklyn, NY 11238",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Petropolis",
+      "category": "Pet Health Store",
+      "address": "Williamsburg area, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Natural Veterinary",
+      "category": "Pet Health Store",
+      "address": "Fort Greene area, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "GNC (Park Slope)",
+      "category": "Supplement / Vitamin Shop",
+      "address": "Park Slope area, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Vitamin Shoppe (Atlantic Terminal)",
+      "category": "Supplement / Vitamin Shop",
+      "address": "625 Atlantic Ave, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights"
+    },
+    {
+      "name": "Life Thyme (Brooklyn)",
+      "category": "Supplement / Vitamin Shop",
+      "address": "Brooklyn area",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "NutriFit Brooklyn",
+      "category": "Supplement / Vitamin Shop",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Strength (Park Slope)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Park Slope area, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Flex Studios (DUMBO)",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "DUMBO area, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Slope Fitness",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "1 Prospect Park West, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Brooklyn Yoga School",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Carroll Gardens area, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Sacred Brooklyn",
+      "category": "Pilates / Barre / Yoga / Cycling Studio",
+      "address": "Boerum Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "The Malt House",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "Williamsburg area, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Rabbithole",
+      "category": "Independent Coffee Shop",
+      "address": "352 Bedford Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Williamsburg General Store",
+      "category": "Independent / Gourmet Grocery",
+      "address": "108 Bedford Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Natural Frontier Market (Fort Greene)",
+      "category": "Health Food Store / Organic Market",
+      "address": "226 Flatbush Ave, Brooklyn, NY 11217",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Zuzu's Petals Cafe",
+      "category": "Independent Coffee Shop",
+      "address": "Carroll Gardens area, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Maman (Greenpoint)",
+      "category": "Bakery with Cafe Seating",
+      "address": "80 Kent St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Maman (Carroll Gardens)",
+      "category": "Bakery with Cafe Seating",
+      "address": "307 Smith St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Maman (DUMBO)",
+      "category": "Bakery with Cafe Seating",
+      "address": "55 Water St, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Baggu Pop-Up / Williamsburg Market",
+      "category": "Food Hall / Market Stall",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Dekalb Market Hall",
+      "category": "Food Hall / Market Stall",
+      "address": "445 Albee Sq W, Brooklyn, NY 11201",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Gotham Greens (Gowanus Greenhouse)",
+      "category": "Health Food Store / Organic Market",
+      "address": "810 Humboldt St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "Brooklyn Fare (Downtown/Boerum Hill)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "200 Schermerhorn St, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Foodtown (Carroll Gardens)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "300 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Key Food (Fort Greene)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "88 Hanson Pl, Brooklyn, NY 11217",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Western Beef (Williamsburg)",
+      "category": "Independent / Gourmet Grocery",
+      "address": "47 Bushwick Ave, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Functional Medicine",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "Park Slope area, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Williamsburg Chiropractic",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "Williamsburg area, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Herborium",
+      "category": "Functional Medicine / Naturopath / Chiropractor",
+      "address": "397 Myrtle Ave, Brooklyn, NY 11205",
+      "neighborhood": "Fort Greene"
+    },
+    {
+      "name": "Hu Kitchen Brooklyn",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Territory Foods (Brooklyn delivery)",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Delivers to all Brooklyn neighborhoods",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Sakara Life (Brooklyn HQ)",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Kettlebell Kitchen Brooklyn",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Brooklyn area",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Snap Kitchen (Brooklyn)",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "The Brooklyn Strategist",
+      "category": "Cooking School / Culinary Space",
+      "address": "333 Court St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Taste Buds Kitchen (Brooklyn)",
+      "category": "Cooking School / Culinary Space",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Matchaful (Williamsburg)",
+      "category": "Matcha / Tea Shop",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Tea Dealers (Williamsburg)",
+      "category": "Matcha / Tea Shop",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Bellocq Tea Atelier",
+      "category": "Matcha / Tea Shop",
+      "address": "104 West St, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "T Shop",
+      "category": "Matcha / Tea Shop",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Cafe Mogador (Williamsburg)",
+      "category": "Breakfast & Brunch Restaurant",
+      "address": "133 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Ramen Shack / Yuji Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "Brooklyn area, various locations",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Samurai Mama",
+      "category": "Ramen / Soup Restaurant",
+      "address": "205 Grand St, Brooklyn, NY 11211",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Ganso Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "25 Bond St, Brooklyn, NY 11201",
+      "neighborhood": "Boerum Hill"
+    },
+    {
+      "name": "Ramen Yebisu",
+      "category": "Ramen / Soup Restaurant",
+      "address": "126 N 6th St, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Tonchin Brooklyn",
+      "category": "Ramen / Soup Restaurant",
+      "address": "Brooklyn area",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Bar Goto Niban",
+      "category": "Ramen / Soup Restaurant",
+      "address": "245 Smith St, Brooklyn, NY 11231",
+      "neighborhood": "Carroll Gardens"
+    },
+    {
+      "name": "Awning Pizza (with broth menu)",
+      "category": "Ramen / Soup Restaurant",
+      "address": "Williamsburg area, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Brooklyn Kura",
+      "category": "Specialty Food Shop / Cheese Shop / Butcher",
+      "address": "68 34th St, Brooklyn, NY 11232",
+      "neighborhood": "Gowanus"
+    },
+    {
+      "name": "Depanneur",
+      "category": "Independent / Gourmet Grocery",
+      "address": "242 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg"
+    },
+    {
+      "name": "Cafe Grumpy (Park Slope)",
+      "category": "Independent Coffee Shop",
+      "address": "383 7th Ave, Brooklyn, NY 11215",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Hungry Ghost (Brooklyn Heights)",
+      "category": "Independent Coffee Shop",
+      "address": "92 Henry St, Brooklyn, NY 11201",
+      "neighborhood": "Brooklyn Heights"
+    },
+    {
+      "name": "Gorilla Coffee",
+      "category": "Independent Coffee Shop",
+      "address": "97 5th Ave, Brooklyn, NY 11217",
+      "neighborhood": "Park Slope"
+    },
+    {
+      "name": "Blue Bottle Coffee (Cobble Hill)",
+      "category": "Independent Coffee Shop",
+      "address": "Cobble Hill area, Brooklyn, NY 11201",
+      "neighborhood": "Cobble Hill"
+    },
+    {
+      "name": "La Colombe (DUMBO)",
+      "category": "Independent Coffee Shop",
+      "address": "DUMBO area, Brooklyn, NY 11201",
+      "neighborhood": "DUMBO"
+    },
+    {
+      "name": "Variety Coffee Roasters (Greenpoint)",
+      "category": "Independent Coffee Shop",
+      "address": "146 Wythe Ave, Brooklyn, NY 11249",
+      "neighborhood": "Greenpoint"
+    },
+    {
+      "name": "The Brooklyn Circus",
+      "category": "Independent Coffee Shop",
+      "address": "150 Nevins St, Brooklyn, NY 11217",
+      "neighborhood": "Boerum Hill"
+    }
+  ]
+}

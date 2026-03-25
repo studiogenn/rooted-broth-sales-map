@@ -1,0 +1,1465 @@
+{
+  "meta": {
+    "brand": "Rooted Broth",
+    "market": "Manhattan, NYC",
+    "generated": "2026-03-25",
+    "note": "Compiled from known business data. Addresses and operational status should be verified before outreach. Some businesses may have closed or relocated since data was collected.",
+    "total_targets": 145,
+    "categories": [
+      "Specialty Grocery",
+      "Health Food Store",
+      "Organic Market",
+      "Juice Bar",
+      "Cafe / Coffee Shop",
+      "Wellness Shop",
+      "Butcher Shop",
+      "Gourmet Food Shop",
+      "Deli / Bodega (Specialty)",
+      "Yoga / Pilates Studio (Retail)",
+      "Supplement Shop",
+      "Prepared Food / Meal Prep"
+    ]
+  },
+  "neighborhoods": [
+    {
+      "name": "Upper West Side (UWS)",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10023", "10024", "10025", "10069"],
+      "demographic_notes": "Affluent families, health-conscious professionals, strong organic/natural food culture. Home to many independent grocers.",
+      "targets": [
+        {
+          "business_name": "Fairway Market",
+          "category": "Specialty Grocery",
+          "address": "2127 Broadway, New York, NY 10023",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic NYC grocery known for specialty and gourmet products. High foot traffic, affluent customer base that seeks premium pantry items like artisanal bone broth."
+        },
+        {
+          "business_name": "Zabar's",
+          "category": "Gourmet Food Shop",
+          "address": "2245 Broadway, New York, NY 10024",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "zabars.com",
+          "fit_rationale": "Legendary NYC gourmet food institution since 1934. Curates specialty food products and has a devoted, affluent customer base that values quality artisanal products."
+        },
+        {
+          "business_name": "Citarella",
+          "category": "Gourmet Food Shop",
+          "address": "2135 Broadway, New York, NY 10023",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "citarella.com",
+          "fit_rationale": "Upscale gourmet market specializing in fresh, high-quality foods. Carries premium prepared foods and specialty grocery items. Ideal customer for artisanal broth."
+        },
+        {
+          "business_name": "Westerly Natural Market",
+          "category": "Health Food Store",
+          "address": "911 8th Avenue, New York, NY 10019",
+          "neighborhood": "Upper West Side / Midtown West border",
+          "phone": "",
+          "website": "westerlynatural.com",
+          "fit_rationale": "Long-standing independent natural foods store. Carries organic, specialty, and health-focused products. Strong alignment with bone broth's health positioning."
+        },
+        {
+          "business_name": "Trader Joe's (UWS)",
+          "category": "Specialty Grocery",
+          "address": "2073 Broadway, New York, NY 10023",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "High-traffic specialty grocery. While a chain, individual locations sometimes carry local products and the customer base is ideal for bone broth."
+        },
+        {
+          "business_name": "Whole Foods Market (Columbus Circle)",
+          "category": "Organic Market",
+          "address": "10 Columbus Circle, New York, NY 10019",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Flagship Whole Foods location with dedicated local vendor programs. Strong organic/natural food focus. Premium price tolerance among shoppers."
+        },
+        {
+          "business_name": "Health Nuts",
+          "category": "Health Food Store",
+          "address": "2141 Broadway, New York, NY 10024",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Local health food store focusing on supplements, organic products, and specialty health foods. Direct alignment with bone broth as a wellness product."
+        },
+        {
+          "business_name": "Juice Press (UWS)",
+          "category": "Juice Bar",
+          "address": "2187 Broadway, New York, NY 10024",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium cold-pressed juice chain with strong wellness positioning. Already carries broth products in some locations. Natural retail partner for bone broth."
+        },
+        {
+          "business_name": "Peacefood Cafe",
+          "category": "Cafe / Coffee Shop",
+          "address": "460 Amsterdam Ave, New York, NY 10024",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health-focused cafe with organic, plant-forward menu. While plant-based focused, their health-conscious clientele overlaps with bone broth consumers."
+        },
+        {
+          "business_name": "West Side Market",
+          "category": "Specialty Grocery",
+          "address": "2840 Broadway, New York, NY 10025",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular neighborhood grocery with a strong prepared foods and specialty section. Services the affluent UWS residential community."
+        },
+        {
+          "business_name": "Levain Bakery (UWS)",
+          "category": "Cafe / Coffee Shop",
+          "address": "167 W 74th St, New York, NY 10023",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic bakery with massive foot traffic. While primarily baked goods, a premium broth product could complement their offerings as a savory pairing."
+        },
+        {
+          "business_name": "Absolute Bagels",
+          "category": "Deli / Bodega (Specialty)",
+          "address": "2788 Broadway, New York, NY 10025",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Beloved neighborhood institution with devoted local following. High volume, could add bone broth as a grab-and-go wellness offering."
+        },
+        {
+          "business_name": "YogaWorks (UWS)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "162 W 72nd St, New York, NY 10023",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Yoga studio with retail section. Health-conscious clientele post-class are ideal for grab-and-go bone broth products."
+        },
+        {
+          "business_name": "GNC (UWS)",
+          "category": "Supplement Shop",
+          "address": "2282 Broadway, New York, NY 10024",
+          "neighborhood": "Upper West Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Supplement and health products retailer. Bone broth fits within their collagen, protein, and gut health product categories."
+        },
+        {
+          "business_name": "Epicerie Boulud",
+          "category": "Gourmet Food Shop",
+          "address": "1900 Broadway, New York, NY 10023",
+          "neighborhood": "Upper West Side (Lincoln Center)",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Daniel Boulud's gourmet market and cafe. Premium positioning, curated specialty foods, affluent clientele near Lincoln Center."
+        }
+      ]
+    },
+    {
+      "name": "Upper East Side (UES)",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10021", "10028", "10065", "10075", "10128"],
+      "demographic_notes": "Wealthiest residential neighborhood in NYC. Old money and new affluent families. Strong demand for premium, health-oriented food products.",
+      "targets": [
+        {
+          "business_name": "Eli's Market (Eli Zabar)",
+          "category": "Gourmet Food Shop",
+          "address": "1411 Third Ave, New York, NY 10028",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic UES gourmet market by Eli Zabar. Premium artisanal foods, prepared foods counter. Affluent clientele who pay premium for quality. Perfect bone broth placement."
+        },
+        {
+          "business_name": "Eli's Vinegar Factory",
+          "category": "Gourmet Food Shop",
+          "address": "431 E 91st St, New York, NY 10128",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Another Eli Zabar venue with specialty grocery, rooftop greenhouse, and prepared foods. Curates artisanal products for discerning UES shoppers."
+        },
+        {
+          "business_name": "Agata & Valentina",
+          "category": "Gourmet Food Shop",
+          "address": "1505 First Ave, New York, NY 10075",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Upscale Italian-inspired gourmet grocery. Strong prepared foods, specialty products, and premium pantry items. Affluent customer base."
+        },
+        {
+          "business_name": "Butterfield Market",
+          "category": "Gourmet Food Shop",
+          "address": "1114 Lexington Ave, New York, NY 10075",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Classic UES gourmet market serving the neighborhood since 1915. Premium prepared foods, specialty grocery. Ideal for artisanal bone broth."
+        },
+        {
+          "business_name": "Citarella (UES)",
+          "category": "Gourmet Food Shop",
+          "address": "1313 Third Ave, New York, NY 10021",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "citarella.com",
+          "fit_rationale": "Premium gourmet food market with focus on quality meats, seafood, and specialty products. Natural fit for artisanal bone broth near prepared foods section."
+        },
+        {
+          "business_name": "Grace's Marketplace",
+          "category": "Gourmet Food Shop",
+          "address": "1237 Third Ave, New York, NY 10021",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Upscale neighborhood grocery with curated specialty items, prepared foods, and gourmet pantry section. Family-owned, supports artisanal brands."
+        },
+        {
+          "business_name": "Whole Foods Market (UES)",
+          "category": "Organic Market",
+          "address": "1551 Third Ave, New York, NY 10128",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Major organic grocer with local vendor programs. UES location serves affluent customers willing to pay premium for quality health foods."
+        },
+        {
+          "business_name": "Schaller & Weber",
+          "category": "Butcher Shop",
+          "address": "1654 Second Ave, New York, NY 10028",
+          "neighborhood": "Upper East Side (Yorkville)",
+          "phone": "",
+          "website": "schallerandweber.com",
+          "fit_rationale": "Historic German-style butcher shop since 1937. Carries specialty meat products and broths. Natural cross-sell for artisanal bone broth."
+        },
+        {
+          "business_name": "Lobel's Prime Meats",
+          "category": "Butcher Shop",
+          "address": "1096 Madison Ave, New York, NY 10028",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "lobels.com",
+          "fit_rationale": "Ultra-premium butcher shop on Madison Ave. Clientele buys the finest meats and would appreciate premium bone broth as a complementary product."
+        },
+        {
+          "business_name": "Juice Press (UES)",
+          "category": "Juice Bar",
+          "address": "1050 Third Ave, New York, NY 10065",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium juice and wellness beverage chain. Already positions broth-like products. Strong alignment with bone broth as a wellness sip."
+        },
+        {
+          "business_name": "The Juicy Spot",
+          "category": "Juice Bar",
+          "address": "1486 First Ave, New York, NY 10075",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood juice bar with smoothies and wellness drinks. Bone broth adds a savory, protein-rich option to their wellness beverage lineup."
+        },
+        {
+          "business_name": "Health Nuts (UES)",
+          "category": "Health Food Store",
+          "address": "1208 Second Ave, New York, NY 10065",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health food and supplement store. Carries specialty health products. Bone broth fits their collagen, gut health, and clean protein positioning."
+        },
+        {
+          "business_name": "Candle Cafe",
+          "category": "Cafe / Coffee Shop",
+          "address": "1307 Third Ave, New York, NY 10021",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic health-conscious restaurant/cafe. While plant-based, their customer base is highly health-conscious and overlaps with bone broth demographics."
+        },
+        {
+          "business_name": "Leonard's Market",
+          "category": "Specialty Grocery",
+          "address": "1385 Third Ave, New York, NY 10075",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood specialty grocery serving UES residents. Curated selection of premium products and prepared foods."
+        },
+        {
+          "business_name": "Pure Barre (UES)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "1175 Third Ave, New York, NY 10065",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Boutique fitness studio with affluent female clientele. Post-workout retail section is ideal for grab-and-go bone broth products."
+        },
+        {
+          "business_name": "SoulCycle (UES)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "1470 Third Ave, New York, NY 10028",
+          "neighborhood": "Upper East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium cycling studio with retail area. Health-focused clientele who invest in wellness products post-workout."
+        }
+      ]
+    },
+    {
+      "name": "West Village",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10014"],
+      "demographic_notes": "One of NYC's most desirable neighborhoods. Mix of creative professionals, affluent residents, and strong food/wellness culture. Extremely high concentration of independent food businesses.",
+      "targets": [
+        {
+          "business_name": "Murray's Cheese",
+          "category": "Gourmet Food Shop",
+          "address": "254 Bleecker St, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "murrayscheese.com",
+          "fit_rationale": "Iconic artisanal cheese shop on Bleecker. Carries curated specialty food products. Customers appreciate artisanal quality and are willing to pay premium."
+        },
+        {
+          "business_name": "Ottomanelli & Sons",
+          "category": "Butcher Shop",
+          "address": "285 Bleecker St, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Family-run butcher shop since 1900. Carries specialty meat products. Bone broth is a natural pairing with their premium meats."
+        },
+        {
+          "business_name": "Li-Lac Chocolates",
+          "category": "Gourmet Food Shop",
+          "address": "40 8th Ave, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While primarily chocolates, this historic shop represents the artisanal food culture of the village and its foot traffic brings ideal customers."
+        },
+        {
+          "business_name": "Lifethyme Natural Market",
+          "category": "Health Food Store",
+          "address": "410 6th Ave, New York, NY 10011",
+          "neighborhood": "West Village / Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Large independent natural foods store with extensive supplement, organic grocery, and specialty health food selection. Prime placement for bone broth."
+        },
+        {
+          "business_name": "The Butcher's Daughter",
+          "category": "Juice Bar",
+          "address": "19 Kenmare St, New York, NY 10012",
+          "neighborhood": "West Village / NoLita border",
+          "phone": "",
+          "website": "thebutchersdaughter.com",
+          "fit_rationale": "Trendy plant-based cafe and juice bar. Despite plant focus, their wellness-oriented customers are key bone broth demographics."
+        },
+        {
+          "business_name": "Juice Press (West Village)",
+          "category": "Juice Bar",
+          "address": "70 E 1st St, New York, NY 10003",
+          "neighborhood": "West Village area",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar. Multiple Village locations. Bone broth fits their warm wellness beverage category."
+        },
+        {
+          "business_name": "Jack's Wife Freda",
+          "category": "Cafe / Coffee Shop",
+          "address": "50 Carmine St, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular neighborhood cafe with devoted following. Health-conscious menu with Mediterranean influence. Bone broth could work as a menu addition or retail item."
+        },
+        {
+          "business_name": "Myers of Keswick",
+          "category": "Gourmet Food Shop",
+          "address": "634 Hudson St, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "British specialty food shop with curated imported and specialty products. Niche but devoted clientele who appreciate artisanal quality."
+        },
+        {
+          "business_name": "Organic Avenue",
+          "category": "Health Food Store",
+          "address": "Various West Village locations",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Organic and raw food retailer focused on wellness products. Direct alignment with bone broth's health and wellness positioning."
+        },
+        {
+          "business_name": "Porto Rico Importing Co.",
+          "category": "Gourmet Food Shop",
+          "address": "201 Bleecker St, New York, NY 10012",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Historic specialty coffee and tea shop since 1907. While focused on beverages, their artisanal food culture customer base overlaps with bone broth buyers."
+        },
+        {
+          "business_name": "Palma",
+          "category": "Cafe / Coffee Shop",
+          "address": "28 Cornelia St, New York, NY 10014",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Italian restaurant with retail section. Farm-to-table ethos aligns with artisanal bone broth's quality positioning."
+        },
+        {
+          "business_name": "Greenblatt's Deli",
+          "category": "Deli / Bodega (Specialty)",
+          "address": "West Village area",
+          "neighborhood": "West Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood deli that carries specialty products alongside standard fare. Opportunity for impulse bone broth purchases."
+        }
+      ]
+    },
+    {
+      "name": "East Village",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10003", "10009"],
+      "demographic_notes": "Creative, health-conscious, younger demographic. Dense concentration of juice bars, wellness shops, and independent food businesses. Strong vegan/health food culture.",
+      "targets": [
+        {
+          "business_name": "Commodities Natural Market",
+          "category": "Health Food Store",
+          "address": "165 First Ave, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Independent natural foods market with a strong selection of organic, specialty, and health-focused products. Ideal channel for bone broth."
+        },
+        {
+          "business_name": "Organic Market (East Village)",
+          "category": "Organic Market",
+          "address": "229 E 10th St, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Small organic grocery focused on clean, natural products. Perfect fit for artisanal bone broth in their curated selection."
+        },
+        {
+          "business_name": "Liquiteria",
+          "category": "Juice Bar",
+          "address": "170 2nd Ave, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "liquiteria.com",
+          "fit_rationale": "One of NYC's original juice bars. Strong wellness brand. Bone broth fits as a warm, protein-rich wellness beverage option."
+        },
+        {
+          "business_name": "Juice Press (East Village)",
+          "category": "Juice Bar",
+          "address": "82 1st Ave, New York, NY 10009",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium cold-pressed juice location. Wellness-focused clientele. Bone broth complements their health beverage lineup."
+        },
+        {
+          "business_name": "Orchard Grocer",
+          "category": "Health Food Store",
+          "address": "78 Orchard St, New York, NY 10002",
+          "neighborhood": "East Village / Lower East Side border",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Plant-based deli and grocery. While vegan-focused, their health-conscious customer base includes many who also consume bone broth."
+        },
+        {
+          "business_name": "Dual Specialty Store",
+          "category": "Specialty Grocery",
+          "address": "91 1st Ave, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Indian spice and specialty grocery. While niche, their customers cook from scratch and value quality ingredients including broths."
+        },
+        {
+          "business_name": "Superiority Burger",
+          "category": "Cafe / Coffee Shop",
+          "address": "430 E 9th St, New York, NY 10009",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Acclaimed vegetable-forward restaurant. Food-savvy clientele who appreciate artisanal products."
+        },
+        {
+          "business_name": "Mud Coffee",
+          "category": "Cafe / Coffee Shop",
+          "address": "307 E 9th St, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Beloved independent coffee shop. Opportunities for bone broth as an alternative warm beverage on their menu."
+        },
+        {
+          "business_name": "Sunrise Mart",
+          "category": "Specialty Grocery",
+          "address": "4 Stuyvesant St, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Japanese specialty grocery. Japanese bone broth (dashi/tonkotsu) tradition creates natural customer interest in premium bone broth."
+        },
+        {
+          "business_name": "East Village Farm & Grocery",
+          "category": "Specialty Grocery",
+          "address": "68 E 4th St, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood grocery with strong produce and specialty items. Located in the heart of the East Village's food-conscious community."
+        },
+        {
+          "business_name": "Jivamukti Yoga Center",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "841 Broadway, New York, NY 10003",
+          "neighborhood": "East Village / Union Square",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Major yoga center with retail area and cafe. Post-practice customers are ideal bone broth consumers seeking protein and collagen recovery."
+        },
+        {
+          "business_name": "S&S Cheesecake / East Village Cheese",
+          "category": "Specialty Grocery",
+          "address": "40 3rd Ave, New York, NY 10003",
+          "neighborhood": "East Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood cheese and specialty grocery. Curated artisanal products appeal to their food-savvy customer base."
+        }
+      ]
+    },
+    {
+      "name": "Greenwich Village",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10011", "10012"],
+      "demographic_notes": "Historic cultural neighborhood. NYU area brings young, health-conscious consumers. Strong independent food business culture.",
+      "targets": [
+        {
+          "business_name": "Lifethyme Natural Market",
+          "category": "Health Food Store",
+          "address": "410 6th Ave, New York, NY 10011",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "lifethymemarket.com",
+          "fit_rationale": "Largest independent natural food store in the Village. Extensive health food, supplement, and organic grocery selection. Prime bone broth placement."
+        },
+        {
+          "business_name": "C.O. Bigelow Apothecaries",
+          "category": "Wellness Shop",
+          "address": "414 6th Ave, New York, NY 10011",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "bigelowchemists.com",
+          "fit_rationale": "America's oldest apothecary (1838). While primarily pharmacy/beauty, carries wellness and health products. Bone broth's collagen benefits align."
+        },
+        {
+          "business_name": "Murray's Cheese Bar",
+          "category": "Gourmet Food Shop",
+          "address": "264 Bleecker St, New York, NY 10014",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Extension of Murray's Cheese shop. Artisanal food culture, curated specialty products, food-savvy customers."
+        },
+        {
+          "business_name": "Faicco's Italian Specialties",
+          "category": "Butcher Shop",
+          "address": "260 Bleecker St, New York, NY 10014",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Historic Italian butcher and specialty shop on Bleecker. Traditional customers who value quality ingredients, including homestyle broth."
+        },
+        {
+          "business_name": "Joe's Pizza",
+          "category": "Deli / Bodega (Specialty)",
+          "address": "7 Carmine St, New York, NY 10014",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While primarily a pizzeria, this iconic Village institution has massive foot traffic. Potential for grab-and-go broth display."
+        },
+        {
+          "business_name": "Think Coffee",
+          "category": "Cafe / Coffee Shop",
+          "address": "248 Mercer St, New York, NY 10012",
+          "neighborhood": "Greenwich Village (NYU area)",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular independent coffee shop near NYU. Socially conscious brand that could feature bone broth as a healthy warm alternative."
+        },
+        {
+          "business_name": "Vitamin Shoppe (Greenwich Village)",
+          "category": "Supplement Shop",
+          "address": "740 Broadway, New York, NY 10003",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health supplement retailer. Bone broth powders and concentrates fit within their protein, collagen, and gut health categories."
+        },
+        {
+          "business_name": "Integral Yoga Natural Foods",
+          "category": "Health Food Store",
+          "address": "229 W 13th St, New York, NY 10011",
+          "neighborhood": "Greenwich Village",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Yoga-community-run natural foods store. Strong focus on health, wellness, and clean eating. Perfect alignment with bone broth values."
+        }
+      ]
+    },
+    {
+      "name": "SoHo",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10012", "10013"],
+      "demographic_notes": "Premier shopping destination. Mix of high-end retail, wellness flagships, and affluent shoppers/tourists. Strong wellness and beauty culture.",
+      "targets": [
+        {
+          "business_name": "Dean & DeLuca",
+          "category": "Gourmet Food Shop",
+          "address": "560 Broadway, New York, NY 10012",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic gourmet food market (verify current operational status). If open, perfect premium placement for artisanal bone broth."
+        },
+        {
+          "business_name": "Whole Foods Market (SoHo/Houston)",
+          "category": "Organic Market",
+          "address": "95 E Houston St, New York, NY 10012",
+          "neighborhood": "SoHo / NoHo border",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Large Whole Foods with local vendor program. High traffic SoHo location, affluent and health-conscious shoppers."
+        },
+        {
+          "business_name": "The Butcher's Daughter (SoHo)",
+          "category": "Juice Bar",
+          "address": "19 Kenmare St, New York, NY 10012",
+          "neighborhood": "SoHo / NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Trendy plant-based juice bar and cafe. Despite plant focus, wellness-oriented clientele are key bone broth demographics."
+        },
+        {
+          "business_name": "Juice Press (SoHo)",
+          "category": "Juice Bar",
+          "address": "73 Spring St, New York, NY 10012",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar in prime SoHo location. High foot traffic, affluent health-conscious customers."
+        },
+        {
+          "business_name": "CAP Beauty",
+          "category": "Wellness Shop",
+          "address": "238 W 10th St, New York, NY 10014",
+          "neighborhood": "SoHo / West Village",
+          "phone": "",
+          "website": "capbeauty.com",
+          "fit_rationale": "High-end natural beauty and wellness shop. Carries ingestible wellness products. Bone broth's collagen benefits align with their beauty-from-within philosophy."
+        },
+        {
+          "business_name": "Gourmet Garage (SoHo)",
+          "category": "Specialty Grocery",
+          "address": "489 Broome St, New York, NY 10013",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Specialty grocery known for quality produce, specialty items, and prepared foods. SoHo location serves affluent neighborhood residents."
+        },
+        {
+          "business_name": "MarieBelle",
+          "category": "Gourmet Food Shop",
+          "address": "484 Broome St, New York, NY 10013",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Artisanal chocolate and gourmet shop. Represents SoHo's premium food culture. Customers appreciate handcrafted, artisanal products."
+        },
+        {
+          "business_name": "Purefit (SoHo)",
+          "category": "Prepared Food / Meal Prep",
+          "address": "SoHo area",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Meal prep and healthy prepared food shop. Bone broth is a natural add-on for their health-conscious meal prep customers."
+        },
+        {
+          "business_name": "The Smile (To Go)",
+          "category": "Cafe / Coffee Shop",
+          "address": "26 Bond St, New York, NY 10012",
+          "neighborhood": "SoHo / NoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular cafe with health-conscious menu and grab-and-go counter. Premium positioning, trendy clientele."
+        },
+        {
+          "business_name": "SoHo Yoga",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "SoHo area",
+          "neighborhood": "SoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Yoga studio serving the SoHo wellness community. Post-class retail opportunity for bone broth."
+        }
+      ]
+    },
+    {
+      "name": "NoHo",
+      "borough": "Manhattan",
+      "priority": "B",
+      "zip_codes": ["10003", "10012"],
+      "demographic_notes": "Small but affluent neighborhood between East Village and SoHo. Boutique food shops, upscale dining, creative professionals.",
+      "targets": [
+        {
+          "business_name": "Whole Foods Market (Bowery)",
+          "category": "Organic Market",
+          "address": "95 E Houston St, New York, NY 10012",
+          "neighborhood": "NoHo / SoHo border",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Major organic grocer at the intersection of NoHo and SoHo. Local vendor programs support artisanal products like bone broth."
+        },
+        {
+          "business_name": "The Smile",
+          "category": "Cafe / Coffee Shop",
+          "address": "26 Bond St, New York, NY 10012",
+          "neighborhood": "NoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Hip, health-conscious cafe. Bond St location attracts creative professionals who value quality, wellness-oriented food options."
+        },
+        {
+          "business_name": "Il Buco Alimentari & Vineria",
+          "category": "Gourmet Food Shop",
+          "address": "53 Great Jones St, New York, NY 10012",
+          "neighborhood": "NoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Artisanal Italian market and restaurant. Carries curated specialty products, house-made pantry items. Premium quality alignment."
+        },
+        {
+          "business_name": "Bond Street Chocolate",
+          "category": "Gourmet Food Shop",
+          "address": "63 E 4th St, New York, NY 10003",
+          "neighborhood": "NoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Artisanal food producer/retailer. Represents NoHo's small-batch artisanal food culture."
+        },
+        {
+          "business_name": "Astor Place Wines & Spirits",
+          "category": "Specialty Grocery",
+          "address": "399 Lafayette St, New York, NY 10003",
+          "neighborhood": "NoHo",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While primarily wines/spirits, adjacent to the food-conscious NoHo community. Partnerships possible for food-pairing events."
+        }
+      ]
+    },
+    {
+      "name": "TriBeCa",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10007", "10013"],
+      "demographic_notes": "Among the wealthiest zip codes in America. Family-oriented affluent residents. Premium grocery and food culture. Celebrity residents.",
+      "targets": [
+        {
+          "business_name": "Whole Foods Market (TriBeCa)",
+          "category": "Organic Market",
+          "address": "270 Greenwich St, New York, NY 10007",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium Whole Foods location serving TriBeCa's wealthy families. Local vendor program, high price tolerance, health-focused shoppers."
+        },
+        {
+          "business_name": "Zucker's Bagels and Smoked Fish",
+          "category": "Gourmet Food Shop",
+          "address": "146 Chambers St, New York, NY 10007",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular gourmet deli/bagel shop with strong neighborhood following. Bone broth could complement their menu as a soup/sip option."
+        },
+        {
+          "business_name": "Laughing Man Coffee & Tea",
+          "category": "Cafe / Coffee Shop",
+          "address": "184 Duane St, New York, NY 10013",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Hugh Jackman's coffee shop. Premium positioning, socially conscious brand, celebrity association draws health-conscious TriBeCa crowd."
+        },
+        {
+          "business_name": "Tribeca Treats",
+          "category": "Gourmet Food Shop",
+          "address": "94 Reade St, New York, NY 10013",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Neighborhood gourmet food shop. Serves TriBeCa's affluent residents who seek premium artisanal products."
+        },
+        {
+          "business_name": "Bazzini's",
+          "category": "Gourmet Food Shop",
+          "address": "339 Greenwich St, New York, NY 10013",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Historic TriBeCa nut and specialty food purveyor. Artisanal positioning, affluent neighborhood clientele."
+        },
+        {
+          "business_name": "Pepe Rosso To Go",
+          "category": "Prepared Food / Meal Prep",
+          "address": "149 Sullivan St, New York, NY 10012",
+          "neighborhood": "TriBeCa / SoHo area",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Italian prepared food shop. Quality-focused, grab-and-go format. Bone broth works as a soup/sipping option."
+        },
+        {
+          "business_name": "Korin",
+          "category": "Gourmet Food Shop",
+          "address": "57 Warren St, New York, NY 10007",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium Japanese knife and kitchenware store. While not food retail, their serious home cook customer base is ideal for bone broth cross-promotion."
+        },
+        {
+          "business_name": "Juice Press (TriBeCa)",
+          "category": "Juice Bar",
+          "address": "83 Chambers St, New York, NY 10007",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium juice bar in family-heavy TriBeCa. Post-workout and wellness-sip positioning for bone broth."
+        },
+        {
+          "business_name": "NY Kids Club (TriBeCa)",
+          "category": "Wellness Shop",
+          "address": "TriBeCa area",
+          "neighborhood": "TriBeCa",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Children's activity center with parent waiting areas. Health-conscious TriBeCa parents are ideal customers for nutritious bone broth."
+        }
+      ]
+    },
+    {
+      "name": "NoLita",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10012"],
+      "demographic_notes": "Trendy, fashion-forward neighborhood. Strong cafe culture, boutique retail, health-conscious young professionals.",
+      "targets": [
+        {
+          "business_name": "The Butcher's Daughter",
+          "category": "Juice Bar",
+          "address": "19 Kenmare St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "thebutchersdaughter.com",
+          "fit_rationale": "Instagram-famous juice bar/cafe. Strong wellness brand. Trendsetting NoLita location, health-conscious clientele."
+        },
+        {
+          "business_name": "Cafe Gitane",
+          "category": "Cafe / Coffee Shop",
+          "address": "242 Mott St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Iconic NoLita cafe with fashion-forward, health-conscious clientele. Premium positioning. Bone broth fits as a wellness menu item."
+        },
+        {
+          "business_name": "Prince Street Pizza",
+          "category": "Deli / Bodega (Specialty)",
+          "address": "27 Prince St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While a pizza shop, massive foot traffic and neighborhood landmark status means high visibility for any partnered product."
+        },
+        {
+          "business_name": "Cafe Habana (To Go)",
+          "category": "Cafe / Coffee Shop",
+          "address": "229 Elizabeth St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular grab-and-go spot. Health-conscious NoLita clientele. Bone broth could work as a warm soup/sip offering."
+        },
+        {
+          "business_name": "Juice Press (NoLita)",
+          "category": "Juice Bar",
+          "address": "279 Mott St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium wellness juice bar. NoLita location serves trendy, health-focused customers seeking premium wellness beverages."
+        },
+        {
+          "business_name": "Le Labo (NoLita)",
+          "category": "Wellness Shop",
+          "address": "233 Elizabeth St, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium fragrance/wellness brand. While not food retail, represents the affluent wellness customer profile in NoLita."
+        },
+        {
+          "business_name": "Eileen's Special Cheesecake",
+          "category": "Gourmet Food Shop",
+          "address": "17 Cleveland Pl, New York, NY 10012",
+          "neighborhood": "NoLita",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Beloved neighborhood specialty food shop. High foot traffic, artisanal quality positioning."
+        }
+      ]
+    },
+    {
+      "name": "Lower East Side",
+      "borough": "Manhattan",
+      "priority": "B",
+      "zip_codes": ["10002"],
+      "demographic_notes": "Rapidly gentrifying neighborhood. Emerging wellness and food scene. Mix of old-school delis and new health-conscious businesses.",
+      "targets": [
+        {
+          "business_name": "Essex Market",
+          "category": "Specialty Grocery",
+          "address": "88 Essex St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "essexmarket.nyc",
+          "fit_rationale": "Historic indoor market with multiple specialty food vendors. Relocated to modern facility. Multiple vendor opportunities for bone broth placement."
+        },
+        {
+          "business_name": "Russ & Daughters",
+          "category": "Gourmet Food Shop",
+          "address": "179 E Houston St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "russanddaughters.com",
+          "fit_rationale": "Legendary appetizing shop since 1914. Premium specialty foods, devoted customer base. Artisanal bone broth fits their quality positioning."
+        },
+        {
+          "business_name": "Economy Candy",
+          "category": "Specialty Grocery",
+          "address": "108 Rivington St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While candy-focused, this iconic LES shop represents the neighborhood's specialty food retail culture and massive foot traffic."
+        },
+        {
+          "business_name": "Orchard Grocer",
+          "category": "Health Food Store",
+          "address": "78 Orchard St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Vegan deli and grocery. Despite plant-based focus, their health-conscious clientele overlaps with bone broth demographics."
+        },
+        {
+          "business_name": "Dimes",
+          "category": "Cafe / Coffee Shop",
+          "address": "49 Canal St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health-forward cafe with strong following. Known for wellness-oriented menu items. Bone broth fits their clean eating philosophy."
+        },
+        {
+          "business_name": "Dimes Deli",
+          "category": "Health Food Store",
+          "address": "143 Division St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Offshoot of Dimes cafe. Curated health-focused grocery and grab-and-go items. Perfect bone broth retail channel."
+        },
+        {
+          "business_name": "Katz's Delicatessen",
+          "category": "Deli / Bodega (Specialty)",
+          "address": "205 E Houston St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "katzsdelicatessen.com",
+          "fit_rationale": "Iconic NYC deli since 1888. While traditional, massive foot traffic and brand cachet. Bone broth could complement their retail/soup offerings."
+        },
+        {
+          "business_name": "Roni-Sue's Chocolates (Essex Market)",
+          "category": "Gourmet Food Shop",
+          "address": "88 Essex St, New York, NY 10002",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Artisanal vendor within Essex Market. Represents the market's curated specialty food culture."
+        },
+        {
+          "business_name": "Juice Press (LES)",
+          "category": "Juice Bar",
+          "address": "Lower East Side area",
+          "neighborhood": "Lower East Side",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar. Health-focused clientele seeking clean, premium wellness beverages."
+        }
+      ]
+    },
+    {
+      "name": "Chelsea",
+      "borough": "Manhattan",
+      "priority": "B",
+      "zip_codes": ["10001", "10011"],
+      "demographic_notes": "Health-conscious professionals, strong fitness culture. Chelsea Market is a major food destination. Gallery district brings affluent visitors.",
+      "targets": [
+        {
+          "business_name": "Chelsea Market",
+          "category": "Specialty Grocery",
+          "address": "75 9th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "chelseamarket.com",
+          "fit_rationale": "Iconic indoor food market with multiple vendors. Massive foot traffic from tourists and locals. Multiple vendor placement opportunities for bone broth."
+        },
+        {
+          "business_name": "The Lobster Place (Chelsea Market)",
+          "category": "Gourmet Food Shop",
+          "address": "75 9th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea (Chelsea Market)",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium seafood market within Chelsea Market. Carries specialty food products. Customer base appreciates quality artisanal foods."
+        },
+        {
+          "business_name": "Dickson's Farmstand Meats (Chelsea Market)",
+          "category": "Butcher Shop",
+          "address": "75 9th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea (Chelsea Market)",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Farm-to-table butcher shop in Chelsea Market. Pasture-raised meats, already makes bone broth in-house. Could carry Rooted Broth as a retail partner."
+        },
+        {
+          "business_name": "Juice Press (Chelsea)",
+          "category": "Juice Bar",
+          "address": "220 8th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice chain. Chelsea location serves the neighborhood's strong fitness and wellness community."
+        },
+        {
+          "business_name": "Foragers Market",
+          "category": "Specialty Grocery",
+          "address": "233 8th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "foragerscitygrocer.com",
+          "fit_rationale": "Farm-to-table specialty grocer focusing on local, sustainable, artisanal products. Perfect alignment with artisanal bone broth positioning."
+        },
+        {
+          "business_name": "The Health Nuts (Chelsea)",
+          "category": "Health Food Store",
+          "address": "Chelsea area",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health food and supplement store. Bone broth fits within their collagen, protein, and gut health product categories."
+        },
+        {
+          "business_name": "Trader Joe's (Chelsea)",
+          "category": "Specialty Grocery",
+          "address": "675 6th Ave, New York, NY 10010",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular specialty grocery with health-conscious customer base. While a chain, the Chelsea location serves a prime demographic."
+        },
+        {
+          "business_name": "GNC (Chelsea)",
+          "category": "Supplement Shop",
+          "address": "Chelsea area",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health supplement retailer. Chelsea's fitness-focused population drives demand for protein and recovery products like bone broth."
+        },
+        {
+          "business_name": "Y7 Studio (Chelsea)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "Chelsea area",
+          "neighborhood": "Chelsea",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Trendy yoga studio with retail component. Post-practice customers are ideal for grab-and-go bone broth products."
+        },
+        {
+          "business_name": "Beyond Sushi",
+          "category": "Prepared Food / Meal Prep",
+          "address": "75 9th Ave, New York, NY 10011",
+          "neighborhood": "Chelsea (Chelsea Market)",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health-focused prepared food vendor. Their customer base seeks nutritious, quality food products."
+        }
+      ]
+    },
+    {
+      "name": "Flatiron / Union Square",
+      "borough": "Manhattan",
+      "priority": "A",
+      "zip_codes": ["10003", "10010"],
+      "demographic_notes": "Major food destination. Union Square Greenmarket, Eataly, Whole Foods. Dense concentration of health-conscious professionals and foodies.",
+      "targets": [
+        {
+          "business_name": "Eataly NYC Flatiron",
+          "category": "Gourmet Food Shop",
+          "address": "200 5th Ave, New York, NY 10010",
+          "neighborhood": "Flatiron",
+          "phone": "",
+          "website": "eataly.com",
+          "fit_rationale": "Massive Italian food hall and market. Carries premium specialty food products. High foot traffic, food-savvy customers. Bone broth fits their artisanal ethos."
+        },
+        {
+          "business_name": "Whole Foods Market (Union Square)",
+          "category": "Organic Market",
+          "address": "4 Union Square South, New York, NY 10003",
+          "neighborhood": "Union Square",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Flagship Union Square Whole Foods. Local vendor program, massive foot traffic, health-conscious shoppers. Prime bone broth placement."
+        },
+        {
+          "business_name": "Trader Joe's (Union Square)",
+          "category": "Specialty Grocery",
+          "address": "142 E 14th St, New York, NY 10003",
+          "neighborhood": "Union Square",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "One of the busiest Trader Joe's in NYC. Enormous foot traffic, health-conscious customer base."
+        },
+        {
+          "business_name": "Union Square Greenmarket",
+          "category": "Organic Market",
+          "address": "Union Square, New York, NY 10003",
+          "neighborhood": "Union Square",
+          "phone": "",
+          "website": "grownyc.org",
+          "fit_rationale": "NYC's premier farmers market. Farm-to-table ethos perfectly aligns with artisanal bone broth. Direct-to-consumer sales opportunity."
+        },
+        {
+          "business_name": "Juice Press (Flatiron)",
+          "category": "Juice Bar",
+          "address": "70 E 1st St / Flatiron area",
+          "neighborhood": "Flatiron",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice chain. Flatiron location serves health-conscious professionals in the area."
+        },
+        {
+          "business_name": "ABC Carpet & Home (ABC Kitchen adjacent)",
+          "category": "Wellness Shop",
+          "address": "888 Broadway, New York, NY 10003",
+          "neighborhood": "Flatiron",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Upscale home and wellness retailer with curated food and wellness products. Premium positioning aligns with artisanal bone broth."
+        },
+        {
+          "business_name": "Franchia Vegan Cafe",
+          "category": "Cafe / Coffee Shop",
+          "address": "12 Park Ave, New York, NY 10016",
+          "neighborhood": "Flatiron / Murray Hill border",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health-focused tea and vegan cafe. While plant-based, their wellness customer base overlaps with bone broth consumers."
+        },
+        {
+          "business_name": "City Acres Market",
+          "category": "Specialty Grocery",
+          "address": "Flatiron area",
+          "neighborhood": "Flatiron",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Independent gourmet grocery with curated specialty food selection. Serves Flatiron's affluent professional community."
+        },
+        {
+          "business_name": "Vitamin Shoppe (Union Square)",
+          "category": "Supplement Shop",
+          "address": "740 Broadway, New York, NY 10003",
+          "neighborhood": "Union Square",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health supplement retailer near Union Square. Bone broth fits collagen, protein, and gut health categories."
+        },
+        {
+          "business_name": "SoulCycle (Union Square)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "12 E 18th St, New York, NY 10003",
+          "neighborhood": "Flatiron",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Premium fitness studio with retail area. Health-focused clientele seeking post-workout recovery products like bone broth."
+        }
+      ]
+    },
+    {
+      "name": "Gramercy",
+      "borough": "Manhattan",
+      "priority": "B",
+      "zip_codes": ["10003", "10010"],
+      "demographic_notes": "Affluent, quiet residential neighborhood. Gramercy Park exclusivity. Smaller food retail scene but quality-focused.",
+      "targets": [
+        {
+          "business_name": "Gramercy Park Flower Shop / Todaro Bros.",
+          "category": "Gourmet Food Shop",
+          "address": "555 2nd Ave, New York, NY 10016",
+          "neighborhood": "Gramercy",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Italian specialty food store with decades of history. Carries premium imported and artisanal products. Loyal neighborhood clientele."
+        },
+        {
+          "business_name": "Fresh & Co (Gramercy)",
+          "category": "Prepared Food / Meal Prep",
+          "address": "Gramercy area",
+          "neighborhood": "Gramercy",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health-focused fast-casual chain. Clean eating menu aligns with bone broth as a add-on soup/sip option."
+        },
+        {
+          "business_name": "Juice Press (Gramercy)",
+          "category": "Juice Bar",
+          "address": "Gramercy area",
+          "neighborhood": "Gramercy",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar. Affluent Gramercy residents are ideal bone broth customers."
+        },
+        {
+          "business_name": "SLT (Strengthen Lengthen Tone)",
+          "category": "Yoga / Pilates Studio (Retail)",
+          "address": "207 3rd Ave, New York, NY 10003",
+          "neighborhood": "Gramercy",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Boutique fitness studio. Affluent, fitness-focused female clientele. Post-class retail opportunity for bone broth."
+        },
+        {
+          "business_name": "Gramercy Wine and Spirits",
+          "category": "Specialty Grocery",
+          "address": "Gramercy area",
+          "neighborhood": "Gramercy",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "While wine-focused, represents affluent Gramercy spending patterns. Potential for specialty food cross-promotion."
+        }
+      ]
+    },
+    {
+      "name": "Murray Hill",
+      "borough": "Manhattan",
+      "priority": "C",
+      "zip_codes": ["10016"],
+      "demographic_notes": "Younger professionals, growing food scene. Some specialty food retail. More price-conscious than UES/UWS but health-aware.",
+      "targets": [
+        {
+          "business_name": "Kalustyan's",
+          "category": "Specialty Grocery",
+          "address": "123 Lexington Ave, New York, NY 10016",
+          "neighborhood": "Murray Hill (Curry Hill)",
+          "phone": "",
+          "website": "kalustyans.com",
+          "fit_rationale": "Legendary specialty food emporium. Carries thousands of specialty products from around the world. Food-savvy customers who appreciate unique artisanal products."
+        },
+        {
+          "business_name": "Trader Joe's (Murray Hill)",
+          "category": "Specialty Grocery",
+          "address": "Murray Hill area",
+          "neighborhood": "Murray Hill",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Popular specialty grocery with health-conscious younger professional customer base."
+        },
+        {
+          "business_name": "Franchia Vegan Cafe",
+          "category": "Cafe / Coffee Shop",
+          "address": "12 Park Ave, New York, NY 10016",
+          "neighborhood": "Murray Hill",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Korean-inspired vegan and tea cafe. Health-conscious clientele, wellness positioning, premium tea and food experience."
+        },
+        {
+          "business_name": "GNC (Murray Hill)",
+          "category": "Supplement Shop",
+          "address": "Murray Hill area",
+          "neighborhood": "Murray Hill",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health supplement retailer. Younger professional Murray Hill residents seeking protein and recovery supplements."
+        },
+        {
+          "business_name": "Juice Press (Murray Hill)",
+          "category": "Juice Bar",
+          "address": "Murray Hill area",
+          "neighborhood": "Murray Hill",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar. Health-focused younger professionals in Murray Hill."
+        },
+        {
+          "business_name": "Todaro Bros. Specialty Foods",
+          "category": "Gourmet Food Shop",
+          "address": "555 2nd Ave, New York, NY 10016",
+          "neighborhood": "Murray Hill",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Long-standing Italian specialty food store. Premium meats, cheeses, and specialty pantry items. Bone broth fits their artisanal product lineup."
+        }
+      ]
+    },
+    {
+      "name": "Midtown West / Hell's Kitchen",
+      "borough": "Manhattan",
+      "priority": "B",
+      "zip_codes": ["10019", "10036"],
+      "demographic_notes": "Dense food scene especially along 9th Avenue. Theater district brings high foot traffic. Mix of residential professionals and tourist traffic.",
+      "targets": [
+        {
+          "business_name": "Whole Foods Market (Midtown West)",
+          "category": "Organic Market",
+          "address": "10 Columbus Circle, New York, NY 10019",
+          "neighborhood": "Midtown West",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Columbus Circle flagship location. Massive foot traffic from residents, office workers, and tourists. Local vendor programs."
+        },
+        {
+          "business_name": "Gotham West Market",
+          "category": "Specialty Grocery",
+          "address": "600 11th Ave, New York, NY 10036",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Upscale food hall with multiple specialty vendors. Growing Hell's Kitchen food destination. Multiple vendor placement opportunities."
+        },
+        {
+          "business_name": "Westerly Natural Market",
+          "category": "Health Food Store",
+          "address": "911 8th Ave, New York, NY 10019",
+          "neighborhood": "Midtown West",
+          "phone": "",
+          "website": "westerlynatural.com",
+          "fit_rationale": "Long-standing independent natural foods store. Organic, specialty, and health products. Strong alignment with bone broth positioning."
+        },
+        {
+          "business_name": "International Grocery",
+          "category": "Specialty Grocery",
+          "address": "543 9th Ave, New York, NY 10018",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "9th Avenue specialty grocery. Eclectic selection of international and specialty products. Food-savvy Hell's Kitchen residents."
+        },
+        {
+          "business_name": "Sea Breeze Fish Market",
+          "category": "Gourmet Food Shop",
+          "address": "541 9th Ave, New York, NY 10018",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Fresh fish and specialty food market on 9th Avenue. Quality-focused customers who cook at home and value premium ingredients."
+        },
+        {
+          "business_name": "Amish Market (Midtown)",
+          "category": "Specialty Grocery",
+          "address": "731 9th Ave, New York, NY 10019",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Specialty grocery known for fresh, quality products. Hell's Kitchen location serves residential community of food-conscious professionals."
+        },
+        {
+          "business_name": "Juice Press (Midtown West)",
+          "category": "Juice Bar",
+          "address": "Midtown West area",
+          "neighborhood": "Midtown West",
+          "phone": "",
+          "website": "juicepress.com",
+          "fit_rationale": "Premium wellness juice bar. Midtown location serves health-conscious office workers and residents."
+        },
+        {
+          "business_name": "Sullivan Street Bakery",
+          "category": "Cafe / Coffee Shop",
+          "address": "533 W 47th St, New York, NY 10036",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Acclaimed artisanal bakery. Quality-focused food customers who appreciate handcrafted products."
+        },
+        {
+          "business_name": "9th Avenue Cheese Market",
+          "category": "Gourmet Food Shop",
+          "address": "Hell's Kitchen, 9th Ave area",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Specialty cheese and gourmet food on the 9th Avenue food corridor. Customers appreciate curated artisanal products."
+        },
+        {
+          "business_name": "Poseidon Bakery",
+          "category": "Gourmet Food Shop",
+          "address": "629 9th Ave, New York, NY 10036",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Historic Greek bakery on 9th Avenue. Represents the neighborhood's artisanal food heritage and devoted local following."
+        },
+        {
+          "business_name": "GNC (Hell's Kitchen)",
+          "category": "Supplement Shop",
+          "address": "Hell's Kitchen area",
+          "neighborhood": "Hell's Kitchen",
+          "phone": "",
+          "website": "",
+          "fit_rationale": "Health supplement retailer. Hell's Kitchen fitness community drives demand for protein and wellness supplements."
+        }
+      ]
+    }
+  ]
+}

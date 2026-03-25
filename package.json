@@ -1,0 +1,16 @@
+{
+  "name": "rooted-broth-sales-map",
+  "version": "1.0.0",
+  "description": "Interactive NYC sales territory map for Rooted Broth with Zoho CRM integration",
+  "main": "zoho-proxy.js",
+  "scripts": {
+    "start": "node zoho-proxy.js",
+    "dev": "node zoho-proxy.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

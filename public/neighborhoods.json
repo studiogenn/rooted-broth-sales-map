@@ -1,0 +1,196 @@
+{
+  "territory_plan": {
+    "version": "1.0",
+    "brand": "Rooted Broth",
+    "market": "NYC",
+    "excluded_areas": ["Bronx", "Harlem", "Staten Island"],
+    "territories": {
+      "danielle": {
+        "label": "Danielle (Founder)",
+        "color": "#E63946",
+        "neighborhoods": [
+          {
+            "name": "West Village",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "High density of health-conscious cafes, boutique grocery, affluent residents"
+          },
+          {
+            "name": "East Village",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Trendy wellness shops, juice bars, organic stores"
+          },
+          {
+            "name": "Greenwich Village",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Overlap with West Village, strong indie food scene"
+          },
+          {
+            "name": "SoHo",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "High-end retail, wellness flagships, affluent shoppers"
+          },
+          {
+            "name": "NoHo",
+            "borough": "Manhattan",
+            "priority": "B",
+            "notes": "Small but affluent, boutique food shops"
+          },
+          {
+            "name": "NoLita",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Trendy boutiques, specialty food, health-conscious crowd"
+          },
+          {
+            "name": "TriBeCa",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Wealthiest zip codes in NYC, family-oriented, premium grocery"
+          },
+          {
+            "name": "Flatiron / Union Square",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Union Square Greenmarket proximity, Whole Foods, Eataly area"
+          },
+          {
+            "name": "Chelsea",
+            "borough": "Manhattan",
+            "priority": "B",
+            "notes": "Chelsea Market area, health-conscious professionals"
+          },
+          {
+            "name": "Gramercy",
+            "borough": "Manhattan",
+            "priority": "B",
+            "notes": "Affluent residential, smaller but quality accounts"
+          }
+        ]
+      },
+      "new_hire": {
+        "label": "New Hire (Full-Time)",
+        "color": "#457B9D",
+        "neighborhoods": [
+          {
+            "name": "Upper West Side",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Family-heavy, health-conscious, many specialty grocers"
+          },
+          {
+            "name": "Upper East Side",
+            "borough": "Manhattan",
+            "priority": "A",
+            "notes": "Wealthiest demographic, gourmet food shops, high purchasing power"
+          },
+          {
+            "name": "Lower East Side",
+            "borough": "Manhattan",
+            "priority": "B",
+            "notes": "Emerging food scene, juice bars, wellness"
+          },
+          {
+            "name": "Murray Hill",
+            "borough": "Manhattan",
+            "priority": "C",
+            "notes": "Younger professionals, some health food options"
+          },
+          {
+            "name": "Midtown West / Hell's Kitchen",
+            "borough": "Manhattan",
+            "priority": "B",
+            "notes": "Dense food scene, specialty stores on 9th Ave"
+          },
+          {
+            "name": "Park Slope",
+            "borough": "Brooklyn",
+            "priority": "A",
+            "notes": "Top target - affluent families, co-op culture, health-focused"
+          },
+          {
+            "name": "Cobble Hill",
+            "borough": "Brooklyn",
+            "priority": "A",
+            "notes": "Upscale boutique shops, young families"
+          },
+          {
+            "name": "Carroll Gardens",
+            "borough": "Brooklyn",
+            "priority": "A",
+            "notes": "Italian food heritage, specialty grocery, affluent"
+          },
+          {
+            "name": "Brooklyn Heights",
+            "borough": "Brooklyn",
+            "priority": "A",
+            "notes": "Wealthy residential, proximity to DUMBO"
+          },
+          {
+            "name": "DUMBO",
+            "borough": "Brooklyn",
+            "priority": "B",
+            "notes": "Trendy, tech workers, boutique food"
+          },
+          {
+            "name": "Williamsburg",
+            "borough": "Brooklyn",
+            "priority": "A",
+            "notes": "Massive health/wellness scene, huge foot traffic"
+          },
+          {
+            "name": "Greenpoint",
+            "borough": "Brooklyn",
+            "priority": "B",
+            "notes": "Emerging wellness, organic shops, young professionals"
+          },
+          {
+            "name": "Fort Greene",
+            "borough": "Brooklyn",
+            "priority": "B",
+            "notes": "Growing food scene, affluent residents"
+          },
+          {
+            "name": "Prospect Heights",
+            "borough": "Brooklyn",
+            "priority": "B",
+            "notes": "Near Barclays, growing specialty food"
+          },
+          {
+            "name": "Boerum Hill",
+            "borough": "Brooklyn",
+            "priority": "B",
+            "notes": "Upscale residential, Atlantic Ave food corridor"
+          },
+          {
+            "name": "Gowanus",
+            "borough": "Brooklyn",
+            "priority": "C",
+            "notes": "Emerging - Whole Foods anchor, new development"
+          },
+          {
+            "name": "Astoria",
+            "borough": "Queens",
+            "priority": "B",
+            "notes": "Diverse food scene, growing health-conscious market"
+          },
+          {
+            "name": "Long Island City",
+            "borough": "Queens",
+            "priority": "C",
+            "notes": "New development, young professionals"
+          },
+          {
+            "name": "Forest Hills",
+            "borough": "Queens",
+            "priority": "C",
+            "notes": "Affluent residential, specialty food shops"
+          }
+        ]
+      }
+    }
+  }
+}
