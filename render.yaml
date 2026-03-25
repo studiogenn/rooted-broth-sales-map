@@ -1,0 +1,20 @@
+services:
+  - type: web
+    runtime: node
+    name: rooted-broth-sales-map
+    repo: https://github.com/studiogenn/rooted-broth-sales-map
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: node zoho-proxy.js
+    envVars:
+      - key: ZOHO_CLIENT_ID
+        value: 1000.15Y71QF5FP5TD20RHGPJSUHMPFR1UJ
+      - key: ZOHO_CLIENT_SECRET
+        sync: false
+      - key: ZOHO_REFRESH_TOKEN
+        sync: false
+      - key: ZOHO_API_BASE
+        value: https://www.zohoapis.eu/crm/v2
+      - key: ZOHO_ACCOUNTS_URL
+        value: https://accounts.zoho.eu
