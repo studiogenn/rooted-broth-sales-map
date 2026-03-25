@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooted Broth — NYC Sales Territory Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root {
+  --bg: #FAFAF7; --card: #FFFFFF; --border: #E8E5DF; --text: #2C2C2C;
+  --muted: #8A8A8A; --accent: #B85C38; --accent2: #5C8A6F;
+  --danielle: #C0392B; --yasmeen: #2980B9; --won: #27AE60; --lost: #95A5A6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:var(--bg); color:var(--text); }
+
+.header { background:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+.header h1 { font-size:20px; font-weight:700; letter-spacing:-0.5px; }
+.header h1 span { color:var(--accent); }
+.stats { display:flex; gap:20px; }
+.stat { text-align:center; }
+.stat-num { font-size:22px; font-weight:800; color:var(--accent); }
+.stat-label { font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+
+/* Tab bar */
+.tab-bar { display:flex; background:#fff; border-bottom:1px solid var(--border); }
+.tab-btn { padding:10px 20px; font-size:12px; font-weight:600; cursor:pointer; border:none; background:none; color:var(--muted); border-bottom:2px solid transparent; transition:all 0.15s; }
+.tab-btn:hover { color:var(--text); }
+.tab-btn.active { color:var(--accent); border-bottom-color:var(--accent); }
+
+.layout { display:flex; height:calc(100vh - 100px); }
+
+.sidebar { width:400px; min-width:400px; background:#fff; border-right:1px solid var(--border); display:flex; flex-direction:column; overflow:hidden; }
+.controls { padding:10px 12px; border-bottom:1px solid var(--border); background:#FAFAF7; }
+.search-box { width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:8px; font-size:13px; outline:none; background:#fff; margin-bottom:6px; }
+.search-box:focus { border-color:var(--accent); box-shadow:0 0 0 2px rgba(184,92,56,0.1); }
+
+.territory-toggle { display:flex; gap:6px; margin-bottom:6px; }
+.territory-btn { flex:1; padding:5px 8px; border-radius:6px; border:1.5px solid var(--border); background:#fff; font-size:11px; font-weight:600; cursor:pointer; text-align:center; transition:all 0.15s; }
+.territory-btn:hover { background:#f5f5f0; }
+.territory-btn.all.active { background:var(--text); color:#fff; border-color:var(--text); }
+.territory-btn.danielle.active { background:var(--danielle); color:#fff; border-color:var(--danielle); }
+.territory-btn.yasmeen.active { background:var(--yasmeen); color:#fff; border-color:var(--yasmeen); }
+
+.filter-row { display:flex; gap:3px; flex-wrap:wrap; margin-bottom:6px; }
+.filter-btn { padding:3px 8px; border-radius:20px; border:1px solid var(--border); background:#fff; color:var(--muted); font-size:10px; cursor:pointer; transition:all 0.15s; }
+.filter-btn:hover { border-color:var(--accent); color:var(--text); }
+.filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+.status-filter-row { display:flex; gap:3px; flex-wrap:wrap; }
+.status-btn { padding:3px 8px; border-radius:20px; border:1px solid var(--border); background:#fff; color:var(--muted); font-size:10px; cursor:pointer; }
+.status-btn:hover { border-color:var(--accent2); }
+.status-btn.active { background:var(--accent2); border-color:var(--accent2); color:#fff; }
+
+.business-list { flex:1; overflow-y:auto; }
+.nh-group { border-bottom:1px solid var(--border); }
+.nh-header { padding:8px 12px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:#FAFAF7; position:sticky; top:0; z-index:2; border-left:3px solid var(--border); }
+.nh-header:hover { background:#F0EDE8; }
+.nh-header .name { font-weight:600; font-size:13px; }
+.nh-header .count { font-size:10px; background:#E8E5DF; padding:2px 8px; border-radius:10px; color:var(--muted); }
+
+.biz-card { padding:8px 12px; border-bottom:1px solid #f0f0ec; cursor:pointer; transition:all 0.1s; display:flex; justify-content:space-between; align-items:flex-start; }
+.biz-card:hover { background:#FAFAF7; }
+.biz-card.highlighted { background:#FFF8F5; border-left:3px solid var(--accent); }
+.biz-info { flex:1; min-width:0; }
+.biz-name { font-weight:600; font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.biz-cat { font-size:10px; color:var(--muted); margin-top:1px; }
+.biz-addr { font-size:11px; color:#999; margin-top:2px; }
+.biz-tags { display:flex; gap:3px; margin-top:3px; flex-wrap:wrap; }
+.tag { font-size:9px; padding:1px 6px; border-radius:3px; font-weight:600; }
+.tag.territory-d { background:rgba(192,57,43,0.1); color:var(--danielle); }
+.tag.territory-y { background:rgba(41,128,185,0.1); color:var(--yasmeen); }
+.tag.status-tag { background:rgba(92,138,111,0.1); color:var(--accent2); }
+
+.status-dots { display:flex; gap:2px; margin-left:6px; flex-wrap:wrap; max-width:40px; }
+.sdot { width:8px; height:8px; border-radius:50%; }
+
+#map { flex:1; }
+
+/* ---- DETAIL PANEL ---- */
+.detail-panel { display:none; position:absolute; right:16px; top:116px; width:360px; background:#fff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.12); z-index:1000; border:1px solid var(--border); overflow:hidden; max-height:calc(100vh - 140px); overflow-y:auto; }
+.detail-panel.open { display:block; }
+.detail-header { padding:14px 16px; background:#FAFAF7; border-bottom:1px solid var(--border); }
+.detail-header h3 { font-size:15px; margin-bottom:2px; padding-right:24px; }
+.detail-header .cat { font-size:11px; color:var(--accent); }
+.detail-header .addr { font-size:12px; color:var(--muted); margin-top:3px; }
+.detail-header .contact-row { font-size:11px; margin-top:4px; color:#555; }
+.detail-header .contact-row a { color:var(--accent); text-decoration:none; }
+.detail-close { position:absolute; top:12px; right:12px; background:none; border:none; font-size:18px; cursor:pointer; color:var(--muted); }
+
+.detail-body { padding:14px 16px; }
+.detail-section { margin-bottom:12px; }
+.detail-section label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); display:block; margin-bottom:5px; }
+
+/* Multi-select status checkboxes */
+.status-checks { display:flex; flex-wrap:wrap; gap:4px; }
+.status-check { display:flex; align-items:center; gap:3px; padding:4px 10px; border:1px solid var(--border); border-radius:6px; cursor:pointer; font-size:11px; transition:all 0.15s; user-select:none; }
+.status-check.active { border-color:var(--accent2); background:rgba(92,138,111,0.08); color:var(--accent2); font-weight:600; }
+.status-check input { display:none; }
+
+.channel-checks { display:flex; gap:6px; flex-wrap:wrap; }
+.channel-check { display:flex; align-items:center; gap:3px; padding:4px 10px; border:1px solid var(--border); border-radius:6px; cursor:pointer; font-size:11px; transition:all 0.15s; }
+.channel-check.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+.channel-check input { display:none; }
+
+.status-select { width:100%; padding:7px 10px; border:1px solid var(--border); border-radius:6px; font-size:13px; background:#fff; cursor:pointer; }
+
+.notes-input { width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:6px; font-size:12px; min-height:50px; resize:vertical; font-family:inherit; }
+
+/* Email compose */
+.email-section { background:#FFF8F5; border:1px solid #f0ddd5; border-radius:8px; padding:10px; margin-top:8px; }
+.email-input { width:100%; padding:6px 8px; border:1px solid var(--border); border-radius:4px; font-size:12px; margin-bottom:6px; font-family:inherit; }
+.email-body { width:100%; padding:6px 8px; border:1px solid var(--border); border-radius:4px; font-size:12px; min-height:60px; resize:vertical; font-family:inherit; }
+
+.detail-footer { padding:10px 16px; border-top:1px solid var(--border); display:flex; gap:6px; flex-wrap:wrap; }
+.btn { padding:7px 12px; border-radius:6px; border:none; font-size:11px; font-weight:600; cursor:pointer; transition:all 0.15s; }
+.btn-primary { background:var(--accent); color:#fff; flex:1; }
+.btn-primary:hover { background:#9A4B2E; }
+.btn-zoho { background:#D4382C; color:#fff; }
+.btn-zoho:hover { background:#B8301F; }
+.btn-email { background:#3498DB; color:#fff; }
+.btn-email:hover { background:#2980B9; }
+.btn-secondary { background:#E8E5DF; color:var(--text); }
+
+.toolbar { position:absolute; top:116px; left:416px; display:flex; gap:6px; z-index:1000; }
+.toolbar .btn { padding:7px 12px; background:#fff; border:1px solid var(--border); border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); font-size:11px; font-weight:600; }
+.toolbar .btn:hover { background:#FAFAF7; }
+
+/* ---- PIPELINE VIEW ---- */
+.pipeline-view { display:none; flex:1; overflow:auto; background:var(--bg); padding:16px; }
+.pipeline-view.visible { display:block; }
+
+.pipeline-stats { display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap; }
+.pipe-stat { background:#fff; border:1px solid var(--border); border-radius:10px; padding:12px 16px; min-width:100px; text-align:center; }
+.pipe-stat .num { font-size:22px; font-weight:800; }
+.pipe-stat .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:2px; }
+
+.pipeline-table { width:100%; background:#fff; border-radius:10px; border:1px solid var(--border); overflow:hidden; }
+.pipeline-table table { width:100%; border-collapse:collapse; font-size:12px; }
+.pipeline-table th { background:#FAFAF7; padding:10px 12px; text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); border-bottom:1px solid var(--border); position:sticky; top:0; }
+.pipeline-table td { padding:8px 12px; border-bottom:1px solid #f5f5f0; }
+.pipeline-table tr:hover { background:#FAFAF7; cursor:pointer; }
+.pipeline-table .status-pill { display:inline-block; padding:2px 8px; border-radius:10px; font-size:10px; font-weight:600; }
+
+.leaflet-popup-content-wrapper { border-radius:10px!important; box-shadow:0 3px 14px rgba(0,0,0,0.1)!important; }
+.popup-content h3 { font-size:14px; margin-bottom:2px; }
+.popup-content .pcat { color:var(--accent); font-size:10px; text-transform:uppercase; }
+.popup-content .paddr { color:var(--muted); font-size:11px; margin-top:3px; }
+
+@media (max-width:900px) {
+  .layout { flex-direction:column; }
+  .sidebar { width:100%; min-width:100%; max-height:40vh; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span>Rooted Broth</span> &mdash; NYC Sales Map</h1>
+  <div class="stats">
+    <div class="stat"><div class="stat-num" id="totalCount">0</div><div class="stat-label">Targets</div></div>
+    <div class="stat"><div class="stat-num" id="contactedCount">0</div><div class="stat-label">Contacted</div></div>
+    <div class="stat"><div class="stat-num" id="wonCount">0</div><div class="stat-label">Won</div></div>
+    <div class="stat"><div class="stat-num" id="hoodCount">0</div><div class="stat-label">Neighborhoods</div></div>
+  </div>
+</div>
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('map')">Map View</button>
+  <button class="tab-btn" onclick="switchTab('pipeline')">Pipeline / Contacted</button>
+  <button class="btn btn-secondary" style="margin-left:auto;margin-right:8px;font-size:11px;" onclick="exportCSV()">Export CSV</button>
+  <button class="btn btn-zoho" style="margin-right:8px;font-size:11px;" onclick="connectZoho()">Sync to Zoho</button>
+</div>
+
+<div id="mapWrapper" class="layout">
+  <div class="sidebar">
+    <div class="controls">
+      <input type="text" class="search-box" id="searchBox" placeholder="Search businesses, neighborhoods, categories..." />
+      <div class="territory-toggle">
+        <button class="territory-btn all active" onclick="filterTerritory('all')">All</button>
+        <button class="territory-btn danielle" onclick="filterTerritory('danielle')">Danielle</button>
+        <button class="territory-btn yasmeen" onclick="filterTerritory('yasmeen')">Yasmeen</button>
+      </div>
+      <div class="filter-row" id="categoryFilters"></div>
+      <div class="status-filter-row" id="statusFilters"></div>
+    </div>
+    <div class="business-list" id="businessList"></div>
+  </div>
+  <div id="map"></div>
+</div>
+
+<div id="pipelineView" class="pipeline-view"></div>
+
+<div class="detail-panel" id="detailPanel">
+  <button class="detail-close" onclick="closeDetail()">&times;</button>
+  <div class="detail-header">
+    <h3 id="detailName"></h3>
+    <div class="cat" id="detailCat"></div>
+    <div class="addr" id="detailAddr"></div>
+    <div class="contact-row" id="detailContact"></div>
+  </div>
+  <div class="detail-body">
+    <div class="detail-section">
+      <label>Outreach Status (select all that apply)</label>
+      <div class="status-checks" id="statusChecks"></div>
+    </div>
+    <div class="detail-section">
+      <label>Channels Used</label>
+      <div class="channel-checks" id="channelChecks">
+        <label class="channel-check" data-ch="instagram"><input type="checkbox" onchange="updateChannels()">Instagram</label>
+        <label class="channel-check" data-ch="email"><input type="checkbox" onchange="updateChannels()">Email</label>
+        <label class="channel-check" data-ch="phone"><input type="checkbox" onchange="updateChannels()">Phone</label>
+        <label class="channel-check" data-ch="in_person"><input type="checkbox" onchange="updateChannels()">In-Person</label>
+      </div>
+    </div>
+    <div class="detail-section">
+      <label>Assigned To</label>
+      <select class="status-select" id="detailAssigned" onchange="updateAssigned()">
+        <option value="danielle">Danielle</option>
+        <option value="yasmeen">Yasmeen</option>
+      </select>
+    </div>
+    <div class="detail-section">
+      <label>Notes</label>
+      <textarea class="notes-input" id="detailNotes" placeholder="Add notes about this account..." onblur="updateNotes()"></textarea>
+    </div>
+    <div class="detail-section">
+      <label>Send Email</label>
+      <div class="email-section">
+        <input class="email-input" id="emailTo" placeholder="To: email@business.com" />
+        <input class="email-input" id="emailSubject" placeholder="Subject: Rooted Broth - Artisanal Bone Broth for Your Store" />
+        <textarea class="email-body" id="emailBody" placeholder="Hi [Name],
+
+I'd love to introduce you to Rooted Broth..."></textarea>
+        <div style="display:flex;gap:6px;margin-top:6px;">
+          <button class="btn btn-email" onclick="sendEmail()">Send via Zoho</button>
+          <button class="btn btn-secondary" onclick="openMailto()">Open in Mail App</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-footer">
+    <button class="btn btn-primary" onclick="saveAndClose()">Save & Close</button>
+    <button class="btn btn-zoho" onclick="syncOneToZoho()">Sync to Zoho</button>
+  </div>
+</div>
+
+<script>
+let ALL_BUSINESSES = [];
+let outreachData = {};
+let selectedBizId = null;
+let currentTab = 'map';
+
+const DANIELLE_HOODS = new Set([
+  'west village','east village','greenwich village','soho','noho',
+  'nolita','tribeca','flatiron / union square','flatiron/union square',
+  'chelsea','gramercy','lower east side'
+]);
+
+function getTerritory(hood) {
+  const h = (hood || '').toLowerCase().trim();
+  for (const d of DANIELLE_HOODS) {
+    if (h.includes(d) || d.includes(h)) return 'danielle';
+  }
+  return 'yasmeen';
+}
+
+const COORDS = {
+  'upper west side':[40.787,-73.975],'upper east side':[40.774,-73.957],
+  'west village':[40.734,-74.003],'east village':[40.727,-73.982],
+  'greenwich village':[40.734,-73.997],'soho':[40.723,-73.999],
+  'noho':[40.726,-73.993],'tribeca':[40.716,-74.009],
+  'nolita':[40.723,-73.996],'lower east side':[40.715,-73.984],
+  'chelsea':[40.747,-74.001],'flatiron / union square':[40.740,-73.990],
+  'flatiron/union square':[40.740,-73.990],'gramercy':[40.737,-73.985],
+  'murray hill':[40.749,-73.976],'midtown west / hell\'s kitchen':[40.764,-73.992],
+  'midtown west/hell\'s kitchen':[40.764,-73.992],'hell\'s kitchen':[40.764,-73.992],
+  'park slope':[40.671,-73.980],'cobble hill':[40.686,-73.996],
+  'carroll gardens':[40.680,-73.999],'brooklyn heights':[40.696,-73.994],
+  'dumbo':[40.703,-73.988],'williamsburg':[40.708,-73.957],
+  'greenpoint':[40.727,-73.951],'fort greene':[40.689,-73.976],
+  'prospect heights':[40.678,-73.969],'boerum hill':[40.685,-73.984],
+  'gowanus':[40.673,-73.990],'astoria':[40.772,-73.930],
+  'long island city':[40.743,-73.956],'forest hills':[40.719,-73.845],
+  'jackson heights':[40.750,-73.883],
+};
+
+function getCoords(hood, idx) {
+  const h = (hood||'').toLowerCase().trim();
+  for (const [k,v] of Object.entries(COORDS)) {
+    if (h.includes(k) || k.includes(h)) return [v[0]+(Math.random()-0.5)*0.004, v[1]+(Math.random()-0.5)*0.004];
+  }
+  return [40.748+(Math.random()-0.5)*0.02, -73.986+(Math.random()-0.5)*0.02];
+}
+
+function getCatGroup(cat) {
+  const c = (cat||'').toLowerCase();
+  if (c.includes('coffee') || c.includes('cafe')) return 'coffee';
+  if (c.includes('brunch') || c.includes('breakfast')) return 'brunch';
+  if (c.includes('grocery') || c.includes('market') || c.includes('deli')) return 'grocery';
+  if (c.includes('health') || c.includes('organic') || c.includes('natural')) return 'health';
+  if (c.includes('acai') || c.includes('smoothie') || c.includes('wellness')) return 'wellness';
+  if (c.includes('yoga') || c.includes('pilates') || c.includes('barre') || c.includes('cycling') || c.includes('fitness')) return 'fitness';
+  if (c.includes('ramen') || c.includes('soup') || c.includes('farm-to-table')) return 'restaurant';
+  if (c.includes('butcher') || c.includes('cheese') || c.includes('specialty') || c.includes('gourmet')) return 'specialty';
+  if (c.includes('co-work') || c.includes('cowork')) return 'cowork';
+  if (c.includes('pet')) return 'pet';
+  if (c.includes('supplement') || c.includes('vitamin')) return 'supplement';
+  if (c.includes('matcha') || c.includes('tea')) return 'tea';
+  if (c.includes('bakery')) return 'bakery';
+  if (c.includes('functional') || c.includes('chiro') || c.includes('naturo')) return 'clinic';
+  if (c.includes('meal prep') || c.includes('prepared')) return 'mealprep';
+  if (c.includes('food hall') || c.includes('cooking')) return 'foodhall';
+  return 'other';
+}
+
+const CAT_COLORS = { coffee:'#8B4513',brunch:'#D4A574',grocery:'#2E7D32',health:'#4CAF50',wellness:'#9C27B0',fitness:'#E91E63',restaurant:'#FF5722',specialty:'#795548',cowork:'#607D8B',pet:'#FF9800',supplement:'#00BCD4',tea:'#689F38',bakery:'#F48FB1',clinic:'#5C6BC0',mealprep:'#26A69A',foodhall:'#8D6E63',other:'#9E9E9E' };
+const CAT_LABELS = { coffee:'Coffee',brunch:'Brunch',grocery:'Grocery',health:'Health Food',wellness:'Wellness/Smoothie',fitness:'Fitness/Yoga',restaurant:'Restaurant',specialty:'Specialty Food',cowork:'Co-Working',pet:'Pet',supplement:'Supplements',tea:'Tea/Matcha',bakery:'Bakery',clinic:'Wellness Clinic',mealprep:'Meal Prep',foodhall:'Food Hall',other:'Other' };
+
+const ALL_STATUSES = ['dm_sent','emailed','called','visited','follow_up','meeting_set','proposal_sent','won','not_interested'];
+const STATUS_LABELS = { not_contacted:'Not Contacted',dm_sent:'DM Sent',emailed:'Emailed',called:'Called',visited:'Visited',follow_up:'Follow-Up',meeting_set:'Meeting Set',proposal_sent:'Proposal Sent',won:'Account Won',not_interested:'Not Interested' };
+const STATUS_COLORS = { not_contacted:'#ccc',dm_sent:'#F39C12',emailed:'#3498DB',called:'#9B59B6',visited:'#E67E22',follow_up:'#E74C3C',meeting_set:'#2ECC71',proposal_sent:'#1ABC9C',won:'#27AE60',not_interested:'#95A5A6' };
+
+let activeTerritory = 'all';
+let activeCats = new Set();
+let activeStatuses = new Set();
+let searchTerm = '';
+let markers = [];
+
+const map = L.map('map').setView([40.733, -73.970], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution:'OpenStreetMap, CARTO', maxZoom:19 }).addTo(map);
+
+// --- Outreach data (localStorage) ---
+// statuses is now an ARRAY of active statuses (multi-select)
+function loadOutreach() { try { const d = localStorage.getItem('rooted_broth_outreach_v2'); if (d) outreachData = JSON.parse(d); } catch(e) {} }
+function saveOutreach() { localStorage.setItem('rooted_broth_outreach_v2', JSON.stringify(outreachData)); }
+function getOutreach(id) {
+  if (!outreachData[id]) outreachData[id] = { statuses:[], channels:[], notes:'', assigned:null, emailsSent:[] };
+  // Migrate old single-status format
+  if (outreachData[id].status && !outreachData[id].statuses) {
+    outreachData[id].statuses = outreachData[id].status !== 'not_contacted' ? [outreachData[id].status] : [];
+    delete outreachData[id].status;
+  }
+  if (!outreachData[id].statuses) outreachData[id].statuses = [];
+  if (!outreachData[id].emailsSent) outreachData[id].emailsSent = [];
+  return outreachData[id];
+}
+
+function isContacted(o) { return o.statuses && o.statuses.length > 0; }
+function highestStatus(o) {
+  if (!o.statuses || o.statuses.length === 0) return 'not_contacted';
+  // Return the "most advanced" status
+  const priority = ['won','proposal_sent','meeting_set','visited','called','emailed','dm_sent','follow_up','not_interested'];
+  for (const p of priority) { if (o.statuses.includes(p)) return p; }
+  return o.statuses[0];
+}
+
+// --- Tab switching ---
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.tab-btn[onclick*="'+tab+'"]').classList.add('active');
+  document.getElementById('mapWrapper').style.display = tab === 'map' ? 'flex' : 'none';
+  document.getElementById('pipelineView').classList.toggle('visible', tab === 'pipeline');
+  if (tab === 'pipeline') renderPipeline();
+  if (tab === 'map') { setTimeout(() => map.invalidateSize(), 100); }
+}
+
+// --- Filters ---
+function buildFilters() {
+  const cats = new Set();
+  ALL_BUSINESSES.forEach(b => cats.add(getCatGroup(b.category)));
+  const container = document.getElementById('categoryFilters');
+  container.innerHTML = '';
+  [...cats].sort().forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.textContent = CAT_LABELS[c] || c;
+    btn.onclick = () => { activeCats.has(c) ? (activeCats.delete(c), btn.classList.remove('active')) : (activeCats.add(c), btn.classList.add('active')); render(); };
+    container.appendChild(btn);
+  });
+  const sContainer = document.getElementById('statusFilters');
+  sContainer.innerHTML = '';
+  ['dm_sent','emailed','called','visited','follow_up','won','not_interested'].forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'status-btn';
+    btn.textContent = STATUS_LABELS[s];
+    btn.onclick = () => { activeStatuses.has(s) ? (activeStatuses.delete(s), btn.classList.remove('active')) : (activeStatuses.add(s), btn.classList.add('active')); render(); };
+    sContainer.appendChild(btn);
+  });
+}
+
+function getFiltered() {
+  return ALL_BUSINESSES.filter(b => {
+    const o = getOutreach(b.id);
+    if (activeTerritory !== 'all') { const t = o.assigned || b.territory; if (t !== activeTerritory) return false; }
+    if (activeCats.size > 0 && !activeCats.has(getCatGroup(b.category))) return false;
+    if (activeStatuses.size > 0) {
+      const hasAny = [...activeStatuses].some(s => (o.statuses||[]).includes(s));
+      if (!hasAny) return false;
+    }
+    if (searchTerm) {
+      const s = searchTerm.toLowerCase();
+      if (!(b.name.toLowerCase().includes(s) || (b.neighborhood||'').toLowerCase().includes(s) || (b.category||'').toLowerCase().includes(s) || (b.address||'').toLowerCase().includes(s) || (b.borough||'').toLowerCase().includes(s))) return false;
+    }
+    return true;
+  });
+}
+
+// --- Main render (map view) ---
+function render() {
+  const filtered = getFiltered();
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  const grouped = {};
+  filtered.forEach(b => { const nh = b.neighborhood || 'Unknown'; if (!grouped[nh]) grouped[nh] = []; grouped[nh].push(b); });
+
+  const listEl = document.getElementById('businessList');
+  listEl.innerHTML = '';
+
+  let contacted = 0, won = 0;
+  const sortedHoods = Object.keys(grouped).sort();
+
+  sortedHoods.forEach(nh => {
+    const businesses = grouped[nh];
+    const group = document.createElement('div');
+    group.className = 'nh-group';
+    const header = document.createElement('div');
+    header.className = 'nh-header';
+    const t = businesses[0].territory;
+    header.style.borderLeftColor = t === 'danielle' ? 'var(--danielle)' : 'var(--yasmeen)';
+    header.innerHTML = '<span class="name">'+nh+'</span><span class="count">'+businesses.length+'</span>';
+    group.appendChild(header);
+
+    const items = document.createElement('div');
+    items.style.display = 'none';
+    header.onclick = () => { items.style.display = items.style.display === 'none' ? 'block' : 'none'; };
+
+    businesses.forEach(b => {
+      const o = getOutreach(b.id);
+      if (isContacted(o)) contacted++;
+      if ((o.statuses||[]).includes('won')) won++;
+
+      const tAssigned = o.assigned || b.territory;
+      const hs = highestStatus(o);
+      const dotHtml = (o.statuses||[]).map(s => '<div class="sdot" style="background:'+STATUS_COLORS[s]+'"></div>').join('');
+      const statusTags = (o.statuses||[]).map(s => '<span class="tag status-tag">'+STATUS_LABELS[s]+'</span>').join('');
+
+      const card = document.createElement('div');
+      card.className = 'biz-card';
+      if (selectedBizId === b.id) card.classList.add('highlighted');
+      card.innerHTML = `<div class="biz-info">
+        <div class="biz-name">${b.name}</div>
+        <div class="biz-cat">${b.category}</div>
+        <div class="biz-addr">${b.address}</div>
+        <div class="biz-tags">
+          <span class="tag territory-${tAssigned === 'danielle' ? 'd' : 'y'}">${tAssigned === 'danielle' ? 'Danielle' : 'Yasmeen'}</span>
+          ${statusTags}
+        </div></div><div class="status-dots">${dotHtml}</div>`;
+      card.onclick = () => openDetail(b);
+      items.appendChild(card);
+    });
+    group.appendChild(items);
+    listEl.appendChild(group);
+  });
+
+  filtered.forEach(b => {
+    const o = getOutreach(b.id);
+    const catColor = CAT_COLORS[getCatGroup(b.category)] || '#999';
+    const hs = highestStatus(o);
+    const sc = STATUS_COLORS[hs];
+    const size = (o.statuses||[]).includes('won') ? 14 : isContacted(o) ? 12 : 9;
+    const icon = L.divIcon({ className:'', html:'<div style="width:'+size+'px;height:'+size+'px;background:'+catColor+';border:2px solid '+(isContacted(o)?sc:'#fff')+';border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>', iconSize:[size,size], iconAnchor:[size/2,size/2] });
+    const statusText = isContacted(o) ? (o.statuses||[]).map(s=>STATUS_LABELS[s]).join(', ') : 'Not Contacted';
+    const marker = L.marker(b.coords, {icon}).bindPopup(`<div class="popup-content"><h3>${b.name}</h3><div class="pcat">${b.category}</div><div class="paddr">${b.address}</div><div style="margin-top:4px;font-size:11px;font-weight:600;color:${sc}">${statusText}</div></div>`, {maxWidth:280}).addTo(map);
+    marker._bizId = b.id;
+    marker.on('click', () => openDetail(b));
+    markers.push(marker);
+  });
+
+  document.getElementById('totalCount').textContent = filtered.length;
+  document.getElementById('contactedCount').textContent = contacted;
+  document.getElementById('wonCount').textContent = won;
+  document.getElementById('hoodCount').textContent = sortedHoods.length;
+}
+
+// --- Pipeline view ---
+function renderPipeline() {
+  const el = document.getElementById('pipelineView');
+  const allContacted = ALL_BUSINESSES.filter(b => isContacted(getOutreach(b.id)));
+  const statusCounts = {};
+  ALL_STATUSES.forEach(s => statusCounts[s] = 0);
+  allContacted.forEach(b => { const o = getOutreach(b.id); (o.statuses||[]).forEach(s => { statusCounts[s] = (statusCounts[s]||0)+1; }); });
+
+  let statsHtml = '<div class="pipeline-stats">';
+  statsHtml += `<div class="pipe-stat"><div class="num" style="color:var(--accent)">${allContacted.length}</div><div class="lbl">Total Contacted</div></div>`;
+  ALL_STATUSES.forEach(s => {
+    if (statusCounts[s] > 0) {
+      statsHtml += `<div class="pipe-stat"><div class="num" style="color:${STATUS_COLORS[s]}">${statusCounts[s]}</div><div class="lbl">${STATUS_LABELS[s]}</div></div>`;
+    }
+  });
+  statsHtml += '</div>';
+
+  let tableHtml = '<div class="pipeline-table"><table><thead><tr><th>Business</th><th>Category</th><th>Neighborhood</th><th>Assigned</th><th>Statuses</th><th>Channels</th><th>Notes</th></tr></thead><tbody>';
+  allContacted.sort((a,b) => {
+    const oA = getOutreach(a.id), oB = getOutreach(b.id);
+    const pA = ALL_STATUSES.indexOf(highestStatus(oA)), pB = ALL_STATUSES.indexOf(highestStatus(oB));
+    return pA - pB;
+  }).forEach(b => {
+    const o = getOutreach(b.id);
+    const assigned = (o.assigned || b.territory) === 'danielle' ? 'Danielle' : 'Yasmeen';
+    const pills = (o.statuses||[]).map(s => `<span class="status-pill" style="background:${STATUS_COLORS[s]}22;color:${STATUS_COLORS[s]}">${STATUS_LABELS[s]}</span>`).join(' ');
+    const chans = (o.channels||[]).join(', ');
+    const notes = (o.notes||'').substring(0, 50) + ((o.notes||'').length > 50 ? '...' : '');
+    tableHtml += `<tr onclick="switchTab('map');openDetailById(${b.id})"><td><strong>${b.name}</strong><br><span style="font-size:10px;color:#999">${b.address}</span></td><td>${b.category}</td><td>${b.neighborhood}</td><td>${assigned}</td><td>${pills}</td><td>${chans}</td><td style="font-size:11px;color:#777">${notes}</td></tr>`;
+  });
+  tableHtml += '</tbody></table></div>';
+
+  if (allContacted.length === 0) {
+    el.innerHTML = '<div style="text-align:center;padding:60px;color:var(--muted)"><h3>No leads contacted yet</h3><p style="margin-top:8px">Click on businesses in the Map View to start tracking outreach.</p></div>';
+  } else {
+    el.innerHTML = statsHtml + tableHtml;
+  }
+}
+
+function openDetailById(id) {
+  const b = ALL_BUSINESSES.find(x => x.id === id);
+  if (b) openDetail(b);
+}
+
+// --- Detail panel ---
+function openDetail(b) {
+  selectedBizId = b.id;
+  const o = getOutreach(b.id);
+  document.getElementById('detailName').textContent = b.name;
+  document.getElementById('detailCat').textContent = b.category;
+  document.getElementById('detailAddr').textContent = b.address;
+
+  // Contact info row
+  let contactHtml = '';
+  if (b.phone) contactHtml += b.phone + ' &nbsp; ';
+  if (b.website) contactHtml += '<a href="'+b.website+'" target="_blank">Website</a> &nbsp; ';
+  if (b.instagram) contactHtml += '<a href="'+b.instagram+'" target="_blank">Instagram</a> &nbsp; ';
+  if (b.email) contactHtml += '<a href="mailto:'+b.email+'">'+b.email+'</a>';
+  document.getElementById('detailContact').innerHTML = contactHtml || '<span style="color:#ccc">No contact info yet</span>';
+
+  // Multi-select status checkboxes
+  const checksEl = document.getElementById('statusChecks');
+  checksEl.innerHTML = '';
+  ALL_STATUSES.forEach(s => {
+    const isActive = (o.statuses||[]).includes(s);
+    const lbl = document.createElement('label');
+    lbl.className = 'status-check' + (isActive ? ' active' : '');
+    lbl.dataset.status = s;
+    lbl.innerHTML = '<input type="checkbox" '+(isActive?'checked':'')+'>'+STATUS_LABELS[s];
+    lbl.querySelector('input').onchange = (e) => {
+      if (e.target.checked) { if (!o.statuses.includes(s)) o.statuses.push(s); lbl.classList.add('active'); }
+      else { o.statuses = o.statuses.filter(x=>x!==s); lbl.classList.remove('active'); }
+      saveOutreach();
+    };
+    checksEl.appendChild(lbl);
+  });
+
+  document.getElementById('detailNotes').value = o.notes || '';
+  document.getElementById('detailAssigned').value = o.assigned || b.territory;
+
+  document.querySelectorAll('.channel-check').forEach(el => {
+    const ch = el.dataset.ch;
+    const active = (o.channels||[]).includes(ch);
+    el.classList.toggle('active', active);
+    el.querySelector('input').checked = active;
+  });
+
+  // Pre-fill email
+  document.getElementById('emailTo').value = b.email || '';
+  document.getElementById('emailSubject').value = 'Rooted Broth x ' + b.name + ' - Premium Bone Broth Partnership';
+  document.getElementById('emailBody').value = 'Hi ' + b.name + ' team,\n\nI\'m reaching out from Rooted Broth. We make artisanal bone broth and I think your customers would love it.\n\nWould love to chat about getting our broth on your shelves or menu.\n\nBest,\nDanielle';
+
+  document.getElementById('detailPanel').classList.add('open');
+  map.setView(b.coords, 15);
+}
+
+function closeDetail() {
+  document.getElementById('detailPanel').classList.remove('open');
+  selectedBizId = null;
+  render();
+}
+
+function updateChannels() {
+  if (!selectedBizId) return;
+  const o = getOutreach(selectedBizId);
+  o.channels = [];
+  document.querySelectorAll('.channel-check input:checked').forEach(el => { o.channels.push(el.parentElement.dataset.ch); });
+  document.querySelectorAll('.channel-check').forEach(el => { el.classList.toggle('active', el.querySelector('input').checked); });
+  saveOutreach();
+}
+
+function updateAssigned() {
+  if (!selectedBizId) return;
+  const o = getOutreach(selectedBizId);
+  o.assigned = document.getElementById('detailAssigned').value;
+  saveOutreach();
+}
+
+function updateNotes() {
+  if (!selectedBizId) return;
+  const o = getOutreach(selectedBizId);
+  o.notes = document.getElementById('detailNotes').value;
+  saveOutreach();
+}
+
+function saveAndClose() {
+  updateChannels(); updateAssigned(); updateNotes();
+  saveOutreach();
+  closeDetail();
+}
+
+// --- Email ---
+function sendEmail() {
+  const to = document.getElementById('emailTo').value;
+  const subject = document.getElementById('emailSubject').value;
+  const body = document.getElementById('emailBody').value;
+  if (!to) { alert('Please enter a recipient email address'); return; }
+
+  const zohoToken = localStorage.getItem('rooted_broth_zoho_token');
+  if (!zohoToken) {
+    alert('Connect Zoho first to send emails through Zoho. Or click "Open in Mail App" to send via your default email client.');
+    return;
+  }
+
+  fetch('/api/zoho/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ to, subject, body, zohoToken })
+  }).then(r => r.json()).then(data => {
+    if (data.success) {
+      alert('Email sent to ' + to);
+      const o = getOutreach(selectedBizId);
+      if (!o.statuses.includes('emailed')) o.statuses.push('emailed');
+      if (!o.channels.includes('email')) o.channels.push('email');
+      o.emailsSent.push({ to, subject, date: new Date().toISOString() });
+      saveOutreach();
+      render();
+    } else {
+      alert('Email failed: ' + (data.error || 'Unknown error') + '\n\nTry "Open in Mail App" instead.');
+    }
+  }).catch(e => {
+    alert('Could not connect to server. Try "Open in Mail App" instead.');
+  });
+}
+
+function openMailto() {
+  const to = document.getElementById('emailTo').value;
+  const subject = document.getElementById('emailSubject').value;
+  const body = document.getElementById('emailBody').value;
+  window.open('mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body));
+  // Mark as emailed
+  const o = getOutreach(selectedBizId);
+  if (!o.statuses.includes('emailed')) o.statuses.push('emailed');
+  if (!o.channels.includes('email')) o.channels.push('email');
+  saveOutreach();
+}
+
+// --- Zoho CRM ---
+function connectZoho() {
+  const token = prompt('Enter your Zoho OAuth Token.\n\nTo get one:\n1. Go to api-console.zoho.com\n2. Create a Self Client\n3. Generate token with scope: ZohoCRM.modules.ALL\n4. Paste the access_token here');
+  if (token) {
+    localStorage.setItem('rooted_broth_zoho_token', token);
+    fetch('/api/zoho/auth', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token })
+    }).then(r => r.json()).then(d => {
+      if (d.success) alert('Zoho connected! You can now sync leads and send emails.');
+      else alert('Token saved locally. Server connection: ' + (d.error || 'OK'));
+    }).catch(() => {
+      alert('Token saved locally. Start the Zoho proxy server to enable full sync.');
+    });
+  }
+}
+
+function syncOneToZoho() {
+  const b = ALL_BUSINESSES.find(x => x.id === selectedBizId);
+  const o = getOutreach(selectedBizId);
+  if (!b) return;
+
+  const zohoToken = localStorage.getItem('rooted_broth_zoho_token');
+  if (!zohoToken) { connectZoho(); return; }
+
+  fetch('/api/zoho/company', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      Account_Name: b.name,
+      Phone: b.phone || '',
+      Website: b.website || '',
+      Billing_Street: b.address,
+      Billing_City: 'New York',
+      Billing_State: 'NY',
+      Description: 'Category: ' + b.category + ' | Neighborhood: ' + b.neighborhood + ' | Statuses: ' + (o.statuses||[]).map(s=>STATUS_LABELS[s]).join(', ') + ' | Channels: ' + (o.channels||[]).join(', ') + ' | Notes: ' + (o.notes||''),
+      Industry: 'Food & Beverage',
+      Tag: (o.assigned || b.territory) === 'danielle' ? 'Danielle' : 'Yasmeen'
+    })
+  }).then(r => r.json()).then(d => {
+    if (d.success) alert('Synced "' + b.name + '" to Zoho CRM!');
+    else alert('Sync issue: ' + JSON.stringify(d.error || d));
+  }).catch(() => alert('Could not reach Zoho proxy. Is the server running?'));
+}
+
+function bulkSyncZoho() {
+  const contacted = ALL_BUSINESSES.filter(b => isContacted(getOutreach(b.id)));
+  if (contacted.length === 0) { alert('No contacted leads to sync'); return; }
+  if (!confirm('Sync ' + contacted.length + ' contacted leads to Zoho CRM?')) return;
+
+  const accounts = contacted.map(b => {
+    const o = getOutreach(b.id);
+    return {
+      Account_Name: b.name, Phone: b.phone || '', Website: b.website || '',
+      Billing_Street: b.address, Billing_City: 'New York', Billing_State: 'NY',
+      Description: 'Category: ' + b.category + ' | Neighborhood: ' + b.neighborhood + ' | Statuses: ' + (o.statuses||[]).map(s=>STATUS_LABELS[s]).join(', '),
+      Industry: 'Food & Beverage'
+    };
+  });
+
+  fetch('/api/zoho/bulk-import', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ accounts })
+  }).then(r => r.json()).then(d => {
+    alert('Bulk sync complete: ' + JSON.stringify(d));
+  }).catch(() => alert('Could not reach Zoho proxy server.'));
+}
+
+// --- Export CSV ---
+function exportCSV() {
+  const filtered = getFiltered();
+  const headers = ['Business Name','Category','Address','Neighborhood','Borough','Territory','Statuses','Channels','Notes','Phone','Website','Email','Instagram','Rating','Reviews'];
+  const rows = filtered.map(b => {
+    const o = getOutreach(b.id);
+    return [ b.name, b.category, b.address, b.neighborhood, b.borough || '',
+      (o.assigned || b.territory) === 'danielle' ? 'Danielle' : 'Yasmeen',
+      (o.statuses||[]).map(s=>STATUS_LABELS[s]).join('; '), (o.channels||[]).join('; '),
+      (o.notes||'').replace(/"/g,"'"), b.phone||'', b.website||'', b.email||'', b.instagram||'', b.rating||'', b.reviewCount||'' ];
+  });
+  let csv = headers.join(',') + '\n';
+  rows.forEach(r => { csv += r.map(v => '"'+v+'"').join(',') + '\n'; });
+  const blob = new Blob([csv], {type:'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'rooted-broth-nyc-' + new Date().toISOString().split('T')[0] + '.csv';
+  a.click();
+}
+
+// --- Event handlers ---
+document.getElementById('searchBox').addEventListener('input', e => { searchTerm = e.target.value; render(); });
+function filterTerritory(t) {
+  activeTerritory = t;
+  document.querySelectorAll('.territory-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.territory-btn.' + t).classList.add('active');
+  render();
+}
+
+// --- INIT ---
+async function init() {
+  loadOutreach();
+  try {
+    const resp = await fetch('all-targets.json');
+    const data = await resp.json();
+    ALL_BUSINESSES = data.map((b, i) => ({ ...b, id: i, territory: getTerritory(b.neighborhood), coords: getCoords(b.neighborhood, i) }));
+  } catch(e) { console.error('Failed to load all-targets.json'); ALL_BUSINESSES = []; }
+  buildFilters();
+  render();
+}
+init();
+</script>
+</body>
+</html>
