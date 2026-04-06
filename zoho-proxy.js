@@ -342,10 +342,75 @@ app.post('/api/zoho/sync-lead', asyncHandler(async (req, res) => {
 }));
 
 // ---------------------------------------------------------------------------
+// API FOR VERCEL COMMAND CENTER — provides live outreach data
+// ---------------------------------------------------------------------------
+app.get('/api/dashboard/pipeline', asyncHandler(async (req, res) => {
+  const fs = require('fs');
+  const dataPath = path.join(__dirname, 'public', 'all-targets.json');
+  let businesses = [];
+  try { businesses = JSON.parse(fs.readFileSync(dataPath, 'utf-8')); } catch(e) {}
+
+  // Pull latest accounts from Zoho to get outreach statuses
+  const token = await ensureToken();
+  let zohoAccounts = [];
+  if (token) {
+    try {
+      const result = await zohoRequest('GET', '/Accounts?fields=Account_Name,Phone,Website,Billing_Street,Description,Industry&per_page=200&page=1');
+      if (result.ok && result.data?.data) zohoAccounts = result.data.data;
+    } catch(e) {}
+  }
+
+  // Build pipeline summary
+  const statusCounts = { prospect: 0, contacted: 0, dm_sent: 0, emailed: 0, called: 0, visited: 0, meeting_set: 0, proposal_sent: 0, won: 0, not_interested: 0 };
+  const recentActivity = [];
+
+  zohoAccounts.forEach(a => {
+    const desc = a.Description || '';
+    const statusMatch = desc.match(/Outreach Status: ([^\n]*)/);
+    if (statusMatch) {
+      const statuses = statusMatch[1].split(', ').map(s => s.trim().toLowerCase().replace(/ /g, '_'));
+      statuses.forEach(s => { if (statusCounts[s] !== undefined) statusCounts[s]++; });
+      if (statuses.length > 0) {
+        statusCounts.contacted++;
+        recentActivity.push({
+          name: a.Account_Name,
+          statuses: statuses,
+          phone: a.Phone || '',
+          address: a.Billing_Street || '',
+          modified: a.Modified_Time || '',
+        });
+      }
+    } else {
+      statusCounts.prospect++;
+    }
+  });
+
+  res.json({
+    success: true,
+    generated: new Date().toISOString(),
+    total_accounts: businesses.length,
+    zoho_accounts: zohoAccounts.length,
+    pipeline: statusCounts,
+    this_week: {
+      total_contacted: statusCounts.contacted,
+      dms_sent: statusCounts.dm_sent,
+      emails_sent: statusCounts.emailed,
+      calls_made: statusCounts.called,
+      visits_made: statusCounts.visited,
+      meetings_set: statusCounts.meeting_set,
+      proposals_sent: statusCounts.proposal_sent,
+      accounts_won: statusCounts.won,
+    },
+    recent_activity: recentActivity.slice(0, 20),
+  });
+}));
+
+// ---------------------------------------------------------------------------
 // START
 // ---------------------------------------------------------------------------
 app.listen(PORT, () => {
   console.log(`[rooted-broth] Server running on http://localhost:${PORT}`);
   console.log(`[rooted-broth] Zoho auto-refresh: enabled`);
   console.log(`[rooted-broth] Static files: ./public`);
+  console.log(`[rooted-broth] Dashboard API: GET /api/dashboard/pipeline`);
 });
