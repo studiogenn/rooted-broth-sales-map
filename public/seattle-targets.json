@@ -1,0 +1,1205 @@
+{
+  "meta": {
+    "brand": "Rooted Broth",
+    "market": "Seattle, WA Metro",
+    "generated": "2026-04-05",
+    "note": "Compiled from known business data. Addresses and operational status should be verified before outreach. Some businesses may have closed or relocated since data was collected.",
+    "total_targets": 118,
+    "cities": [
+      "Seattle",
+      "Bellevue",
+      "Kirkland",
+      "Redmond",
+      "Bothell",
+      "Edmonds",
+      "Shoreline",
+      "Burien",
+      "Renton",
+      "Issaquah",
+      "Mercer Island",
+      "Bainbridge Island",
+      "Tacoma",
+      "Olympia"
+    ],
+    "categories": [
+      "Natural/Organic Grocery",
+      "Food Co-op",
+      "Independent Grocery",
+      "Butcher Shop / Meat Market",
+      "Health Food / Supplement Store",
+      "Specialty/Gourmet Food Shop",
+      "Wellness Clinic with Retail",
+      "Fitness Studio with Retail",
+      "Farm-to-Table Restaurant",
+      "Breakfast/Brunch Restaurant",
+      "Bakery with Cafe Seating",
+      "Pet Health Store",
+      "Meal Prep / Prepared Food",
+      "Ramen / Soup Restaurant",
+      "Co-working Space with Food",
+      "Farmers Market"
+    ]
+  },
+  "targets": [
+    {
+      "name": "PCC Community Markets - Fremont",
+      "category": "Natural/Organic Grocery",
+      "address": "600 N 34th St, Seattle, WA 98103",
+      "neighborhood": "Fremont",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Green Lake",
+      "category": "Natural/Organic Grocery",
+      "address": "7504 Aurora Ave N, Seattle, WA 98103",
+      "neighborhood": "Green Lake",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Columbia City",
+      "category": "Natural/Organic Grocery",
+      "address": "3610 S Edmunds St, Seattle, WA 98118",
+      "neighborhood": "Columbia City",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - West Seattle",
+      "category": "Natural/Organic Grocery",
+      "address": "2749 California Ave SW, Seattle, WA 98116",
+      "neighborhood": "West Seattle",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Central District",
+      "category": "Natural/Organic Grocery",
+      "address": "1765 12th Ave, Seattle, WA 98122",
+      "neighborhood": "Central District",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Ballard",
+      "category": "Natural/Organic Grocery",
+      "address": "1451 NW 46th St, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Bothell",
+      "category": "Natural/Organic Grocery",
+      "address": "22621 Bothell Everett Hwy, Bothell, WA 98021",
+      "neighborhood": "Bothell",
+      "city": "Bothell",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Burien",
+      "category": "Natural/Organic Grocery",
+      "address": "15840 1st Ave S, Burien, WA 98148",
+      "neighborhood": "Burien",
+      "city": "Burien",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Edmonds",
+      "category": "Natural/Organic Grocery",
+      "address": "9803 Edmonds Way, Edmonds, WA 98020",
+      "neighborhood": "Edmonds",
+      "city": "Edmonds",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Issaquah",
+      "category": "Natural/Organic Grocery",
+      "address": "1810 12th Ave NW, Issaquah, WA 98027",
+      "neighborhood": "Issaquah Highlands",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Kirkland",
+      "category": "Natural/Organic Grocery",
+      "address": "10718 NE 68th St, Kirkland, WA 98033",
+      "neighborhood": "Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - Redmond",
+      "category": "Natural/Organic Grocery",
+      "address": "11435 Avondale Rd NE, Redmond, WA 98052",
+      "neighborhood": "Redmond",
+      "city": "Redmond",
+      "state": "WA"
+    },
+    {
+      "name": "PCC Community Markets - View Ridge",
+      "category": "Natural/Organic Grocery",
+      "address": "6514 40th Ave NE, Seattle, WA 98115",
+      "neighborhood": "View Ridge",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Queen Anne",
+      "category": "Natural/Organic Grocery",
+      "address": "1908 Queen Anne Ave N, Seattle, WA 98109",
+      "neighborhood": "Upper Queen Anne",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Sand Point",
+      "category": "Natural/Organic Grocery",
+      "address": "5250 40th Ave NE, Seattle, WA 98105",
+      "neighborhood": "Sand Point",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Admiral",
+      "category": "Natural/Organic Grocery",
+      "address": "2320 42nd Ave SW, Seattle, WA 98116",
+      "neighborhood": "Admiral",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Mercer Island",
+      "category": "Natural/Organic Grocery",
+      "address": "2758 77th Ave SE, Mercer Island, WA 98040",
+      "neighborhood": "Mercer Island",
+      "city": "Mercer Island",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Proctor",
+      "category": "Natural/Organic Grocery",
+      "address": "2420 N Proctor St, Tacoma, WA 98406",
+      "neighborhood": "Proctor District",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Metropolitan Market - Kirkland",
+      "category": "Natural/Organic Grocery",
+      "address": "10611 NE 68th St, Kirkland, WA 98033",
+      "neighborhood": "Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Haggen - Bellingham (flagship reference)",
+      "category": "Natural/Organic Grocery",
+      "address": "2900 Woburn St, Bellingham, WA 98226",
+      "neighborhood": "Bellingham",
+      "city": "Bellingham",
+      "state": "WA"
+    },
+    {
+      "name": "Central Co-op - Capitol Hill",
+      "category": "Food Co-op",
+      "address": "1600 E Madison St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Central Co-op - Central District",
+      "category": "Food Co-op",
+      "address": "1550 S Dearborn St, Seattle, WA 98144",
+      "neighborhood": "Central District",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Olympia Food Co-op - Eastside",
+      "category": "Food Co-op",
+      "address": "3111 Pacific Ave SE, Olympia, WA 98501",
+      "neighborhood": "Eastside",
+      "city": "Olympia",
+      "state": "WA"
+    },
+    {
+      "name": "Olympia Food Co-op - Westside",
+      "category": "Food Co-op",
+      "address": "921 Rogers St NW, Olympia, WA 98502",
+      "neighborhood": "Westside",
+      "city": "Olympia",
+      "state": "WA"
+    },
+    {
+      "name": "Tacoma Food Co-op",
+      "category": "Food Co-op",
+      "address": "1101 S M St, Tacoma, WA 98405",
+      "neighborhood": "Hilltop",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Marlene's Market & Deli - Tacoma",
+      "category": "Natural/Organic Grocery",
+      "address": "2951 S 38th St, Tacoma, WA 98409",
+      "neighborhood": "South Tacoma",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Marlene's Market & Deli - Federal Way",
+      "category": "Natural/Organic Grocery",
+      "address": "2565 S Gateway Center Pl, Federal Way, WA 98003",
+      "neighborhood": "Federal Way",
+      "city": "Federal Way",
+      "state": "WA"
+    },
+    {
+      "name": "Uwajimaya - Seattle",
+      "category": "Independent Grocery",
+      "address": "600 5th Ave S, Seattle, WA 98104",
+      "neighborhood": "International District",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Uwajimaya - Bellevue",
+      "category": "Independent Grocery",
+      "address": "15555 NE 24th St, Bellevue, WA 98007",
+      "neighborhood": "Crossroads",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Uwajimaya - Renton",
+      "category": "Independent Grocery",
+      "address": "500 S Grady Way, Renton, WA 98057",
+      "neighborhood": "Downtown Renton",
+      "city": "Renton",
+      "state": "WA"
+    },
+    {
+      "name": "H Mart - Bellevue",
+      "category": "Independent Grocery",
+      "address": "3301 NE 4th St, Bellevue, WA 98004",
+      "neighborhood": "Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "H Mart - Lynnwood",
+      "category": "Independent Grocery",
+      "address": "3711 196th St SW, Lynnwood, WA 98036",
+      "neighborhood": "Lynnwood",
+      "city": "Lynnwood",
+      "state": "WA"
+    },
+    {
+      "name": "H Mart - Federal Way",
+      "category": "Independent Grocery",
+      "address": "31217 Pacific Hwy S, Federal Way, WA 98003",
+      "neighborhood": "Federal Way",
+      "city": "Federal Way",
+      "state": "WA"
+    },
+    {
+      "name": "Town & Country Markets - Bainbridge Island",
+      "category": "Independent Grocery",
+      "address": "343 Winslow Way E, Bainbridge Island, WA 98110",
+      "neighborhood": "Winslow",
+      "city": "Bainbridge Island",
+      "state": "WA"
+    },
+    {
+      "name": "Town & Country Markets - Shoreline",
+      "category": "Independent Grocery",
+      "address": "15505 Westminster Way N, Shoreline, WA 98133",
+      "neighborhood": "Shoreline",
+      "city": "Shoreline",
+      "state": "WA"
+    },
+    {
+      "name": "Town & Country Markets - Mill Creek",
+      "category": "Independent Grocery",
+      "address": "15802 Mill Creek Blvd, Mill Creek, WA 98012",
+      "neighborhood": "Mill Creek",
+      "city": "Mill Creek",
+      "state": "WA"
+    },
+    {
+      "name": "Bainbridge Island Grocery",
+      "category": "Independent Grocery",
+      "address": "321 High School Rd NE, Bainbridge Island, WA 98110",
+      "neighborhood": "Bainbridge Island",
+      "city": "Bainbridge Island",
+      "state": "WA"
+    },
+    {
+      "name": "Rain Shadow Meats - Capitol Hill",
+      "category": "Butcher Shop / Meat Market",
+      "address": "404 E Pine St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Rain Shadow Meats - Pioneer Square",
+      "category": "Butcher Shop / Meat Market",
+      "address": "82 Yesler Way, Seattle, WA 98104",
+      "neighborhood": "Pioneer Square",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Rain Shadow Meats - Bellevue",
+      "category": "Butcher Shop / Meat Market",
+      "address": "404 Bellevue Way NE, Bellevue, WA 98004",
+      "neighborhood": "Old Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Bill the Butcher - Woodinville",
+      "category": "Butcher Shop / Meat Market",
+      "address": "17622 140th Ave NE, Woodinville, WA 98072",
+      "neighborhood": "Woodinville",
+      "city": "Woodinville",
+      "state": "WA"
+    },
+    {
+      "name": "Don and Joe's Meats - Pike Place Market",
+      "category": "Butcher Shop / Meat Market",
+      "address": "85 Pike St, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "BB Ranch Butcher Shop - Kirkland",
+      "category": "Butcher Shop / Meat Market",
+      "address": "309 Kirkland Ave, Kirkland, WA 98033",
+      "neighborhood": "Downtown Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "The Swinery - West Seattle",
+      "category": "Butcher Shop / Meat Market",
+      "address": "3207 California Ave SW, Seattle, WA 98116",
+      "neighborhood": "West Seattle",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Wilson Fish - Pike Place",
+      "category": "Butcher Shop / Meat Market",
+      "address": "1535 Pike Pl, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Stadium Thriftway - Tacoma",
+      "category": "Independent Grocery",
+      "address": "625 N Tacoma Ave, Tacoma, WA 98403",
+      "neighborhood": "Stadium District",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "DeLaurenti Specialty Food & Wine",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1435 1st Ave, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "The Spanish Table",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1426 Western Ave, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Beecher's Handmade Cheese",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1600 Pike Pl, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Paris Grocery - Bellevue",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "10038 Main St, Bellevue, WA 98004",
+      "neighborhood": "Old Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "World Spice Merchants",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1509 Western Ave, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Salumi Artisan Cured Meats",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "309 3rd Ave S, Seattle, WA 98104",
+      "neighborhood": "Pioneer Square",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Uli's Famous Sausage",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1511 Pike Pl, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "The Calf & Kid",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1600 Pike Pl, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Market House Meats",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "1124 Hobart St, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Olsen Farms (Pike Place Market vendor)",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "Pike Place Market, 85 Pike St, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Issaquah Salmon Hatchery Market",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "125 W Sunset Way, Issaquah, WA 98027",
+      "neighborhood": "Downtown Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "Huckleberry Square - Burien",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "145 SW 153rd St, Burien, WA 98166",
+      "neighborhood": "Burien",
+      "city": "Burien",
+      "state": "WA"
+    },
+    {
+      "name": "Radiance Herbs & Massage - Olympia",
+      "category": "Health Food / Supplement Store",
+      "address": "113 5th Ave SE, Olympia, WA 98501",
+      "neighborhood": "Downtown Olympia",
+      "city": "Olympia",
+      "state": "WA"
+    },
+    {
+      "name": "Pharmaca Integrative Pharmacy - Queen Anne",
+      "category": "Health Food / Supplement Store",
+      "address": "1815 N 45th St, Seattle, WA 98103",
+      "neighborhood": "Wallingford",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Tenzing Momo - Pike Place",
+      "category": "Health Food / Supplement Store",
+      "address": "93 Pike St, Seattle, WA 98101",
+      "neighborhood": "Pike Place",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Zenith Health - Issaquah",
+      "category": "Health Food / Supplement Store",
+      "address": "22530 SE 64th Pl, Issaquah, WA 98027",
+      "neighborhood": "Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "Natural Grocers - Kirkland",
+      "category": "Natural/Organic Grocery",
+      "address": "12019 NE 85th St, Kirkland, WA 98033",
+      "neighborhood": "Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Natural Grocers - Tacoma",
+      "category": "Natural/Organic Grocery",
+      "address": "5702 6th Ave, Tacoma, WA 98406",
+      "neighborhood": "6th Ave",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Bastyr University Natural Health Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "3670 Stone Way N, Seattle, WA 98103",
+      "neighborhood": "Wallingford",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Emerald City Naturopathic Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "2601 NW 56th St, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Meridian Integrative Wellness - Bellevue",
+      "category": "Wellness Clinic with Retail",
+      "address": "1409 140th Pl NE, Bellevue, WA 98007",
+      "neighborhood": "Crossroads",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Tacoma Naturopathic Medicine",
+      "category": "Wellness Clinic with Retail",
+      "address": "715 Tacoma Ave S, Tacoma, WA 98402",
+      "neighborhood": "Downtown Tacoma",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Pacific Naturopathic - Edmonds",
+      "category": "Wellness Clinic with Retail",
+      "address": "630 Main St, Edmonds, WA 98020",
+      "neighborhood": "Downtown Edmonds",
+      "city": "Edmonds",
+      "state": "WA"
+    },
+    {
+      "name": "Kirkland Whole Life Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "124 4th Ave S, Kirkland, WA 98033",
+      "neighborhood": "Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "CrossFit Seattle",
+      "category": "Fitness Studio with Retail",
+      "address": "1407 Western Ave, Seattle, WA 98101",
+      "neighborhood": "Waterfront",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "CrossFit Bellevue",
+      "category": "Fitness Studio with Retail",
+      "address": "1100 Bellevue Way NE, Bellevue, WA 98004",
+      "neighborhood": "Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "CrossFit Redmond",
+      "category": "Fitness Studio with Retail",
+      "address": "16310 NE 80th St, Redmond, WA 98052",
+      "neighborhood": "Redmond",
+      "city": "Redmond",
+      "state": "WA"
+    },
+    {
+      "name": "Barre3 - Capitol Hill",
+      "category": "Fitness Studio with Retail",
+      "address": "1426 11th Ave, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Barre3 - Kirkland",
+      "category": "Fitness Studio with Retail",
+      "address": "211 Central Way, Kirkland, WA 98033",
+      "neighborhood": "Downtown Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Barre3 - Issaquah",
+      "category": "Fitness Studio with Retail",
+      "address": "317 NW Gilman Blvd, Issaquah, WA 98027",
+      "neighborhood": "Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "8 Limbs Yoga - Capitol Hill",
+      "category": "Fitness Studio with Retail",
+      "address": "500 E Pike St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "8 Limbs Yoga - Wedgwood",
+      "category": "Fitness Studio with Retail",
+      "address": "7345 35th Ave NE, Seattle, WA 98115",
+      "neighborhood": "Wedgwood",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "The Herbfarm Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "14590 NE 145th St, Woodinville, WA 98072",
+      "neighborhood": "Woodinville",
+      "city": "Woodinville",
+      "state": "WA"
+    },
+    {
+      "name": "Canlis",
+      "category": "Farm-to-Table Restaurant",
+      "address": "2576 Aurora Ave N, Seattle, WA 98109",
+      "neighborhood": "Westlake",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "The Walrus and the Carpenter",
+      "category": "Farm-to-Table Restaurant",
+      "address": "4743 Ballard Ave NW, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Cafe Juanita",
+      "category": "Farm-to-Table Restaurant",
+      "address": "9702 NE 120th Pl, Kirkland, WA 98034",
+      "neighborhood": "Juanita",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Tilth (now Archipelago)",
+      "category": "Farm-to-Table Restaurant",
+      "address": "1411 N 45th St, Seattle, WA 98103",
+      "neighborhood": "Wallingford",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Harvest Vine",
+      "category": "Farm-to-Table Restaurant",
+      "address": "2701 E Madison St, Seattle, WA 98112",
+      "neighborhood": "Madison Valley",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Willows Inn (Lummi Island - premium regional)",
+      "category": "Farm-to-Table Restaurant",
+      "address": "2579 W Shore Dr, Lummi Island, WA 98262",
+      "neighborhood": "Lummi Island",
+      "city": "Lummi Island",
+      "state": "WA"
+    },
+    {
+      "name": "Eden Hill Provisions - Queen Anne",
+      "category": "Farm-to-Table Restaurant",
+      "address": "2209 Queen Anne Ave N, Seattle, WA 98109",
+      "neighborhood": "Queen Anne",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Goldfinch Tavern - Four Seasons",
+      "category": "Farm-to-Table Restaurant",
+      "address": "99 Union St, Seattle, WA 98101",
+      "neighborhood": "Waterfront",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Skillet Diner - Capitol Hill",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "1400 E Union St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Portage Bay Cafe - Roosevelt",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "4130 Roosevelt Way NE, Seattle, WA 98105",
+      "neighborhood": "Roosevelt",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Portage Bay Cafe - South Lake Union",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "391 Terry Ave N, Seattle, WA 98109",
+      "neighborhood": "South Lake Union",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Portage Bay Cafe - Ballard",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "8 NW 65th St, Seattle, WA 98117",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Biscuit Bitch - Belltown",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2001 Western Ave, Seattle, WA 98121",
+      "neighborhood": "Belltown",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "The Fat Hen - Ballard",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "1418 NW 70th St, Seattle, WA 98117",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Geraldine's Counter - Columbia City",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "4872 Rainier Ave S, Seattle, WA 98118",
+      "neighborhood": "Columbia City",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Toulouse Petit - Queen Anne",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "601 Queen Anne Ave N, Seattle, WA 98109",
+      "neighborhood": "Queen Anne",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Eggs and Plants - Tacoma",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "1315 MLK Jr Way, Tacoma, WA 98405",
+      "neighborhood": "Hilltop",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "The Red Wagon - Tacoma",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2510 N Proctor St, Tacoma, WA 98406",
+      "neighborhood": "Proctor",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Macrina Bakery - SLU",
+      "category": "Bakery with Cafe Seating",
+      "address": "615 Westlake Ave N, Seattle, WA 98109",
+      "neighborhood": "South Lake Union",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Macrina Bakery - Belltown",
+      "category": "Bakery with Cafe Seating",
+      "address": "2408 1st Ave, Seattle, WA 98121",
+      "neighborhood": "Belltown",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Macrina Bakery - Capitol Hill",
+      "category": "Bakery with Cafe Seating",
+      "address": "1943 E Madison St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Grand Central Bakery - Pioneer Square",
+      "category": "Bakery with Cafe Seating",
+      "address": "214 1st Ave S, Seattle, WA 98104",
+      "neighborhood": "Pioneer Square",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Grand Central Bakery - Wedgwood",
+      "category": "Bakery with Cafe Seating",
+      "address": "7501 35th Ave NE, Seattle, WA 98115",
+      "neighborhood": "Wedgwood",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Grand Central Bakery - Burien",
+      "category": "Bakery with Cafe Seating",
+      "address": "620 SW 153rd St, Burien, WA 98166",
+      "neighborhood": "Burien",
+      "city": "Burien",
+      "state": "WA"
+    },
+    {
+      "name": "Columbia City Bakery",
+      "category": "Bakery with Cafe Seating",
+      "address": "4865 Rainier Ave S, Seattle, WA 98118",
+      "neighborhood": "Columbia City",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Coyle's Bakeshop - Greenwood",
+      "category": "Bakery with Cafe Seating",
+      "address": "8300 Greenwood Ave N, Seattle, WA 98103",
+      "neighborhood": "Greenwood",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Kizuki Ramen - Bellevue",
+      "category": "Ramen / Soup Restaurant",
+      "address": "601 108th Ave NE, Bellevue, WA 98004",
+      "neighborhood": "Downtown Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Kizuki Ramen - Capitol Hill",
+      "category": "Ramen / Soup Restaurant",
+      "address": "220 Broadway E, Seattle, WA 98102",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Kizuki Ramen - Issaquah",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1170 NW Gilman Blvd, Issaquah, WA 98027",
+      "neighborhood": "Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "Kizuki Ramen - Redmond",
+      "category": "Ramen / Soup Restaurant",
+      "address": "16564 Cleveland St, Redmond, WA 98052",
+      "neighborhood": "Downtown Redmond",
+      "city": "Redmond",
+      "state": "WA"
+    },
+    {
+      "name": "Samurai Noodle - International District",
+      "category": "Ramen / Soup Restaurant",
+      "address": "606 5th Ave S, Seattle, WA 98104",
+      "neighborhood": "International District",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Ramen Danbo - Capitol Hill",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1222 E Pine St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Bellevue",
+      "category": "Pet Health Store",
+      "address": "14339 NE 20th St, Bellevue, WA 98007",
+      "neighborhood": "Crossroads",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Kirkland",
+      "category": "Pet Health Store",
+      "address": "12527 NE 85th St, Kirkland, WA 98033",
+      "neighborhood": "Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Redmond",
+      "category": "Pet Health Store",
+      "address": "7217 170th Ave NE, Redmond, WA 98052",
+      "neighborhood": "Redmond",
+      "city": "Redmond",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Issaquah",
+      "category": "Pet Health Store",
+      "address": "735 NW Gilman Blvd, Issaquah, WA 98027",
+      "neighborhood": "Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Ballard",
+      "category": "Pet Health Store",
+      "address": "5000 20th Ave NW, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Renton",
+      "category": "Pet Health Store",
+      "address": "601 S Grady Way, Renton, WA 98057",
+      "neighborhood": "Renton",
+      "city": "Renton",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Shoreline",
+      "category": "Pet Health Store",
+      "address": "14810 Aurora Ave N, Shoreline, WA 98133",
+      "neighborhood": "Shoreline",
+      "city": "Shoreline",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Edmonds",
+      "category": "Pet Health Store",
+      "address": "546 5th Ave S, Edmonds, WA 98020",
+      "neighborhood": "Edmonds",
+      "city": "Edmonds",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Tacoma",
+      "category": "Pet Health Store",
+      "address": "4009 Tacoma Mall Blvd, Tacoma, WA 98409",
+      "neighborhood": "Tacoma Mall",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Mud Bay - Olympia",
+      "category": "Pet Health Store",
+      "address": "1530 Black Lake Blvd SW, Olympia, WA 98502",
+      "neighborhood": "West Olympia",
+      "city": "Olympia",
+      "state": "WA"
+    },
+    {
+      "name": "All the Best Pet Care - Ballard",
+      "category": "Pet Health Store",
+      "address": "5308 22nd Ave NW, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "All the Best Pet Care - University Village",
+      "category": "Pet Health Store",
+      "address": "4559 University Village Pl NE, Seattle, WA 98105",
+      "neighborhood": "University Village",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "All the Best Pet Care - Capitol Hill",
+      "category": "Pet Health Store",
+      "address": "918 E John St, Seattle, WA 98102",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Snap Kitchen - South Lake Union",
+      "category": "Meal Prep / Prepared Food",
+      "address": "2200 Westlake Ave, Seattle, WA 98121",
+      "neighborhood": "South Lake Union",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Territory Foods Seattle",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Seattle Metro Delivery Area",
+      "neighborhood": "Metro-wide",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Factor Meals (Eastside delivery hub)",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Bellevue/Redmond Delivery Area",
+      "neighborhood": "Eastside",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "WeWork - South Lake Union",
+      "category": "Co-working Space with Food",
+      "address": "500 Yale Ave N, Seattle, WA 98109",
+      "neighborhood": "South Lake Union",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Industrious - Bellevue",
+      "category": "Co-working Space with Food",
+      "address": "10900 NE 4th St, Bellevue, WA 98004",
+      "neighborhood": "Downtown Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "The Pioneer Collective - Pioneer Square",
+      "category": "Co-working Space with Food",
+      "address": "100 S King St, Seattle, WA 98104",
+      "neighborhood": "Pioneer Square",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "University District Farmers Market",
+      "category": "Farmers Market",
+      "address": "University Way NE & NE 50th St, Seattle, WA 98105",
+      "neighborhood": "University District",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Ballard Farmers Market",
+      "category": "Farmers Market",
+      "address": "5330 Ballard Ave NW, Seattle, WA 98107",
+      "neighborhood": "Ballard",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "West Seattle Farmers Market",
+      "category": "Farmers Market",
+      "address": "California Ave SW & SW Alaska St, Seattle, WA 98116",
+      "neighborhood": "West Seattle",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Columbia City Farmers Market",
+      "category": "Farmers Market",
+      "address": "4801 Rainier Ave S, Seattle, WA 98118",
+      "neighborhood": "Columbia City",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Capitol Hill Farmers Market",
+      "category": "Farmers Market",
+      "address": "Broadway & E Pine St, Seattle, WA 98122",
+      "neighborhood": "Capitol Hill",
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "name": "Bellevue Farmers Market",
+      "category": "Farmers Market",
+      "address": "1717 Bellevue Way NE, Bellevue, WA 98004",
+      "neighborhood": "Downtown Bellevue",
+      "city": "Bellevue",
+      "state": "WA"
+    },
+    {
+      "name": "Kirkland Wednesday Market",
+      "category": "Farmers Market",
+      "address": "Park Lane & 3rd St, Kirkland, WA 98033",
+      "neighborhood": "Downtown Kirkland",
+      "city": "Kirkland",
+      "state": "WA"
+    },
+    {
+      "name": "Redmond Saturday Market",
+      "category": "Farmers Market",
+      "address": "7730 Leary Way NE, Redmond, WA 98052",
+      "neighborhood": "Downtown Redmond",
+      "city": "Redmond",
+      "state": "WA"
+    },
+    {
+      "name": "Issaquah Farmers Market",
+      "category": "Farmers Market",
+      "address": "Pickering Barn, 1730 10th Ave NW, Issaquah, WA 98027",
+      "neighborhood": "Issaquah",
+      "city": "Issaquah",
+      "state": "WA"
+    },
+    {
+      "name": "Edmonds Farmers Market",
+      "category": "Farmers Market",
+      "address": "5th Ave & Bell St, Edmonds, WA 98020",
+      "neighborhood": "Downtown Edmonds",
+      "city": "Edmonds",
+      "state": "WA"
+    },
+    {
+      "name": "Tacoma Farmers Market - Broadway",
+      "category": "Farmers Market",
+      "address": "901 Broadway, Tacoma, WA 98402",
+      "neighborhood": "Stadium District",
+      "city": "Tacoma",
+      "state": "WA"
+    },
+    {
+      "name": "Olympia Farmers Market",
+      "category": "Farmers Market",
+      "address": "700 Capitol Way N, Olympia, WA 98501",
+      "neighborhood": "Downtown Olympia",
+      "city": "Olympia",
+      "state": "WA"
+    },
+    {
+      "name": "Bainbridge Island Farmers Market",
+      "category": "Farmers Market",
+      "address": "280 Madison Ave N, Bainbridge Island, WA 98110",
+      "neighborhood": "Winslow",
+      "city": "Bainbridge Island",
+      "state": "WA"
+    },
+    {
+      "name": "Shoreline Farmers Market",
+      "category": "Farmers Market",
+      "address": "17500 Midvale Ave N, Shoreline, WA 98133",
+      "neighborhood": "Shoreline",
+      "city": "Shoreline",
+      "state": "WA"
+    },
+    {
+      "name": "Burien Farmers Market",
+      "category": "Farmers Market",
+      "address": "SW 153rd St & 5th Ave SW, Burien, WA 98166",
+      "neighborhood": "Downtown Burien",
+      "city": "Burien",
+      "state": "WA"
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+{
+  "meta": {
+    "brand": "Rooted Broth",
+    "market": "Portland, OR Metro",
+    "generated": "2026-04-05",
+    "note": "Compiled from known business data. Addresses and operational status should be verified before outreach. Some businesses may have closed or relocated since data was collected.",
+    "total_targets": 112,
+    "cities": [
+      "Portland",
+      "Beaverton",
+      "Lake Oswego",
+      "Tigard",
+      "Hillsboro",
+      "Clackamas",
+      "Milwaukie",
+      "Gresham",
+      "West Linn",
+      "Tualatin",
+      "Oregon City",
+      "Happy Valley",
+      "Sellwood",
+      "Vancouver WA"
+    ],
+    "categories": [
+      "Natural/Organic Grocery",
+      "Food Co-op",
+      "Independent Grocery",
+      "Butcher Shop / Meat Market",
+      "Health Food / Supplement Store",
+      "Specialty/Gourmet Food Shop",
+      "Wellness Clinic with Retail",
+      "Fitness Studio with Retail",
+      "Farm-to-Table Restaurant",
+      "Breakfast/Brunch Restaurant",
+      "Bakery with Cafe Seating",
+      "Pet Health Store",
+      "Meal Prep / Prepared Food",
+      "Ramen / Soup Restaurant",
+      "Co-working Space with Food",
+      "Farmers Market"
+    ]
+  },
+  "targets": [
+    {
+      "name": "New Seasons Market - Arbor Lodge",
+      "category": "Natural/Organic Grocery",
+      "address": "6400 N Interstate Ave, Portland, OR 97217",
+      "neighborhood": "Arbor Lodge",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Cedar Hills",
+      "category": "Natural/Organic Grocery",
+      "address": "3495 SW Cedar Hills Blvd, Beaverton, OR 97005",
+      "neighborhood": "Cedar Hills",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Concordia",
+      "category": "Natural/Organic Grocery",
+      "address": "5320 NE 33rd Ave, Portland, OR 97211",
+      "neighborhood": "Concordia",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Grant Park",
+      "category": "Natural/Organic Grocery",
+      "address": "3210 NE Broadway St, Portland, OR 97232",
+      "neighborhood": "Grant Park",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Happy Valley",
+      "category": "Natural/Organic Grocery",
+      "address": "15861 SE Happy Valley Town Center Dr, Happy Valley, OR 97086",
+      "neighborhood": "Happy Valley",
+      "city": "Happy Valley",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Hawthorne",
+      "category": "Natural/Organic Grocery",
+      "address": "4034 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Milwaukie",
+      "category": "Natural/Organic Grocery",
+      "address": "10830 SE Oak St, Milwaukie, OR 97222",
+      "neighborhood": "Milwaukie",
+      "city": "Milwaukie",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Mountain Park",
+      "category": "Natural/Organic Grocery",
+      "address": "3 Monroe Pkwy, Lake Oswego, OR 97035",
+      "neighborhood": "Mountain Park",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Orenco Station",
+      "category": "Natural/Organic Grocery",
+      "address": "1453 NE 61st Ave, Hillsboro, OR 97124",
+      "neighborhood": "Orenco Station",
+      "city": "Hillsboro",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Raleigh Hills",
+      "category": "Natural/Organic Grocery",
+      "address": "7300 SW Beaverton-Hillsdale Hwy, Portland, OR 97225",
+      "neighborhood": "Raleigh Hills",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Sellwood",
+      "category": "Natural/Organic Grocery",
+      "address": "1214 SE Tacoma St, Portland, OR 97202",
+      "neighborhood": "Sellwood",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Slabtown",
+      "category": "Natural/Organic Grocery",
+      "address": "1954 NW Pettygrove St, Portland, OR 97209",
+      "neighborhood": "Slabtown",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Williams",
+      "category": "Natural/Organic Grocery",
+      "address": "3445 N Williams Ave, Portland, OR 97227",
+      "neighborhood": "Williams",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "New Seasons Market - Woodstock",
+      "category": "Natural/Organic Grocery",
+      "address": "4500 SE Woodstock Blvd, Portland, OR 97206",
+      "neighborhood": "Woodstock",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Zupan's Markets - Burnside",
+      "category": "Natural/Organic Grocery",
+      "address": "2340 W Burnside St, Portland, OR 97210",
+      "neighborhood": "Nob Hill",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Zupan's Markets - Macadam",
+      "category": "Natural/Organic Grocery",
+      "address": "7221 SW Macadam Ave, Portland, OR 97219",
+      "neighborhood": "Johns Landing",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Zupan's Markets - Belmont",
+      "category": "Natural/Organic Grocery",
+      "address": "3301 SE Belmont St, Portland, OR 97214",
+      "neighborhood": "Belmont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Zupan's Markets - Lake Oswego",
+      "category": "Natural/Organic Grocery",
+      "address": "16380 Boones Ferry Rd, Lake Oswego, OR 97035",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Chuck's Produce & Street Market - Tigard",
+      "category": "Natural/Organic Grocery",
+      "address": "9060 SW Hall Blvd, Tigard, OR 97223",
+      "neighborhood": "Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Chuck's Produce & Street Market - Vancouver",
+      "category": "Natural/Organic Grocery",
+      "address": "15015 SE Mill Plain Blvd, Vancouver, WA 98684",
+      "neighborhood": "East Vancouver",
+      "city": "Vancouver",
+      "state": "WA"
+    },
+    {
+      "name": "Market of Choice - West Linn",
+      "category": "Natural/Organic Grocery",
+      "address": "5639 Hood St, West Linn, OR 97068",
+      "neighborhood": "West Linn",
+      "city": "West Linn",
+      "state": "OR"
+    },
+    {
+      "name": "Market of Choice - Lake Oswego",
+      "category": "Natural/Organic Grocery",
+      "address": "333 S State St, Lake Oswego, OR 97034",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Natural Grocers - Beaverton",
+      "category": "Natural/Organic Grocery",
+      "address": "4000 SW 117th Ave, Beaverton, OR 97005",
+      "neighborhood": "Beaverton",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "Natural Grocers - Tigard",
+      "category": "Natural/Organic Grocery",
+      "address": "11550 SW Pacific Hwy, Tigard, OR 97223",
+      "neighborhood": "Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Natural Grocers - Gresham",
+      "category": "Natural/Organic Grocery",
+      "address": "717 NW 12th St, Gresham, OR 97030",
+      "neighborhood": "Downtown Gresham",
+      "city": "Gresham",
+      "state": "OR"
+    },
+    {
+      "name": "Natural Grocers - Clackamas",
+      "category": "Natural/Organic Grocery",
+      "address": "9350 SE 82nd Ave, Clackamas, OR 97015",
+      "neighborhood": "Clackamas",
+      "city": "Clackamas",
+      "state": "OR"
+    },
+    {
+      "name": "Natural Grocers - Hillsboro",
+      "category": "Natural/Organic Grocery",
+      "address": "2094 NW Allie Ave, Hillsboro, OR 97124",
+      "neighborhood": "Tanasbourne",
+      "city": "Hillsboro",
+      "state": "OR"
+    },
+    {
+      "name": "Whole Foods Market - Pearl District",
+      "category": "Natural/Organic Grocery",
+      "address": "1210 NW Couch St, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Whole Foods Market - Fremont",
+      "category": "Natural/Organic Grocery",
+      "address": "3535 NE 15th Ave, Portland, OR 97212",
+      "neighborhood": "Fremont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Whole Foods Market - Lake Oswego",
+      "category": "Natural/Organic Grocery",
+      "address": "15391 Bangy Rd, Lake Oswego, OR 97035",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Whole Foods Market - Tigard",
+      "category": "Natural/Organic Grocery",
+      "address": "7380 SW Bridgeport Rd, Tigard, OR 97224",
+      "neighborhood": "Bridgeport",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "People's Food Co-op",
+      "category": "Food Co-op",
+      "address": "3029 SE 21st Ave, Portland, OR 97202",
+      "neighborhood": "Brooklyn",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Alberta Cooperative Grocery",
+      "category": "Food Co-op",
+      "address": "1500 NE Alberta St, Portland, OR 97211",
+      "neighborhood": "Alberta Arts",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Food Front Cooperative Grocery - Hillsdale",
+      "category": "Food Co-op",
+      "address": "6344 SW Capitol Hwy, Portland, OR 97239",
+      "neighborhood": "Hillsdale",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Food Front Cooperative Grocery - NW",
+      "category": "Food Co-op",
+      "address": "2375 NW Thurman St, Portland, OR 97210",
+      "neighborhood": "Slabtown",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Sheridan Fruit Company",
+      "category": "Independent Grocery",
+      "address": "409 SE Martin Luther King Jr Blvd, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Uwajimaya - Beaverton",
+      "category": "Independent Grocery",
+      "address": "10500 SW Beaverton-Hillsdale Hwy, Beaverton, OR 97005",
+      "neighborhood": "Beaverton",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "H Mart - Tigard",
+      "category": "Independent Grocery",
+      "address": "10500 SW Beaverton-Hillsdale Hwy, Beaverton, OR 97005",
+      "neighborhood": "Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Barbur World Foods",
+      "category": "Independent Grocery",
+      "address": "9845 SW Barbur Blvd, Portland, OR 97219",
+      "neighborhood": "Barbur",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Fubonn Supermarket",
+      "category": "Independent Grocery",
+      "address": "2850 SE 82nd Ave, Portland, OR 97266",
+      "neighborhood": "Jade District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Basics Market - Multnomah Village",
+      "category": "Independent Grocery",
+      "address": "7866 SW Capitol Hwy, Portland, OR 97219",
+      "neighborhood": "Multnomah Village",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Basics Market - Kenton",
+      "category": "Independent Grocery",
+      "address": "2034 N Kilpatrick St, Portland, OR 97217",
+      "neighborhood": "Kenton",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Gartner's Meats",
+      "category": "Butcher Shop / Meat Market",
+      "address": "7450 NE Killingsworth St, Portland, OR 97218",
+      "neighborhood": "Cully",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Laurelhurst Market",
+      "category": "Butcher Shop / Meat Market",
+      "address": "3155 E Burnside St, Portland, OR 97214",
+      "neighborhood": "Laurelhurst",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Tails & Trotters",
+      "category": "Butcher Shop / Meat Market",
+      "address": "525 NE 24th Ave, Portland, OR 97232",
+      "neighborhood": "Kerns",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Nicky USA",
+      "category": "Butcher Shop / Meat Market",
+      "address": "223 SE 3rd Ave, Portland, OR 97214",
+      "neighborhood": "Industrial Southeast",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Phil's Meat Market",
+      "category": "Butcher Shop / Meat Market",
+      "address": "13925 SW Pacific Hwy, Tigard, OR 97224",
+      "neighborhood": "Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Otto's Sausage Kitchen",
+      "category": "Butcher Shop / Meat Market",
+      "address": "4138 SE Woodstock Blvd, Portland, OR 97206",
+      "neighborhood": "Woodstock",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Sheridan's Country Meats",
+      "category": "Butcher Shop / Meat Market",
+      "address": "16795 SW Pacific Hwy, Tigard, OR 97224",
+      "neighborhood": "King City",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Clackamas Meat Co.",
+      "category": "Butcher Shop / Meat Market",
+      "address": "15964 SE 82nd Dr, Clackamas, OR 97015",
+      "neighborhood": "Clackamas",
+      "city": "Clackamas",
+      "state": "OR"
+    },
+    {
+      "name": "Providore Fine Foods",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "2340 NE Sandy Blvd, Portland, OR 97232",
+      "neighborhood": "Sullivan's Gulch",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Pastaworks - Hawthorne",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "3735 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Foster & Dobbs",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "2518 NE 15th Ave, Portland, OR 97212",
+      "neighborhood": "Irvington",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Elephant's Delicatessen - NW",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "115 NW 22nd Ave, Portland, OR 97210",
+      "neighborhood": "Nob Hill",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Elephant's Delicatessen - Pearl",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "404 NW 10th Ave, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Chop Butchery & Charcuterie",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "3808 N Williams Ave, Portland, OR 97227",
+      "neighborhood": "Boise",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "The Meadow",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "3731 N Mississippi Ave, Portland, OR 97227",
+      "neighborhood": "Mississippi",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Penzeys Spices - Bridgeport",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "7329 SW Bridgeport Rd, Tigard, OR 97224",
+      "neighborhood": "Bridgeport Village",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "World Foods Portland",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "829 SE Woodstock Blvd, Portland, OR 97202",
+      "neighborhood": "Sellwood",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Salt & Straw Scoop Shop - NW 23rd",
+      "category": "Specialty/Gourmet Food Shop",
+      "address": "838 NW 23rd Ave, Portland, OR 97210",
+      "neighborhood": "Nob Hill",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Peoples Wellness Center",
+      "category": "Health Food / Supplement Store",
+      "address": "3029 SE 21st Ave, Portland, OR 97202",
+      "neighborhood": "Brooklyn",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Nature's Marketplace - Lake Oswego",
+      "category": "Health Food / Supplement Store",
+      "address": "15402 Boones Ferry Rd, Lake Oswego, OR 97035",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Bob's Red Mill Whole Grain Store",
+      "category": "Health Food / Supplement Store",
+      "address": "13521 SE Pheasant Ct, Milwaukie, OR 97222",
+      "neighborhood": "Milwaukie",
+      "city": "Milwaukie",
+      "state": "OR"
+    },
+    {
+      "name": "Vitamin Shoppe - Clackamas",
+      "category": "Health Food / Supplement Store",
+      "address": "12140 SE 82nd Ave, Clackamas, OR 97015",
+      "neighborhood": "Clackamas",
+      "city": "Clackamas",
+      "state": "OR"
+    },
+    {
+      "name": "Healthy Pets NW - Mississippi",
+      "category": "Pet Health Store",
+      "address": "4030 N Mississippi Ave, Portland, OR 97227",
+      "neighborhood": "Mississippi",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Hawthorne",
+      "category": "Pet Health Store",
+      "address": "3620 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Lake Oswego",
+      "category": "Pet Health Store",
+      "address": "16199 Boones Ferry Rd, Lake Oswego, OR 97035",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Beaverton",
+      "category": "Pet Health Store",
+      "address": "3500 SW Cedar Hills Blvd, Beaverton, OR 97005",
+      "neighborhood": "Cedar Hills",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Tigard",
+      "category": "Pet Health Store",
+      "address": "11655 SW Pacific Hwy, Tigard, OR 97223",
+      "neighborhood": "Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Hillsboro",
+      "category": "Pet Health Store",
+      "address": "1880 NW 185th Ave, Hillsboro, OR 97124",
+      "neighborhood": "Tanasbourne",
+      "city": "Hillsboro",
+      "state": "OR"
+    },
+    {
+      "name": "Mud Bay - Gresham",
+      "category": "Pet Health Store",
+      "address": "550 NW Eastman Pkwy, Gresham, OR 97030",
+      "neighborhood": "Gresham",
+      "city": "Gresham",
+      "state": "OR"
+    },
+    {
+      "name": "Pet Pantry - NE Portland",
+      "category": "Pet Health Store",
+      "address": "5028 NE Fremont St, Portland, OR 97213",
+      "neighborhood": "Beaumont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Dogwood Pet Supply - Oregon City",
+      "category": "Pet Health Store",
+      "address": "19263 Molalla Ave, Oregon City, OR 97045",
+      "neighborhood": "Oregon City",
+      "city": "Oregon City",
+      "state": "OR"
+    },
+    {
+      "name": "Green Dog Pet Supply",
+      "category": "Pet Health Store",
+      "address": "4327 NE Fremont St, Portland, OR 97213",
+      "neighborhood": "Beaumont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "National College of Natural Medicine Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "049 SW Porter St, Portland, OR 97201",
+      "neighborhood": "South Portland",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Heart Spring Health",
+      "category": "Wellness Clinic with Retail",
+      "address": "8571 SW Apple Way, Portland, OR 97225",
+      "neighborhood": "Raleigh Hills",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Nature Cures Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "1100 SE Grand Ave, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Lake Oswego Naturopathic Clinic",
+      "category": "Wellness Clinic with Retail",
+      "address": "2 Centerpointe Dr, Lake Oswego, OR 97035",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Beaverton Wellness Center",
+      "category": "Wellness Clinic with Retail",
+      "address": "12725 SW Millikan Way, Beaverton, OR 97005",
+      "neighborhood": "Beaverton",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "CrossFit Portland",
+      "category": "Fitness Studio with Retail",
+      "address": "719 SE Morrison St, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Barre3 - Pearl District",
+      "category": "Fitness Studio with Retail",
+      "address": "1030 NW Johnson St, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Barre3 - Lake Oswego",
+      "category": "Fitness Studio with Retail",
+      "address": "333 S State St, Lake Oswego, OR 97034",
+      "neighborhood": "Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Barre3 - West Linn",
+      "category": "Fitness Studio with Retail",
+      "address": "22000 Willamette Dr, West Linn, OR 97068",
+      "neighborhood": "West Linn",
+      "city": "West Linn",
+      "state": "OR"
+    },
+    {
+      "name": "CrossFit Hillsboro",
+      "category": "Fitness Studio with Retail",
+      "address": "5480 NE Elam Young Pkwy, Hillsboro, OR 97124",
+      "neighborhood": "Hillsboro",
+      "city": "Hillsboro",
+      "state": "OR"
+    },
+    {
+      "name": "Yoga Union Community Wellness Center",
+      "category": "Fitness Studio with Retail",
+      "address": "2043 SE 50th Ave, Portland, OR 97215",
+      "neighborhood": "Richmond",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "The People's Yoga - Alberta",
+      "category": "Fitness Studio with Retail",
+      "address": "4731 NE Fremont St, Portland, OR 97213",
+      "neighborhood": "Beaumont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Ox Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "2225 NE Martin Luther King Jr Blvd, Portland, OR 97212",
+      "neighborhood": "Eliot",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Higgins Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "1239 SW Broadway, Portland, OR 97205",
+      "neighborhood": "Downtown",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Coquine",
+      "category": "Farm-to-Table Restaurant",
+      "address": "6839 SE Belmont St, Portland, OR 97215",
+      "neighborhood": "Mt. Tabor",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Farm Spirit",
+      "category": "Farm-to-Table Restaurant",
+      "address": "1403 SE Belmont St, Portland, OR 97214",
+      "neighborhood": "Belmont",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Castagna Restaurant",
+      "category": "Farm-to-Table Restaurant",
+      "address": "1752 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Nostrana",
+      "category": "Farm-to-Table Restaurant",
+      "address": "1401 SE Morrison St, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Arden - Clackamas",
+      "category": "Farm-to-Table Restaurant",
+      "address": "16187 SE Happy Valley Town Center Dr, Happy Valley, OR 97086",
+      "neighborhood": "Happy Valley",
+      "city": "Happy Valley",
+      "state": "OR"
+    },
+    {
+      "name": "Screen Door",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2337 E Burnside St, Portland, OR 97214",
+      "neighborhood": "Kerns",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Gravy",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "3957 N Mississippi Ave, Portland, OR 97227",
+      "neighborhood": "Mississippi",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Jam on Hawthorne",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2239 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Broder Nord",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2240 N Interstate Ave, Portland, OR 97227",
+      "neighborhood": "Mississippi",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Pine State Biscuits - Alberta",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "2204 NE Alberta St, Portland, OR 97211",
+      "neighborhood": "Alberta Arts",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Sweedeedee",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "5202 N Albina Ave, Portland, OR 97217",
+      "neighborhood": "Humboldt",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "The Original - Tigard",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "9895 SW Beaverton-Hillsdale Hwy, Beaverton, OR 97005",
+      "neighborhood": "Beaverton",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "Wild Plum Cafe & Bakery",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "19043 Beavercreek Rd, Oregon City, OR 97045",
+      "neighborhood": "Oregon City",
+      "city": "Oregon City",
+      "state": "OR"
+    },
+    {
+      "name": "Fat Albert's Breakfast Cafe - Sellwood",
+      "category": "Breakfast/Brunch Restaurant",
+      "address": "6668 SE Milwaukie Ave, Portland, OR 97202",
+      "neighborhood": "Sellwood",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Ken's Artisan Bakery",
+      "category": "Bakery with Cafe Seating",
+      "address": "338 NW 21st Ave, Portland, OR 97209",
+      "neighborhood": "Nob Hill",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Tabor Bread",
+      "category": "Bakery with Cafe Seating",
+      "address": "5051 SE Hawthorne Blvd, Portland, OR 97215",
+      "neighborhood": "Mt. Tabor",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Grand Central Bakery - Hawthorne",
+      "category": "Bakery with Cafe Seating",
+      "address": "4412 SE Hawthorne Blvd, Portland, OR 97215",
+      "neighborhood": "Hawthorne",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Grand Central Bakery - Multnomah Village",
+      "category": "Bakery with Cafe Seating",
+      "address": "3425 SW Multnomah Blvd, Portland, OR 97219",
+      "neighborhood": "Multnomah Village",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Grand Central Bakery - Sellwood",
+      "category": "Bakery with Cafe Seating",
+      "address": "7987 SE 13th Ave, Portland, OR 97202",
+      "neighborhood": "Sellwood",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Little T American Baker",
+      "category": "Bakery with Cafe Seating",
+      "address": "2600 SE Division St, Portland, OR 97202",
+      "neighborhood": "Division",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Marukin Ramen - Pearl",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1028 NW Flanders St, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Afuri Ramen - Pearl",
+      "category": "Ramen / Soup Restaurant",
+      "address": "50 SW 3rd Ave, Portland, OR 97204",
+      "neighborhood": "Old Town",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Kayo's Ramen Bar",
+      "category": "Ramen / Soup Restaurant",
+      "address": "2 SW 2nd Ave, Portland, OR 97204",
+      "neighborhood": "Old Town",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Kinboshi Ramen",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1235 SW Jefferson St, Portland, OR 97201",
+      "neighborhood": "Downtown",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Boke Bowl",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1028 SE Water Ave, Portland, OR 97214",
+      "neighborhood": "Central Eastside",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Boxer Ramen - NE",
+      "category": "Ramen / Soup Restaurant",
+      "address": "1025 NW Flanders St, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Nourish Northwest",
+      "category": "Meal Prep / Prepared Food",
+      "address": "1937 NW 23rd Pl, Portland, OR 97210",
+      "neighborhood": "Nob Hill",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Trifecta Annex Meal Prep",
+      "category": "Meal Prep / Prepared Food",
+      "address": "726 SE 6th Ave, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Territory Foods Portland",
+      "category": "Meal Prep / Prepared Food",
+      "address": "Portland Metro Delivery Area",
+      "neighborhood": "Metro-wide",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Collective Agency",
+      "category": "Co-working Space with Food",
+      "address": "511 NW Broadway, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "WeWork - Custom House",
+      "category": "Co-working Space with Food",
+      "address": "220 NW 8th Ave, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "CENTRL Office - Eastside",
+      "category": "Co-working Space with Food",
+      "address": "1355 NW Everett St, Portland, OR 97209",
+      "neighborhood": "Pearl District",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Portland Farmers Market - PSU",
+      "category": "Farmers Market",
+      "address": "SW Park Ave & Montgomery St, Portland, OR 97201",
+      "neighborhood": "Downtown PSU",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Portland Farmers Market - King",
+      "category": "Farmers Market",
+      "address": "NE 7th Ave & Wygant St, Portland, OR 97211",
+      "neighborhood": "King",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Portland Farmers Market - Shemanski Park",
+      "category": "Farmers Market",
+      "address": "SW Park Ave & Main St, Portland, OR 97205",
+      "neighborhood": "Downtown",
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "name": "Beaverton Farmers Market",
+      "category": "Farmers Market",
+      "address": "12375 SW 5th St, Beaverton, OR 97005",
+      "neighborhood": "Downtown Beaverton",
+      "city": "Beaverton",
+      "state": "OR"
+    },
+    {
+      "name": "Hillsboro Farmers Market",
+      "category": "Farmers Market",
+      "address": "E Main St & 2nd Ave, Hillsboro, OR 97123",
+      "neighborhood": "Downtown Hillsboro",
+      "city": "Hillsboro",
+      "state": "OR"
+    },
+    {
+      "name": "Lake Oswego Farmers Market",
+      "category": "Farmers Market",
+      "address": "Millennium Plaza Park, Lake Oswego, OR 97034",
+      "neighborhood": "Downtown Lake Oswego",
+      "city": "Lake Oswego",
+      "state": "OR"
+    },
+    {
+      "name": "Milwaukie Farmers Market",
+      "category": "Farmers Market",
+      "address": "SE Main St & Harrison St, Milwaukie, OR 97222",
+      "neighborhood": "Downtown Milwaukie",
+      "city": "Milwaukie",
+      "state": "OR"
+    },
+    {
+      "name": "Oregon City Farmers Market",
+      "category": "Farmers Market",
+      "address": "2nd St & Center St, Oregon City, OR 97045",
+      "neighborhood": "Downtown Oregon City",
+      "city": "Oregon City",
+      "state": "OR"
+    },
+    {
+      "name": "Tigard Farmers Market",
+      "category": "Farmers Market",
+      "address": "12675 SW Main St, Tigard, OR 97223",
+      "neighborhood": "Downtown Tigard",
+      "city": "Tigard",
+      "state": "OR"
+    },
+    {
+      "name": "West Linn Farmers Market",
+      "category": "Farmers Market",
+      "address": "Willamette Falls Dr, West Linn, OR 97068",
+      "neighborhood": "West Linn",
+      "city": "West Linn",
+      "state": "OR"
+    },
+    {
+      "name": "Tualatin Farmers Market",
+      "category": "Farmers Market",
+      "address": "Tualatin Community Park, Tualatin, OR 97062",
+      "neighborhood": "Tualatin",
+      "city": "Tualatin",
+      "state": "OR"
+    },
+    {
+      "name": "Gresham Farmers Market",
+      "category": "Farmers Market",
+      "address": "3rd St & NW Miller Ave, Gresham, OR 97030",
+      "neighborhood": "Downtown Gresham",
+      "city": "Gresham",
+      "state": "OR"
+    }
+  ]
+}
